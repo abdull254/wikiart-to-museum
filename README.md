@@ -100,6 +100,7 @@ reports/      progress reports
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |
 | `docs/settings.md` | Split, seeds, model, probe and RQ2 settings |
 | `docs/code_review.md`, `docs/todo.md` | Code review and the to-do list |
+| `src/train.py` | ResNet-50 training and evaluation; writes config, history, metrics and predictions per run |
 | `src/stats.py` | Bootstrap intervals, museum-gap test, seen-artist boost, paired comparison |
 | `results/style_date_conflicts.csv` | Labels that conflicted with the painting's date |
 | `results/stats_summary.csv`, `stats_per_class.csv`, `stats_report.txt` | 3-seed ResNet-50 statistics (RQ1 table) |
@@ -115,7 +116,7 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 
 | Requested | Status | Where |
 |---|---|---|
-| All code and notebooks, including RQ2 | Partly | `src/` (incl. `stats.py`), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: `train.py`, download and harvest scripts (`wikiart_download.py`, `main.py`, `met_harvest.py`), `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
+| All code and notebooks, including RQ2 | Partly | `src/` (incl. `train.py` and `stats.py`), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: download and harvest scripts (`wikiart_download.py`, `main.py`, `met_harvest.py`), `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
 | `labeling_rules.md` | Partly | Rules summarized in [results/labels/README.md](results/labels/README.md) from `src/label_museums.py`; the original `labeling_rules.md` is missing |
 | Label and rule for every museum painting | Done for the test sets | [results/labels/museum_test_labels.csv](results/labels/museum_test_labels.csv) (Met 937, Rijks 3,092). Full `museum_labels.csv` incl. unlabeled rows missing |
 | Met and Rijksmuseum object IDs with export dates | IDs done; export dates missing | Object IDs in `museum_test_labels.csv`. Harvest logs with dates are in `data/` on the author's computer |

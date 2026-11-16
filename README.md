@@ -98,23 +98,49 @@ reports/      progress reports
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
 | `docs/rq1_results.md` | Full RQ1, ablation and probe results |
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |
+| `docs/settings.md` | Split, seeds, model, probe and RQ2 settings |
 | `docs/code_review.md`, `docs/todo.md` | Code review and the to-do list |
 | `results/style_date_conflicts.csv` | Labels that conflicted with the painting's date |
 
-## How to run (Colab)
+### Which numbers are current
 
-1. Put `colab_data.zip` (built by the pipeline) in your Google Drive.
-2. Open `notebooks/wikiart_colab.ipynb` in Colab, choose a T4 GPU, set `SEED`, and run all. Repeat for seeds 1, 2, 3.
-3. Run `src/evaluate.py --run <run folder>` for the ablations.
-4. Open `notebooks/foundation_probes.ipynb` and run all for the CLIP and DINOv2 probes.
-5. Open `notebooks/rq2_fewshot.ipynb` and run all for RQ2.
+Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Presentation 2 showed unseen-artist Met 56.3 and Rijks 57.7. Those came from the old labels, before the date-fit fix and the B&W filter (Oct 26). After retraining all three seeds on the fixed labels, the numbers are Met 57.5 and Rijks 58.2.
 
-Results are saved to `My Drive/wikiart_runs/`.
+## Instructor checklist (repository contents)
+
+| Requested | Status | Where |
+|---|---|---|
+| All code and notebooks, including RQ2 | Partly | `src/`, `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: download and harvest scripts, `train.py`, `stats.py`, `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
+| `labeling_rules.md` | Missing | On Drive / local copy |
+| Label and rule for every museum painting | Missing | `data/labels/museum_labels.csv` (on Drive) |
+| Met and Rijksmuseum object IDs with export dates | Missing | `data/met/`, `data/rijks/` metadata CSVs (on Drive) |
+| Removed WikiArt-museum overlaps; near-duplicate list | Missing | `data/final/` (on Drive) |
+| Artist-disjoint split, seeds, model and probe settings | Settings done; split file missing | [docs/settings.md](docs/settings.md); split CSVs in `data/final/` (on Drive) |
+| Result files behind every table, incl. `rq1_results.md` | Partly | `docs/rq1_results.md`. Missing: `wikiart_runs/stats_*.csv`, `stats_report.txt`, ablation CSVs, `probes/` results, per-run `metrics.json` |
+| README with library versions and steps to reproduce | Steps done; exact versions missing | Below. Exact versions need `pip freeze` from the Colab runtime |
+
+## Reproducing the main tables
+
+Library versions: `requirements.txt` lists the libraries. The exact versions used in Colab are still to be saved: in a Colab cell, run `!pip freeze > /content/drive/MyDrive/wikiart_runs/colab_versions.txt` and add that file to `results/`.
+
+1. **Data (computer).** Build the datasets and `colab_data.zip` with the pipeline scripts (download, harvest, `src/label_museums.py`, `src/prepare_dataset.py all`). Upload the zip to Google Drive.
+2. **ResNet-50 table (Colab).** Run `notebooks/wikiart_colab.ipynb` with `SEED = 1`, `2` and `3`.
+3. **Ablation table (Colab).** For each seed, run `python src/evaluate.py --run runs/resnet50_seed<N>`.
+4. **Statistics (Colab).** Run `python stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3` (script still to be added).
+5. **Foundation-model table (Colab).** Run `notebooks/foundation_probes.ipynb`.
+6. **RQ2 curve (Colab).** Run `notebooks/rq2_fewshot.ipynb`.
+
+## Ethics and licensing
+
+- This repository releases **IDs, source URLs, labels and label maps, not images**. WikiArt images are for non-commercial research only and may not be redistributed. Anyone can rebuild the image sets from the IDs with the scripts.
+- Met Open Access and Rijksmuseum images are public domain / CC0. Wikidata is CC0.
+- No personal data is collected.
+- CLIP and DINOv2 were pretrained on web-scale data that likely includes WikiArt and museum images. The ImageNet-initialized ResNet-50 does not have this problem, so it is the cleanest test of transfer.
 
 ## What is not in this repo
 
-- Images, datasets, caches and model checkpoints (`.pt`, `.zip`). WikiArt images may not be redistributed.
-- Some pipeline scripts and run outputs are still on Google Drive and will be added next: the download and harvest scripts, `train.py`, `stats.py`, and the result CSVs (`wikiart_runs/stats_*.csv`, `wikiart_runs/probes/`).
+- Images, datasets, caches and model checkpoints (`.pt`, `.zip`).
+- Files still on Google Drive or the author's computer: see the "Missing" rows in the instructor checklist above.
 
 ## Next steps
 

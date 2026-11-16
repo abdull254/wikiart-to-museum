@@ -82,6 +82,15 @@ reports/      progress reports
 
 | File | What it does |
 |---|---|
+| `src/wikiart_download.py` | Download `Artificio/WikiArt_Full` (probe, then download) |
+| `src/main.py` | Rijksmuseum harvest: IDs, metadata, IIIF images |
+| `src/check.py` | Check the Rijksmuseum harvest (duplicates, missing Wikidata, errors) |
+| `src/filter_rijks.py` | Keep only the Rijksmuseum paintings collection (`SK-`) |
+| `src/met_harvest.py` | Met harvest: IDs, metadata, images |
+| `src/squash_museums.py` | 256 px squash and center-crop versions of museum images |
+| `src/pack_for_colab.py` | Pack `train.py`, `data/final/` and the images into `colab_data.zip` |
+| `src/precheck_handcheck.py` | Sort the hand check by agreement with WikiArt |
+| `src/check_gpu.py` | Quick PyTorch test on the Mac GPU (MPS) |
 | `src/label_museums.py` | Museum style labels from Wikidata and the date rule (with the date-fit fix) |
 | `src/prepare_dataset.py` | Builds the final splits, dedup, overlap removal, hand-check report |
 | `src/evaluate.py` | Test-time ablations: crop, colornorm, colorwhiten, down128/64, jpegmatch, jpeg50, gray; checkpoint sanity check |
@@ -98,6 +107,8 @@ reports/      progress reports
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
 | `docs/rq1_results.md` | Full RQ1, ablation and probe results |
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |
+| `docs/labeling_rules.md` | Numbered rules for museum style labels |
+| `docs/data_notes.md` | Sources, versions, style mapping, cleaning steps and thresholds |
 | `docs/settings.md` | Split, seeds, model, probe and RQ2 settings |
 | `docs/code_review.md`, `docs/todo.md` | Code review and the to-do list |
 | `src/train.py` | ResNet-50 training and evaluation; writes config, history, metrics and predictions per run |
@@ -116,11 +127,11 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 
 | Requested | Status | Where |
 |---|---|---|
-| All code and notebooks, including RQ2 | Partly | `src/` (incl. `train.py` and `stats.py`), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: download and harvest scripts (`wikiart_download.py`, `main.py`, `met_harvest.py`), `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
-| `labeling_rules.md` | Partly | Rules summarized in [results/labels/README.md](results/labels/README.md) from `src/label_museums.py`; the original `labeling_rules.md` is missing |
+| All code and notebooks, including RQ2 | Done | `src/` (harvest, labeling, dataset, training, evaluation, statistics), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). See the pipeline below |
+| `labeling_rules.md` | Done | [docs/labeling_rules.md](docs/labeling_rules.md); rule counts in [results/labels/README.md](results/labels/README.md) |
 | Label and rule for every museum painting | Done for the test sets | [results/labels/museum_test_labels.csv](results/labels/museum_test_labels.csv) (Met 937, Rijks 3,092). Full `museum_labels.csv` incl. unlabeled rows missing |
-| Met and Rijksmuseum object IDs with export dates | IDs done; export dates missing | Object IDs in `museum_test_labels.csv`. Harvest logs with dates are in `data/` on the author's computer |
-| Removed WikiArt-museum overlaps; near-duplicate list | Missing | `data/final/` (inside `colab_data.zip`, too large to fetch) |
+| Met and Rijksmuseum object IDs with export dates | IDs done; export dates missing | Object IDs in `results/labels/museum_test_labels.csv`. Dates are in the harvest logs (`data/*/harvest_log.json`, `data/wikiart/download_log.json`), not yet added; placeholders in [docs/data_notes.md](docs/data_notes.md) |
+| Removed WikiArt-museum overlaps; near-duplicate list | Method done; lists missing | Method and thresholds in [docs/data_notes.md](docs/data_notes.md) section 5. The lists are outputs of `src/prepare_dataset.py` in `data/final/`, not yet added |
 | Artist-disjoint split, seeds, model and probe settings | Settings done; split file missing | [docs/settings.md](docs/settings.md), `results/runs/*/config.json` (split file hash `d5bb835c8cd9526a`); split CSVs in `data/final/` |
 | Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations and probes | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/` |
 | README with library versions and steps to reproduce | Mostly | Below. Python and PyTorch versions are recorded; the full `pip freeze` is still to be saved |
@@ -129,7 +140,14 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 
 Library versions recorded in the run configs: Python 3.13.16, PyTorch 2.11.0+cu130 (Colab, CUDA GPU). `requirements.txt` lists the other libraries. To save the full list, run `!pip freeze > /content/drive/MyDrive/wikiart_runs/colab_versions.txt` in Colab and add the file to `results/`.
 
-1. **Data (computer).** Build the datasets and `colab_data.zip` with the pipeline scripts (download, harvest, `src/label_museums.py`, `src/prepare_dataset.py all`). Upload the zip to Google Drive.
+1. **Data (computer).** The scripts look for `data/` next to themselves, so run them from one folder (for example copy `src/*.py` to the project folder). In order:
+   - `python wikiart_download.py probe`, then `python wikiart_download.py download`
+   - `python main.py ids`, `python main.py meta`, `python main.py images`, then `python check.py` and `python filter_rijks.py`
+   - `python met_harvest.py ids`, `python met_harvest.py meta`, `python met_harvest.py images`
+   - `python squash_museums.py`
+   - `python label_museums.py`
+   - `python prepare_dataset.py all`
+   - `python pack_for_colab.py`, then upload `colab_data.zip` to Google Drive
 2. **ResNet-50 table (Colab).** Run `notebooks/wikiart_colab.ipynb` with `SEED = 1`, `2` and `3`.
 3. **Ablation table (Colab).** For each seed, run `python src/evaluate.py --run runs/resnet50_seed<N>`.
 4. **Statistics (Colab).** Run `python src/stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3`. Output matches `results/stats_report.txt`.

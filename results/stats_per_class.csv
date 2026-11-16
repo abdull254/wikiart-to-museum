@@ -1,0 +1,19 @@
+set,style,n,recall
+wikiart_test,Baroque,583,0.5946255002858777
+wikiart_test,Mannerism (Late Renaissance),210,0.5555555555555556
+wikiart_test,Northern Renaissance,221,0.7662141779788839
+wikiart_test,Realism,1298,0.7565485362095532
+wikiart_test,Rococo,388,0.5223367697594502
+wikiart_test,Romanticism,1157,0.46931719965427837
+met,Baroque,376,0.6755319148936171
+met,Mannerism (Late Renaissance),59,0.6497175141242938
+met,Northern Renaissance,180,0.887037037037037
+met,Realism,104,0.5352564102564102
+met,Rococo,165,0.5292929292929293
+met,Romanticism,53,0.38364779874213834
+rijks,Baroque,2124,0.6222536095417451
+rijks,Mannerism (Late Renaissance),72,0.39814814814814814
+rijks,Northern Renaissance,107,0.7258566978193146
+rijks,Realism,281,0.7769869513641755
+rijks,Rococo,470,0.5368794326241134
+rijks,Romanticism,38,0.42105263157894735

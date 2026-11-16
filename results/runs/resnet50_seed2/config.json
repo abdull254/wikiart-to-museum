@@ -1,0 +1,32 @@
+{
+  "seed": 2,
+  "epochs": 12,
+  "batch_size": 64,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.1,
+  "no_class_weights": false,
+  "grayscale_aug": 0.0,
+  "workers": 2,
+  "quick": false,
+  "eval_museums": true,
+  "museum_image": "image",
+  "no_pretrained": false,
+  "name": "resnet50_seed2",
+  "device": "cuda",
+  "classes": [
+    "Baroque",
+    "Mannerism (Late Renaissance)",
+    "Northern Renaissance",
+    "Realism",
+    "Rococo",
+    "Romanticism"
+  ],
+  "train_size": 18501,
+  "val_size": 3786,
+  "test_size": 3857,
+  "split_file_sha256": "d5bb835c8cd9526a",
+  "torch": "2.11.0+cu130",
+  "python": "3.13.16",
+  "started": "2026-10-27T03:10:51+00:00"
+}

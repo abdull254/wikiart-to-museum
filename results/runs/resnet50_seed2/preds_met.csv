@@ -1,0 +1,938 @@
+id,true,pred,confidence,p_Baroque,p_Mannerism (Late Renaissance),p_Northern Renaissance,p_Realism,p_Rococo,p_Romanticism,artist_group,rule_id
+met:189656,Rococo,Baroque,0.7989,0.7989,0.0655,0.037,0.0069,0.0526,0.0391,seen,R7
+met:435573,Rococo,Rococo,0.6204,0.1431,0.1286,0.0488,0.0059,0.6204,0.0532,unseen,R2a
+met:435585,Northern Renaissance,Northern Renaissance,0.9437,0.0081,0.0231,0.9437,0.0047,0.0171,0.0033,unseen,R7
+met:435590,Baroque,Rococo,0.8164,0.05,0.0597,0.028,0.0016,0.8164,0.0443,unseen,R7
+met:435594,Mannerism (Late Renaissance),Northern Renaissance,0.6985,0.0389,0.1255,0.6985,0.009,0.0416,0.0867,unseen,R7
+met:435596,Baroque,Baroque,0.879,0.879,0.0418,0.0373,0.0048,0.0331,0.004,unseen,R2c
+met:435597,Baroque,Baroque,0.9006,0.9006,0.0327,0.0306,0.0081,0.0179,0.01,unseen,R7
+met:435598,Baroque,Baroque,0.4294,0.4294,0.1025,0.162,0.0402,0.2131,0.0527,unseen,R2c
+met:435622,Rococo,Baroque,0.5029,0.5029,0.1266,0.0347,0.0012,0.3304,0.0042,unseen,R2a
+met:435623,Rococo,Rococo,0.9135,0.0242,0.0341,0.0257,0.0011,0.9135,0.0015,unseen,R2a
+met:435626,Realism,Romanticism,0.5207,0.0323,0.1116,0.1034,0.1773,0.0548,0.5207,unseen,R2a
+met:435633,Baroque,Baroque,0.9399,0.9399,0.0261,0.0126,0.003,0.0113,0.0071,unseen,R7
+met:435635,Northern Renaissance,Northern Renaissance,0.9268,0.0052,0.0377,0.9268,0.0099,0.0144,0.006,unseen,R2a
+met:435637,Northern Renaissance,Northern Renaissance,0.9216,0.0101,0.0291,0.9216,0.0016,0.0296,0.0079,unseen,R2a
+met:435638,Northern Renaissance,Northern Renaissance,0.9218,0.0123,0.0258,0.9218,0.0053,0.0183,0.0165,unseen,R2a
+met:435639,Rococo,Realism,0.364,0.0841,0.0928,0.0839,0.364,0.2402,0.1349,unseen,R7
+met:435646,Rococo,Rococo,0.9814,0.0023,0.0084,0.0061,0.0015,0.9814,0.0003,seen,R7
+met:435647,Rococo,Rococo,0.6307,0.1177,0.088,0.1016,0.0496,0.6307,0.0124,seen,R7
+met:435651,Northern Renaissance,Northern Renaissance,0.796,0.0029,0.1656,0.796,0.002,0.0192,0.0143,unseen,R7
+met:435655,Baroque,Baroque,0.7026,0.7026,0.0723,0.0337,0.0008,0.1538,0.0368,unseen,R2a
+met:435663,Baroque,Baroque,0.698,0.698,0.2012,0.03,0.0325,0.0264,0.0121,unseen,R7
+met:435670,Baroque,Baroque,0.8413,0.8413,0.0433,0.0416,0.0037,0.0637,0.0064,unseen,R2a
+met:435671,Romanticism,Romanticism,0.4645,0.0742,0.1782,0.1321,0.0663,0.0848,0.4645,unseen,R2a
+met:435672,Baroque,Baroque,0.711,0.711,0.1117,0.0495,0.0073,0.1062,0.0142,unseen,R7
+met:435673,Rococo,Baroque,0.711,0.711,0.0458,0.0308,0.0069,0.1991,0.0064,unseen,R7
+met:435678,Northern Renaissance,Baroque,0.586,0.586,0.0716,0.1196,0.054,0.1185,0.0503,unseen,R7
+met:435680,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9688,0.0035,0.9688,0.013,0.0024,0.0102,0.002,unseen,R2a
+met:435689,Baroque,Rococo,0.4224,0.4118,0.0613,0.0458,0.031,0.4224,0.0277,unseen,R2a
+met:435690,Baroque,Rococo,0.5332,0.078,0.155,0.0372,0.0036,0.5332,0.1931,unseen,R2a
+met:435705,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9297,0.0094,0.9297,0.0313,0.0031,0.0094,0.0171,unseen,R7
+met:435706,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9668,0.0041,0.9668,0.0113,0.0016,0.0125,0.0037,unseen,R7
+met:435713,Baroque,Rococo,0.8096,0.0758,0.0585,0.0362,0.0076,0.8096,0.0123,unseen,R7
+met:435715,Baroque,Baroque,0.8856,0.8856,0.0468,0.034,0.0051,0.0253,0.0033,unseen,R2a
+met:435716,Baroque,Baroque,0.8406,0.8406,0.0418,0.0373,0.0039,0.0729,0.0035,unseen,R2a
+met:435717,Baroque,Baroque,0.8969,0.8969,0.0435,0.0284,0.0031,0.0246,0.0035,unseen,R2a
+met:435718,Baroque,Baroque,0.5762,0.5762,0.0591,0.0684,0.0115,0.2809,0.0038,unseen,R2a
+met:435722,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.8581,0.0135,0.8581,0.075,0.0065,0.0416,0.0053,unseen,R7
+met:435723,Baroque,Romanticism,0.4258,0.3832,0.0635,0.0363,0.002,0.0892,0.4258,unseen,R2a
+met:435725,Northern Renaissance,Northern Renaissance,0.5312,0.362,0.0376,0.5312,0.0133,0.0329,0.0231,seen,R1
+met:435727,Rococo,Rococo,0.5582,0.0446,0.3502,0.042,0.0013,0.5582,0.0036,unseen,R7
+met:435737,Rococo,Baroque,0.432,0.432,0.1233,0.0398,0.0022,0.3905,0.0122,unseen,R2a
+met:435740,Rococo,Rococo,0.9367,0.0011,0.022,0.0227,0.0006,0.9367,0.017,unseen,R2a
+met:435741,Rococo,Rococo,0.8611,0.0181,0.0613,0.0346,0.0011,0.8611,0.0239,unseen,R2a
+met:435742,Rococo,Rococo,0.5165,0.0313,0.4,0.0312,0.0059,0.5165,0.0152,unseen,R2a
+met:435743,Rococo,Mannerism (Late Renaissance),0.5502,0.0359,0.5502,0.0563,0.0122,0.3218,0.0235,unseen,R2a
+met:435744,Rococo,Rococo,0.9107,0.0103,0.0454,0.0195,0.0014,0.9107,0.0127,unseen,R2a
+met:435746,Rococo,Rococo,0.4836,0.4047,0.0684,0.0271,0.0017,0.4836,0.0145,unseen,R2a
+met:435747,Rococo,Rococo,0.8385,0.0199,0.1139,0.0138,0.0017,0.8385,0.0123,unseen,R2a
+met:435755,Baroque,Baroque,0.6504,0.6504,0.1943,0.0727,0.0041,0.0614,0.0171,seen,R7
+met:435756,Baroque,Baroque,0.4585,0.4585,0.0682,0.0543,0.0008,0.3831,0.0351,seen,R7
+met:435759,Northern Renaissance,Northern Renaissance,0.4629,0.3257,0.1176,0.4629,0.0179,0.0404,0.0354,unseen,R1
+met:435760,Northern Renaissance,Northern Renaissance,0.9443,0.012,0.0243,0.9443,0.0021,0.0139,0.0034,unseen,R2c
+met:435762,Northern Renaissance,Northern Renaissance,0.909,0.0141,0.0488,0.909,0.0042,0.0207,0.0032,unseen,R1
+met:435763,Northern Renaissance,Northern Renaissance,0.9344,0.0106,0.036,0.9344,0.0038,0.012,0.0031,unseen,R7
+met:435764,Northern Renaissance,Northern Renaissance,0.9495,0.008,0.0179,0.9495,0.0034,0.0175,0.0037,unseen,R7
+met:435765,Northern Renaissance,Northern Renaissance,0.9419,0.0076,0.0303,0.9419,0.0033,0.0141,0.0029,unseen,R2c
+met:435766,Northern Renaissance,Northern Renaissance,0.9242,0.0097,0.0323,0.9242,0.0086,0.0218,0.0034,unseen,R1
+met:435769,Baroque,Baroque,0.8737,0.8737,0.0299,0.0385,0.0046,0.039,0.0143,unseen,R7
+met:435770,Baroque,Rococo,0.881,0.043,0.0292,0.0294,0.0016,0.881,0.0157,unseen,R7
+met:435771,Baroque,Baroque,0.877,0.877,0.0399,0.0304,0.0174,0.0248,0.0105,unseen,R7
+met:435772,Baroque,Baroque,0.8538,0.8538,0.0444,0.0517,0.0114,0.0247,0.0139,unseen,R7
+met:435774,Realism,Realism,0.837,0.0178,0.0619,0.045,0.837,0.0286,0.0096,seen,R2a
+met:435776,Northern Renaissance,Romanticism,0.4972,0.0326,0.0989,0.2107,0.0211,0.1395,0.4972,unseen,R2c
+met:435778,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.7864,0.0876,0.7864,0.0482,0.0053,0.0612,0.0113,unseen,R7
+met:435779,Baroque,Mannerism (Late Renaissance),0.6548,0.1996,0.6548,0.0596,0.0084,0.0401,0.0375,unseen,R7
+met:435804,Northern Renaissance,Northern Renaissance,0.9234,0.0105,0.0386,0.9234,0.004,0.0193,0.0043,unseen,R7
+met:435809,Northern Renaissance,Northern Renaissance,0.6564,0.2451,0.0464,0.6564,0.0051,0.0259,0.021,seen,R1
+met:435810,Baroque,Northern Renaissance,0.6082,0.1345,0.0654,0.6082,0.142,0.0277,0.0222,unseen,R2a
+met:435813,Baroque,Baroque,0.6551,0.6551,0.0863,0.1123,0.0087,0.0924,0.0452,unseen,R2a
+met:435814,Baroque,Baroque,0.6283,0.6283,0.1142,0.0419,0.1455,0.0339,0.0362,unseen,R2a
+met:435818,Northern Renaissance,Northern Renaissance,0.6738,0.0994,0.132,0.6738,0.0088,0.0696,0.0165,unseen,R2a
+met:435819,Northern Renaissance,Northern Renaissance,0.7413,0.1201,0.0486,0.7413,0.0117,0.0698,0.0086,unseen,R2a
+met:435820,Northern Renaissance,Northern Renaissance,0.8347,0.0458,0.0518,0.8347,0.0094,0.0489,0.0094,unseen,R7
+met:435833,Baroque,Baroque,0.755,0.755,0.0529,0.0424,0.0034,0.1337,0.0125,unseen,R7
+met:435835,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9034,0.0093,0.9034,0.014,0.0234,0.0421,0.0078,unseen,R7
+met:435837,Northern Renaissance,Northern Renaissance,0.9454,0.0038,0.0303,0.9454,0.0037,0.0152,0.0015,unseen,R2c
+met:435838,Northern Renaissance,Northern Renaissance,0.6073,0.1787,0.0827,0.6073,0.0146,0.1004,0.0163,seen,R1
+met:435842,Baroque,Baroque,0.7161,0.7161,0.0609,0.0281,0.0062,0.083,0.1058,unseen,R7
+met:435843,Baroque,Baroque,0.3869,0.3869,0.1252,0.0701,0.0166,0.2275,0.1737,unseen,R7
+met:435858,Rococo,Baroque,0.3805,0.3805,0.1091,0.05,0.0037,0.3593,0.0974,unseen,R7
+met:435861,Baroque,Rococo,0.7762,0.1311,0.053,0.0363,0.0018,0.7762,0.0017,unseen,R7
+met:435864,Baroque,Rococo,0.9255,0.0101,0.0343,0.0212,0.0048,0.9255,0.0042,unseen,R2a
+met:435886,Baroque,Baroque,0.8676,0.8676,0.0514,0.0391,0.0059,0.0282,0.0079,unseen,R2a
+met:435894,Baroque,Rococo,0.4353,0.2735,0.2005,0.0411,0.0047,0.4353,0.045,unseen,R7
+met:435896,Northern Renaissance,Baroque,0.5712,0.5712,0.0617,0.326,0.0086,0.0209,0.0116,seen,R1
+met:435898,Northern Renaissance,Northern Renaissance,0.9568,0.0074,0.0218,0.9568,0.0021,0.0092,0.0027,seen,R1
+met:435899,Northern Renaissance,Northern Renaissance,0.9087,0.0232,0.0418,0.9087,0.0026,0.0112,0.0125,seen,R1
+met:435900,Mannerism (Late Renaissance),Baroque,0.5982,0.5982,0.2228,0.044,0.0011,0.1262,0.0077,unseen,R2a
+met:435905,Baroque,Romanticism,0.4275,0.156,0.093,0.0529,0.0055,0.2651,0.4275,seen,R2a
+met:435906,Baroque,Rococo,0.5774,0.0332,0.0687,0.0702,0.0091,0.5774,0.2414,seen,R2a
+met:435907,Baroque,Rococo,0.7969,0.018,0.0474,0.0272,0.0062,0.7969,0.1043,seen,R2a
+met:435908,Baroque,Baroque,0.6615,0.6615,0.0936,0.0693,0.0102,0.1008,0.0645,seen,R2a
+met:435909,Baroque,Rococo,0.7953,0.0137,0.0488,0.0371,0.0076,0.7953,0.0974,seen,R2a
+met:435912,Northern Renaissance,Mannerism (Late Renaissance),0.8021,0.1471,0.8021,0.0202,0.0047,0.0203,0.0055,unseen,R7
+met:435914,Northern Renaissance,Northern Renaissance,0.9404,0.0141,0.0219,0.9404,0.0062,0.0152,0.0022,unseen,R2a
+met:435916,Northern Renaissance,Rococo,0.4777,0.3724,0.0537,0.0645,0.0173,0.4777,0.0143,unseen,R7
+met:435917,Northern Renaissance,Northern Renaissance,0.9728,0.0076,0.0116,0.9728,0.0007,0.0048,0.0024,unseen,R7
+met:435918,Baroque,Baroque,0.6484,0.6484,0.1015,0.0378,0.0123,0.1855,0.0144,unseen,R7
+met:435923,Romanticism,Realism,0.4724,0.0537,0.0777,0.093,0.4724,0.0667,0.2364,unseen,R2a
+met:435945,Northern Renaissance,Mannerism (Late Renaissance),0.4079,0.1182,0.4079,0.355,0.022,0.0443,0.0525,unseen,R7
+met:435948,Northern Renaissance,Mannerism (Late Renaissance),0.8128,0.0023,0.8128,0.1112,0.0446,0.0151,0.014,unseen,R7
+met:435950,Northern Renaissance,Northern Renaissance,0.803,0.0078,0.1224,0.803,0.0065,0.0227,0.0376,unseen,R7
+met:435951,Northern Renaissance,Northern Renaissance,0.9263,0.002,0.0516,0.9263,0.0024,0.0151,0.0025,unseen,R7
+met:435953,Northern Renaissance,Northern Renaissance,0.6051,0.0203,0.1848,0.6051,0.0189,0.0779,0.093,unseen,R7
+met:435954,Northern Renaissance,Northern Renaissance,0.6313,0.0258,0.175,0.6313,0.0585,0.0445,0.065,unseen,R7
+met:435955,Northern Renaissance,Northern Renaissance,0.6167,0.0051,0.3284,0.6167,0.015,0.0259,0.0088,unseen,R7
+met:435956,Northern Renaissance,Northern Renaissance,0.468,0.0073,0.4223,0.468,0.0356,0.0493,0.0176,unseen,R7
+met:435958,Northern Renaissance,Northern Renaissance,0.6905,0.035,0.1587,0.6905,0.019,0.0862,0.0106,unseen,R7
+met:435963,Realism,Romanticism,0.4287,0.0467,0.1101,0.134,0.222,0.0585,0.4287,unseen,R2a
+met:435964,Realism,Realism,0.3389,0.3116,0.1178,0.0965,0.3389,0.07,0.0653,unseen,R2a
+met:435965,Realism,Romanticism,0.7428,0.0104,0.0832,0.0655,0.0592,0.0389,0.7428,unseen,R2a
+met:435966,Realism,Realism,0.5884,0.1401,0.1054,0.0956,0.5884,0.0596,0.0109,unseen,R2a
+met:435968,Realism,Realism,0.7125,0.034,0.0947,0.0711,0.7125,0.0715,0.0162,unseen,R2a
+met:435969,Realism,Romanticism,0.4878,0.0749,0.0949,0.1774,0.1149,0.0501,0.4878,unseen,R2a
+met:435971,Realism,Romanticism,0.3473,0.0703,0.0939,0.0969,0.2983,0.0934,0.3473,unseen,R2a
+met:435975,Realism,Realism,0.6589,0.0851,0.0968,0.1104,0.6589,0.0424,0.0065,unseen,R2a
+met:435977,Realism,Realism,0.3676,0.0548,0.1168,0.0701,0.3676,0.0847,0.3059,unseen,R2a
+met:435978,Realism,Romanticism,0.3575,0.0266,0.1026,0.0696,0.2211,0.2225,0.3575,unseen,R2a
+met:435979,Realism,Realism,0.7162,0.0431,0.0788,0.0717,0.7162,0.0472,0.0431,unseen,R2a
+met:435980,Realism,Baroque,0.6619,0.6619,0.0507,0.0408,0.177,0.0464,0.0232,unseen,R2a
+met:435981,Realism,Rococo,0.4849,0.082,0.1815,0.0412,0.0588,0.4849,0.1516,unseen,R2a
+met:435983,Realism,Realism,0.5197,0.2432,0.0817,0.0644,0.5197,0.0656,0.0254,unseen,R2a
+met:435985,Realism,Baroque,0.3616,0.3616,0.25,0.1249,0.06,0.1325,0.071,unseen,R2a
+met:435986,Realism,Realism,0.5132,0.0877,0.1324,0.0592,0.5132,0.0835,0.124,unseen,R2a
+met:435989,Realism,Realism,0.7275,0.0338,0.0898,0.0676,0.7275,0.0491,0.0322,unseen,R2a
+met:435990,Realism,Realism,0.6748,0.0886,0.0741,0.0879,0.6748,0.0304,0.0441,unseen,R2a
+met:435998,Rococo,Rococo,0.9306,0.0091,0.029,0.0223,0.0034,0.9306,0.0055,unseen,R7
+met:436000,Realism,Mannerism (Late Renaissance),0.3695,0.032,0.3695,0.0576,0.3491,0.0393,0.1525,unseen,R2a
+met:436003,Realism,Romanticism,0.4385,0.0208,0.1403,0.0677,0.2856,0.0471,0.4385,unseen,R2a
+met:436006,Realism,Romanticism,0.5699,0.0349,0.1096,0.0966,0.1315,0.0575,0.5699,unseen,R2a
+met:436008,Realism,Baroque,0.8389,0.8389,0.041,0.0459,0.0345,0.0223,0.0175,unseen,R2a
+met:436009,Realism,Realism,0.7015,0.0213,0.103,0.057,0.7015,0.0581,0.059,unseen,R2a
+met:436010,Realism,Realism,0.781,0.023,0.0724,0.0574,0.781,0.0359,0.0302,unseen,R2a
+met:436011,Realism,Realism,0.6886,0.0311,0.0841,0.0605,0.6886,0.066,0.0698,unseen,R2a
+met:436012,Realism,Realism,0.4835,0.0147,0.0999,0.0655,0.4835,0.0465,0.29,unseen,R2a
+met:436013,Realism,Realism,0.6984,0.0167,0.0892,0.0689,0.6984,0.0748,0.052,unseen,R2a
+met:436015,Realism,Baroque,0.806,0.806,0.0458,0.0348,0.0518,0.0459,0.0156,unseen,R2a
+met:436017,Realism,Romanticism,0.5984,0.0235,0.077,0.1045,0.0527,0.144,0.5984,unseen,R2a
+met:436018,Realism,Baroque,0.8603,0.8603,0.0772,0.0293,0.0117,0.013,0.0085,unseen,R2a
+met:436019,Realism,Baroque,0.8011,0.8011,0.0354,0.0335,0.0577,0.0232,0.049,unseen,R2a
+met:436020,Realism,Realism,0.6807,0.0289,0.0876,0.0717,0.6807,0.058,0.0731,unseen,R2a
+met:436021,Realism,Romanticism,0.6782,0.0113,0.0754,0.0848,0.1053,0.045,0.6782,unseen,R2a
+met:436024,Realism,Rococo,0.5784,0.238,0.0593,0.0509,0.0387,0.5784,0.0347,unseen,R2a
+met:436025,Realism,Realism,0.8095,0.0093,0.0528,0.036,0.8095,0.0666,0.0258,unseen,R2a
+met:436034,Northern Renaissance,Mannerism (Late Renaissance),0.621,0.0049,0.621,0.3585,0.0012,0.0114,0.003,seen,R2a
+met:436035,Northern Renaissance,Northern Renaissance,0.4594,0.0167,0.4561,0.4594,0.0101,0.0291,0.0286,seen,R2a
+met:436044,Northern Renaissance,Northern Renaissance,0.9519,0.0046,0.0245,0.9519,0.0022,0.015,0.0019,seen,R2c
+met:436049,Baroque,Rococo,0.5222,0.2877,0.1394,0.028,0.014,0.5222,0.0087,unseen,R2a
+met:436060,Baroque,Baroque,0.6537,0.6537,0.0671,0.0593,0.0012,0.1944,0.0245,unseen,R7
+met:436061,Baroque,Romanticism,0.5363,0.0788,0.0877,0.063,0.0093,0.2249,0.5363,seen,R2a
+met:436062,Baroque,Baroque,0.918,0.918,0.0162,0.0185,0.003,0.0205,0.0237,seen,R2a
+met:436063,Baroque,Rococo,0.4704,0.278,0.1159,0.0397,0.0119,0.4704,0.0842,seen,R2a
+met:436064,Baroque,Baroque,0.5746,0.5746,0.103,0.0559,0.0046,0.1122,0.1499,seen,R2a
+met:436065,Baroque,Rococo,0.4647,0.2189,0.1041,0.1009,0.0066,0.4647,0.1049,seen,R2c
+met:436077,Baroque,Rococo,0.8484,0.0401,0.0419,0.038,0.015,0.8484,0.0167,unseen,R2a
+met:436078,Baroque,Baroque,0.6193,0.6193,0.3012,0.0217,0.0087,0.0332,0.016,unseen,R2a
+met:436079,Rococo,Rococo,0.91,0.0208,0.0301,0.0229,0.0073,0.91,0.0088,unseen,R7
+met:436081,Realism,Realism,0.8328,0.0404,0.0504,0.0398,0.8328,0.0273,0.0093,seen,R2a
+met:436083,Realism,Realism,0.6381,0.0452,0.118,0.0723,0.6381,0.0705,0.056,seen,R2a
+met:436084,Realism,Realism,0.7997,0.0465,0.0654,0.0488,0.7997,0.0312,0.0085,seen,R2a
+met:436085,Realism,Realism,0.7451,0.0302,0.0942,0.0665,0.7451,0.0589,0.0052,seen,R2a
+met:436086,Realism,Realism,0.855,0.0187,0.053,0.0343,0.855,0.0311,0.0079,seen,R2a
+met:436088,Realism,Realism,0.8122,0.0188,0.0742,0.0427,0.8122,0.0461,0.006,seen,R2a
+met:436090,Realism,Realism,0.6354,0.0203,0.1194,0.0745,0.6354,0.0562,0.0942,seen,R2a
+met:436091,Realism,Romanticism,0.5183,0.0481,0.1423,0.0741,0.1469,0.0702,0.5183,seen,R2a
+met:436092,Realism,Romanticism,0.3994,0.1288,0.1113,0.125,0.1454,0.0901,0.3994,seen,R2a
+met:436093,Realism,Romanticism,0.3762,0.1255,0.1248,0.1004,0.0788,0.1944,0.3762,seen,R2a
+met:436096,Northern Renaissance,Northern Renaissance,0.5589,0.0755,0.0574,0.5589,0.0262,0.0327,0.2492,unseen,R1
+met:436097,Northern Renaissance,Northern Renaissance,0.6758,0.1721,0.044,0.6758,0.0314,0.0424,0.0343,unseen,R1
+met:436098,Northern Renaissance,Northern Renaissance,0.8896,0.006,0.0684,0.8896,0.0007,0.025,0.0102,unseen,R1
+met:436100,Northern Renaissance,Northern Renaissance,0.9507,0.0062,0.0265,0.9507,0.0014,0.0138,0.0015,unseen,R1
+met:436103,Northern Renaissance,Northern Renaissance,0.7665,0.0119,0.1683,0.7665,0.0065,0.0407,0.006,unseen,R2a
+met:436114,Romanticism,Baroque,0.8139,0.8139,0.0894,0.0478,0.0195,0.0187,0.0107,unseen,R2a
+met:436115,Romanticism,Baroque,0.756,0.756,0.0572,0.0596,0.0045,0.0268,0.0959,unseen,R2a
+met:436175,Romanticism,Romanticism,0.3425,0.1151,0.1339,0.0826,0.1316,0.1944,0.3425,seen,R2a
+met:436176,Romanticism,Romanticism,0.5852,0.0297,0.209,0.0428,0.0961,0.0371,0.5852,seen,R2a
+met:436177,Romanticism,Romanticism,0.3807,0.0467,0.0658,0.1063,0.2613,0.1391,0.3807,seen,R2a
+met:436178,Romanticism,Baroque,0.8208,0.8208,0.0249,0.0258,0.0084,0.0394,0.0807,seen,R2a
+met:436179,Romanticism,Baroque,0.5461,0.5461,0.0633,0.0553,0.0072,0.1566,0.1716,seen,R2a
+met:436182,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.6049,0.1351,0.6049,0.1072,0.0046,0.126,0.0222,unseen,R2a
+met:436183,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.738,0.0556,0.738,0.0702,0.0083,0.0903,0.0375,unseen,R2a
+met:436186,Rococo,Baroque,0.9031,0.9031,0.0393,0.0168,0.003,0.033,0.0048,unseen,R7
+met:436191,Realism,Mannerism (Late Renaissance),0.5333,0.1682,0.5333,0.0219,0.0207,0.0532,0.2028,unseen,R2a
+met:436192,Realism,Romanticism,0.4006,0.2036,0.106,0.0944,0.1009,0.0945,0.4006,unseen,R2a
+met:436193,Realism,Realism,0.7051,0.0641,0.0739,0.0584,0.7051,0.0641,0.0344,unseen,R2a
+met:436195,Realism,Realism,0.7041,0.0671,0.0867,0.0653,0.7041,0.0615,0.0152,unseen,R2a
+met:436196,Realism,Romanticism,0.303,0.0761,0.1507,0.1285,0.2209,0.1208,0.303,unseen,R2a
+met:436198,Baroque,Baroque,0.5574,0.5574,0.0987,0.0497,0.0052,0.2562,0.0328,unseen,R2a
+met:436199,Rococo,Baroque,0.8149,0.8149,0.042,0.0545,0.0241,0.032,0.0324,unseen,R7
+met:436201,Rococo,Baroque,0.786,0.786,0.0539,0.0592,0.003,0.0605,0.0374,unseen,R7
+met:436203,Rococo,Rococo,0.9128,0.0101,0.0411,0.0223,0.0014,0.9128,0.0122,unseen,R7
+met:436205,Baroque,Baroque,0.4381,0.4381,0.0797,0.1835,0.0039,0.2788,0.0161,unseen,R7
+met:436209,Baroque,Baroque,0.9549,0.9549,0.0163,0.015,0.0036,0.0087,0.0016,seen,R2a
+met:436210,Baroque,Baroque,0.9157,0.9157,0.0309,0.0349,0.0027,0.0119,0.0039,seen,R2a
+met:436211,Baroque,Baroque,0.8983,0.8983,0.043,0.0285,0.0101,0.012,0.0081,unseen,R2a
+met:436212,Baroque,Rococo,0.4574,0.3805,0.0777,0.0442,0.0049,0.4574,0.0354,unseen,R7
+met:436213,Rococo,Rococo,0.853,0.0248,0.0684,0.0437,0.006,0.853,0.0042,unseen,R7
+met:436214,Rococo,Rococo,0.9042,0.0145,0.0325,0.031,0.0092,0.9042,0.0085,unseen,R7
+met:436216,Rococo,Rococo,0.7058,0.0357,0.1835,0.0588,0.0091,0.7058,0.0072,unseen,R7
+met:436217,Rococo,Rococo,0.9369,0.0097,0.0278,0.018,0.0019,0.9369,0.0057,unseen,R7
+met:436221,Baroque,Baroque,0.7993,0.7993,0.0573,0.058,0.0167,0.0196,0.0491,unseen,R7
+met:436229,Baroque,Romanticism,0.3736,0.1798,0.136,0.0981,0.0168,0.1957,0.3736,unseen,R7
+met:436230,Rococo,Rococo,0.3162,0.2231,0.0795,0.1114,0.0104,0.3162,0.2595,unseen,R7
+met:436235,Rococo,Rococo,0.8877,0.0071,0.0518,0.0312,0.0131,0.8877,0.0091,unseen,R7
+met:436236,Rococo,Mannerism (Late Renaissance),0.9073,0.0301,0.9073,0.0295,0.0118,0.0114,0.01,unseen,R7
+met:436238,Rococo,Baroque,0.5509,0.5509,0.0599,0.0658,0.0109,0.2711,0.0413,unseen,R7
+met:436245,Northern Renaissance,Northern Renaissance,0.8537,0.005,0.1009,0.8537,0.0039,0.0257,0.0108,seen,R2a
+met:436246,Northern Renaissance,Northern Renaissance,0.9275,0.0122,0.0249,0.9275,0.0069,0.0227,0.0058,unseen,R7
+met:436248,Baroque,Rococo,0.7921,0.0885,0.0466,0.0428,0.0071,0.7921,0.0228,unseen,R7
+met:436253,Baroque,Baroque,0.7702,0.7702,0.0394,0.0482,0.0058,0.078,0.0584,unseen,R2a
+met:436254,Baroque,Baroque,0.8606,0.8606,0.0646,0.0461,0.0061,0.019,0.0036,unseen,R2a
+met:436256,Baroque,Baroque,0.5252,0.5252,0.0658,0.048,0.0017,0.3541,0.0052,unseen,R1
+met:436257,Baroque,Rococo,0.8013,0.1295,0.0363,0.0158,0.0007,0.8013,0.0165,unseen,R1
+met:436261,Baroque,Baroque,0.8831,0.8831,0.0359,0.0299,0.0116,0.0307,0.009,unseen,R2a
+met:436262,Baroque,Baroque,0.8458,0.8458,0.0775,0.0189,0.0063,0.0412,0.0103,unseen,R2a
+met:436263,Baroque,Baroque,0.8073,0.8073,0.0413,0.0653,0.0151,0.0357,0.0353,unseen,R2c
+met:436264,Baroque,Northern Renaissance,0.4186,0.0967,0.1717,0.4186,0.0312,0.1732,0.1086,unseen,R2c
+met:436266,Baroque,Baroque,0.7224,0.7224,0.0931,0.0612,0.0125,0.0851,0.0257,unseen,R2a
+met:436267,Baroque,Baroque,0.6317,0.6317,0.0568,0.0556,0.0643,0.0917,0.0999,unseen,R2a
+met:436268,Rococo,Mannerism (Late Renaissance),0.3755,0.2461,0.3755,0.0351,0.0097,0.3162,0.0174,unseen,R7
+met:436269,Rococo,Rococo,0.4203,0.1436,0.3429,0.0382,0.0265,0.4203,0.0285,unseen,R7
+met:436271,Northern Renaissance,Northern Renaissance,0.8317,0.0462,0.1,0.8317,0.002,0.0161,0.004,unseen,R7
+met:436272,Northern Renaissance,Northern Renaissance,0.9273,0.0087,0.0229,0.9273,0.0032,0.0214,0.0166,unseen,R7
+met:436282,Northern Renaissance,Northern Renaissance,0.9739,0.002,0.0146,0.9739,0.001,0.0064,0.0021,unseen,R1
+met:436283,Northern Renaissance,Northern Renaissance,0.9553,0.0087,0.0184,0.9553,0.0031,0.0111,0.0034,unseen,R2c
+met:436284,Northern Renaissance,Northern Renaissance,0.6934,0.0102,0.2636,0.6934,0.004,0.022,0.0069,unseen,R1
+met:436286,Northern Renaissance,Northern Renaissance,0.9193,0.0099,0.0254,0.9193,0.0091,0.0262,0.0101,unseen,R7
+met:436287,Northern Renaissance,Northern Renaissance,0.9421,0.0082,0.0255,0.9421,0.002,0.019,0.0032,unseen,R7
+met:436288,Baroque,Baroque,0.8065,0.8065,0.0512,0.0434,0.0048,0.0572,0.0369,unseen,R7
+met:436292,Realism,Realism,0.6132,0.0686,0.1011,0.0495,0.6132,0.1182,0.0494,unseen,R2a
+met:436296,Realism,Baroque,0.5226,0.5226,0.0671,0.0665,0.0769,0.0846,0.1822,unseen,R2a
+met:436297,Realism,Romanticism,0.497,0.1118,0.0654,0.0746,0.1584,0.0927,0.497,unseen,R2a
+met:436301,Baroque,Baroque,0.6317,0.6317,0.2177,0.0403,0.0042,0.0818,0.0243,unseen,R7
+met:436302,Baroque,Mannerism (Late Renaissance),0.5257,0.0872,0.5257,0.04,0.0064,0.3098,0.0308,unseen,R7
+met:436305,Baroque,Baroque,0.4471,0.4471,0.1654,0.0595,0.2663,0.0405,0.0212,unseen,R7
+met:436310,Mannerism (Late Renaissance),Baroque,0.6686,0.6686,0.1259,0.0526,0.0115,0.1239,0.0174,seen,R2a
+met:436318,Romanticism,Realism,0.401,0.0259,0.092,0.0596,0.401,0.0576,0.3639,unseen,R2a
+met:436319,Rococo,Baroque,0.8236,0.8236,0.0234,0.0183,0.0002,0.1337,0.0008,seen,R2a
+met:436320,Rococo,Rococo,0.9122,0.007,0.0418,0.0328,0.0037,0.9122,0.0025,seen,R2a
+met:436321,Rococo,Baroque,0.3353,0.3353,0.0775,0.0989,0.0463,0.2848,0.1572,seen,R2a
+met:436323,Rococo,Rococo,0.9115,0.0258,0.0344,0.0223,0.0034,0.9115,0.0027,seen,R2a
+met:436324,Rococo,Baroque,0.9291,0.9291,0.0238,0.0104,0.0013,0.0299,0.0054,seen,R2a
+met:436325,Rococo,Rococo,0.8727,0.0208,0.0609,0.0303,0.0051,0.8727,0.0102,seen,R2a
+met:436327,Rococo,Rococo,0.9327,0.0109,0.0327,0.0203,0.001,0.9327,0.0023,seen,R2a
+met:436329,Realism,Romanticism,0.3948,0.0755,0.1171,0.0888,0.0478,0.276,0.3948,unseen,R2a
+met:436336,Northern Renaissance,Northern Renaissance,0.9603,0.0068,0.0188,0.9603,0.002,0.0098,0.0022,unseen,R7
+met:436337,Northern Renaissance,Northern Renaissance,0.8515,0.0045,0.0953,0.8515,0.0126,0.0329,0.0031,unseen,R7
+met:436344,Baroque,Baroque,0.6057,0.6057,0.2034,0.1342,0.0209,0.0261,0.0099,unseen,R7
+met:436345,Baroque,Northern Renaissance,0.3019,0.213,0.1513,0.3019,0.1223,0.0236,0.188,unseen,R7
+met:436346,Baroque,Baroque,0.3162,0.3162,0.2724,0.0601,0.0024,0.3106,0.0382,unseen,R7
+met:436347,Baroque,Baroque,0.7497,0.7497,0.0282,0.1066,0.0312,0.0775,0.0067,unseen,R7
+met:436397,Baroque,Baroque,0.8378,0.8378,0.0463,0.0433,0.0056,0.0521,0.0148,unseen,R7
+met:436398,Baroque,Rococo,0.945,0.0126,0.0201,0.016,0.0022,0.945,0.004,unseen,R7
+met:436404,Rococo,Baroque,0.5352,0.5352,0.0747,0.0676,0.0057,0.1878,0.129,unseen,R7
+met:436409,Northern Renaissance,Mannerism (Late Renaissance),0.4212,0.2311,0.4212,0.234,0.0221,0.0381,0.0536,unseen,R7
+met:436410,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.3394,0.3061,0.3394,0.1166,0.0059,0.1954,0.0367,unseen,R1
+met:436411,Northern Renaissance,Northern Renaissance,0.9063,0.017,0.0201,0.9063,0.0067,0.0337,0.0162,unseen,R7
+met:436414,Northern Renaissance,Northern Renaissance,0.7871,0.0264,0.0447,0.7871,0.0121,0.0623,0.0675,unseen,R7
+met:436424,Baroque,Baroque,0.6461,0.6461,0.0756,0.0606,0.0661,0.0763,0.0753,unseen,R2a
+met:436425,Baroque,Baroque,0.7057,0.7057,0.0621,0.0676,0.0143,0.0942,0.0561,unseen,R2a
+met:436427,Baroque,Baroque,0.4651,0.4651,0.0787,0.04,0.0095,0.0424,0.3643,unseen,R2a
+met:436433,Rococo,Rococo,0.4055,0.0435,0.09,0.0903,0.1133,0.4055,0.2574,unseen,R2a
+met:436434,Rococo,Rococo,0.9045,0.0197,0.0313,0.0301,0.0047,0.9045,0.0097,unseen,R2a
+met:436436,Rococo,Rococo,0.844,0.0142,0.0814,0.0221,0.0331,0.844,0.0052,unseen,R2a
+met:436440,Rococo,Rococo,0.6412,0.1911,0.0538,0.0386,0.0082,0.6412,0.0671,unseen,R2a
+met:436443,Mannerism (Late Renaissance),Northern Renaissance,0.6161,0.0919,0.1667,0.6161,0.0573,0.0422,0.0257,seen,R7
+met:436453,Baroque,Baroque,0.7562,0.7562,0.131,0.0447,0.0035,0.057,0.0077,unseen,R2a
+met:436455,Romanticism,Rococo,0.3306,0.176,0.2018,0.2303,0.0008,0.3306,0.0604,unseen,R2a
+met:436476,Northern Renaissance,Northern Renaissance,0.9606,0.0047,0.0171,0.9606,0.0033,0.0114,0.003,unseen,R7
+met:436477,Northern Renaissance,Northern Renaissance,0.9437,0.0077,0.0266,0.9437,0.0044,0.0146,0.003,unseen,R7
+met:436480,Northern Renaissance,Northern Renaissance,0.6679,0.0362,0.059,0.6679,0.0212,0.0993,0.1164,unseen,R7
+met:436485,Baroque,Baroque,0.8443,0.8443,0.0863,0.0294,0.0119,0.0135,0.0146,unseen,R7
+met:436494,Mannerism (Late Renaissance),Northern Renaissance,0.8624,0.0138,0.0961,0.8624,0.0018,0.0106,0.0153,unseen,R7
+met:436499,Mannerism (Late Renaissance),Northern Renaissance,0.8835,0.0069,0.0654,0.8835,0.0083,0.0191,0.0168,unseen,R7
+met:436503,Baroque,Rococo,0.4374,0.396,0.1283,0.0305,0.0015,0.4374,0.0063,unseen,R2a
+met:436520,Baroque,Rococo,0.9129,0.0091,0.0417,0.0265,0.0046,0.9129,0.0051,unseen,R7
+met:436523,Northern Renaissance,Northern Renaissance,0.9498,0.0085,0.0227,0.9498,0.0023,0.0132,0.0035,seen,R7
+met:436538,Northern Renaissance,Northern Renaissance,0.501,0.0242,0.3163,0.501,0.0142,0.1395,0.0048,unseen,R7
+met:436539,Northern Renaissance,Mannerism (Late Renaissance),0.5832,0.0368,0.5832,0.0641,0.0064,0.2547,0.0549,unseen,R7
+met:436551,Romanticism,Rococo,0.8784,0.0196,0.0492,0.0321,0.0044,0.8784,0.0164,unseen,R2a
+met:436554,Romanticism,Baroque,0.5038,0.5038,0.0814,0.0906,0.0011,0.3128,0.0103,unseen,R2c
+met:436555,Baroque,Baroque,0.8517,0.8517,0.0272,0.0193,0.0008,0.0985,0.0024,unseen,R2a
+met:436556,Baroque,Baroque,0.7592,0.7592,0.0512,0.0393,0.0026,0.1167,0.031,unseen,R2a
+met:436557,Baroque,Baroque,0.8411,0.8411,0.0464,0.0237,0.0086,0.0403,0.0399,unseen,R2a
+met:436558,Baroque,Baroque,0.7972,0.7972,0.0495,0.0303,0.0415,0.0294,0.0521,unseen,R2a
+met:436559,Baroque,Rococo,0.3323,0.2635,0.0903,0.0695,0.0219,0.3323,0.2224,unseen,R2a
+met:436560,Baroque,Baroque,0.8238,0.8238,0.0548,0.027,0.0193,0.0136,0.0616,unseen,R7
+met:436571,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9499,0.0045,0.9499,0.0171,0.0022,0.0236,0.0027,seen,R2a
+met:436572,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.955,0.0042,0.955,0.0164,0.0036,0.0186,0.0022,seen,R1
+met:436573,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9664,0.0034,0.9664,0.0122,0.0021,0.0145,0.0015,seen,R2a
+met:436574,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9661,0.0054,0.9661,0.0122,0.0041,0.0102,0.002,seen,R1
+met:436577,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9802,0.004,0.9802,0.0076,0.0004,0.006,0.0019,seen,R2c
+met:436580,Rococo,Rococo,0.5091,0.0245,0.0811,0.0471,0.0133,0.5091,0.3249,seen,R2a
+met:436581,Rococo,Rococo,0.8021,0.0502,0.0663,0.0534,0.0133,0.8021,0.0148,seen,R2a
+met:436582,Rococo,Rococo,0.8853,0.0325,0.034,0.0294,0.0038,0.8853,0.015,seen,R2a
+met:436583,Rococo,Rococo,0.8548,0.0361,0.0528,0.0327,0.003,0.8548,0.0206,seen,R2a
+met:436584,Rococo,Rococo,0.9584,0.0049,0.0191,0.0129,0.0016,0.9584,0.003,seen,R2a
+met:436586,Rococo,Rococo,0.9578,0.0062,0.0182,0.0151,0.002,0.9578,0.0007,seen,R2a
+met:436587,Rococo,Rococo,0.8766,0.0265,0.0474,0.0354,0.0059,0.8766,0.0082,seen,R2a
+met:436588,Rococo,Rococo,0.826,0.025,0.0522,0.0346,0.0378,0.826,0.0245,seen,R2a
+met:436590,Rococo,Rococo,0.6991,0.0827,0.0882,0.055,0.0042,0.6991,0.0708,unseen,R7
+met:436593,Rococo,Baroque,0.959,0.959,0.0197,0.0087,0.0019,0.0098,0.001,seen,R2a
+met:436594,Rococo,Baroque,0.9663,0.9663,0.013,0.0096,0.0011,0.0089,0.0011,seen,R2a
+met:436595,Rococo,Baroque,0.3089,0.3089,0.1223,0.0837,0.1904,0.0384,0.2564,seen,R2a
+met:436597,Rococo,Baroque,0.8698,0.8698,0.0434,0.0186,0.0347,0.0269,0.0066,seen,R2a
+met:436598,Rococo,Baroque,0.84,0.84,0.0674,0.0303,0.009,0.0465,0.0067,seen,R2a
+met:436599,Rococo,Baroque,0.4773,0.4773,0.0631,0.0367,0.0042,0.4073,0.0114,seen,R2a
+met:436600,Rococo,Baroque,0.9138,0.9138,0.0415,0.0208,0.0039,0.0173,0.0027,seen,R2c
+met:436601,Rococo,Baroque,0.5799,0.5799,0.1032,0.1489,0.0119,0.1372,0.0189,seen,R2c
+met:436604,Baroque,Baroque,0.6957,0.6957,0.1975,0.0517,0.0024,0.0467,0.006,seen,R2a
+met:436607,Baroque,Baroque,0.7795,0.7795,0.1488,0.0363,0.0035,0.0274,0.0045,unseen,R7
+met:436615,Baroque,Baroque,0.6662,0.6662,0.1056,0.0777,0.0046,0.0928,0.0532,unseen,R2a
+met:436624,Baroque,Baroque,0.9077,0.9077,0.0286,0.0279,0.0089,0.0215,0.0054,seen,R2a
+met:436625,Baroque,Baroque,0.7307,0.7307,0.0566,0.0497,0.0047,0.1478,0.0105,seen,R2a
+met:436627,Baroque,Baroque,0.7505,0.7505,0.0961,0.0794,0.0075,0.0561,0.0104,seen,R7
+met:436628,Baroque,Baroque,0.7716,0.7716,0.0424,0.0422,0.0306,0.083,0.0302,seen,R2c
+met:436630,Baroque,Baroque,0.8355,0.8355,0.0354,0.0362,0.0031,0.0858,0.0041,unseen,R2a
+met:436634,Baroque,Realism,0.3111,0.2209,0.139,0.0805,0.3111,0.1352,0.1133,unseen,R7
+met:436636,Baroque,Baroque,0.6941,0.6941,0.0555,0.1555,0.0458,0.0338,0.0153,unseen,R7
+met:436637,Baroque,Baroque,0.4301,0.4301,0.1119,0.0618,0.2678,0.0612,0.0673,unseen,R7
+met:436642,Baroque,Baroque,0.7672,0.7672,0.0774,0.0573,0.004,0.0641,0.0299,unseen,R2a
+met:436647,Baroque,Baroque,0.9211,0.9211,0.0205,0.009,0.0042,0.0423,0.003,unseen,R7
+met:436648,Baroque,Baroque,0.8833,0.8833,0.0365,0.0115,0.0069,0.0581,0.0037,unseen,R7
+met:436652,Baroque,Baroque,0.9596,0.9596,0.0143,0.0058,0.0039,0.013,0.0033,unseen,R7
+met:436653,Baroque,Baroque,0.968,0.968,0.0112,0.0075,0.0027,0.0098,0.0008,unseen,R7
+met:436660,Northern Renaissance,Northern Renaissance,0.9445,0.0069,0.0318,0.9445,0.0033,0.0112,0.0022,unseen,R2a
+met:436667,Northern Renaissance,Northern Renaissance,0.9209,0.0363,0.0272,0.9209,0.0031,0.0099,0.0025,unseen,R2c
+met:436669,Northern Renaissance,Northern Renaissance,0.9466,0.0095,0.0211,0.9466,0.0038,0.0174,0.0016,unseen,R2c
+met:436671,Baroque,Baroque,0.6722,0.6722,0.0689,0.0546,0.0015,0.1901,0.0126,seen,R7
+met:436672,Baroque,Baroque,0.5663,0.5663,0.1099,0.0656,0.0033,0.2388,0.0161,unseen,R7
+met:436675,Baroque,Baroque,0.6584,0.6584,0.0846,0.077,0.0539,0.0204,0.1057,unseen,R2a
+met:436676,Baroque,Baroque,0.3371,0.3371,0.0857,0.0813,0.1544,0.0889,0.2525,unseen,R2a
+met:436677,Baroque,Baroque,0.8964,0.8964,0.0256,0.0195,0.0031,0.0447,0.0107,unseen,R2a
+met:436679,Baroque,Baroque,0.6676,0.6676,0.0349,0.1045,0.0073,0.1776,0.0081,unseen,R2a
+met:436680,Baroque,Rococo,0.4392,0.3912,0.0806,0.0745,0.0059,0.4392,0.0086,unseen,R2a
+met:436693,Rococo,Rococo,0.8241,0.0822,0.0422,0.0359,0.0009,0.8241,0.0146,unseen,R7
+met:436702,Northern Renaissance,Northern Renaissance,0.7443,0.0324,0.1755,0.7443,0.0085,0.0222,0.0172,unseen,R7
+met:436705,Romanticism,Mannerism (Late Renaissance),0.2587,0.1014,0.2587,0.1098,0.1671,0.161,0.2019,unseen,R2a
+met:436721,Northern Renaissance,Mannerism (Late Renaissance),0.5125,0.0156,0.5125,0.4,0.0186,0.0359,0.0174,unseen,R7
+met:436722,Northern Renaissance,Northern Renaissance,0.6212,0.1061,0.1374,0.6212,0.05,0.0569,0.0283,unseen,R7
+met:436723,Northern Renaissance,Northern Renaissance,0.9498,0.0129,0.0203,0.9498,0.0039,0.0104,0.0027,unseen,R7
+met:436724,Realism,Baroque,0.6838,0.6838,0.0494,0.0309,0.1344,0.0479,0.0535,unseen,R2a
+met:436739,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9178,0.0028,0.9178,0.0061,0.0059,0.0641,0.0032,unseen,R7
+met:436741,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.618,0.0497,0.618,0.1854,0.0156,0.0557,0.0756,unseen,R7
+met:436749,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9186,0.0067,0.9186,0.0267,0.0124,0.008,0.0276,unseen,R7
+met:436752,Baroque,Baroque,0.8255,0.8255,0.0779,0.0134,0.056,0.012,0.0152,unseen,R2a
+met:436772,Realism,Realism,0.6593,0.0381,0.0886,0.0809,0.6593,0.0403,0.0927,seen,R2a
+met:436774,Realism,Baroque,0.5071,0.5071,0.1045,0.063,0.0198,0.2144,0.0912,seen,R2a
+met:436776,Baroque,Baroque,0.9007,0.9007,0.0368,0.0343,0.0038,0.0173,0.0072,unseen,R2a
+met:436781,Northern Renaissance,Northern Renaissance,0.4298,0.3435,0.147,0.4298,0.0046,0.0659,0.0091,unseen,R7
+met:436782,Rococo,Baroque,0.7109,0.7109,0.1482,0.0449,0.002,0.0859,0.0082,unseen,R7
+met:436784,Baroque,Baroque,0.4528,0.4528,0.1081,0.1123,0.0258,0.0594,0.2416,unseen,R7
+met:436788,Baroque,Baroque,0.8989,0.8989,0.0394,0.023,0.0036,0.0282,0.0068,unseen,R7
+met:436789,Baroque,Rococo,0.5152,0.3733,0.0452,0.0438,0.0117,0.5152,0.0108,unseen,R7
+met:436790,Baroque,Baroque,0.9203,0.9203,0.0279,0.0167,0.0026,0.0305,0.002,unseen,R7
+met:436791,Northern Renaissance,Northern Renaissance,0.9085,0.0342,0.0323,0.9085,0.0026,0.0194,0.0031,unseen,R7
+met:436792,Northern Renaissance,Northern Renaissance,0.8152,0.0088,0.1019,0.8152,0.0091,0.0382,0.0268,unseen,R7
+met:436793,Northern Renaissance,Northern Renaissance,0.8184,0.0213,0.1259,0.8184,0.0022,0.0273,0.0049,unseen,R7
+met:436794,Northern Renaissance,Northern Renaissance,0.6411,0.0176,0.3034,0.6411,0.0018,0.0296,0.0065,unseen,R7
+met:436795,Northern Renaissance,Northern Renaissance,0.9334,0.0071,0.0355,0.9334,0.0022,0.0189,0.003,unseen,R7
+met:436796,Northern Renaissance,Northern Renaissance,0.9567,0.0068,0.027,0.9567,0.0015,0.0071,0.0011,unseen,R7
+met:436797,Northern Renaissance,Northern Renaissance,0.8692,0.022,0.0841,0.8692,0.003,0.0192,0.0026,unseen,R7
+met:436801,Northern Renaissance,Northern Renaissance,0.6502,0.0344,0.2745,0.6502,0.0073,0.028,0.0055,unseen,R7
+met:436802,Northern Renaissance,Northern Renaissance,0.9402,0.0114,0.0307,0.9402,0.0035,0.01,0.0042,unseen,R7
+met:436803,Northern Renaissance,Baroque,0.6951,0.6951,0.0581,0.0985,0.0038,0.1259,0.0186,unseen,R1
+met:436816,Baroque,Baroque,0.747,0.747,0.0963,0.0317,0.0067,0.1082,0.0101,unseen,R7
+met:436817,Baroque,Baroque,0.8245,0.8245,0.0543,0.0412,0.0094,0.0245,0.0459,unseen,R7
+met:436818,Baroque,Baroque,0.9076,0.9076,0.0375,0.0284,0.0029,0.0222,0.0013,unseen,R7
+met:436821,Rococo,Rococo,0.9107,0.0064,0.0435,0.0258,0.0111,0.9107,0.0025,unseen,R7
+met:436823,Baroque,Rococo,0.8452,0.0232,0.067,0.0423,0.0074,0.8452,0.0149,unseen,R7
+met:436824,Baroque,Rococo,0.9112,0.0223,0.0388,0.0198,0.0064,0.9112,0.0015,unseen,R7
+met:436826,Realism,Realism,0.7639,0.0481,0.0694,0.0488,0.7639,0.0448,0.025,unseen,R2a
+met:436827,Realism,Romanticism,0.6161,0.0913,0.1038,0.0522,0.0081,0.1285,0.6161,unseen,R2a
+met:436830,Baroque,Baroque,0.8048,0.8048,0.0734,0.0365,0.0171,0.0606,0.0077,unseen,R7
+met:436831,Baroque,Baroque,0.6809,0.6809,0.0684,0.0401,0.0449,0.09,0.0757,unseen,R7
+met:436832,Baroque,Baroque,0.5834,0.5834,0.0993,0.0524,0.1084,0.0391,0.1174,unseen,R7
+met:436834,Northern Renaissance,Northern Renaissance,0.5302,0.2249,0.0558,0.5302,0.0371,0.13,0.022,unseen,R2a
+met:436835,Northern Renaissance,Mannerism (Late Renaissance),0.5201,0.0244,0.5201,0.4099,0.0041,0.0292,0.0123,unseen,R2a
+met:436836,Baroque,Baroque,0.5572,0.5572,0.2961,0.0867,0.0053,0.0394,0.0153,unseen,R2a
+met:436837,Rococo,Romanticism,0.5203,0.066,0.1263,0.0839,0.0163,0.1872,0.5203,unseen,R1
+met:436843,Baroque,Rococo,0.8661,0.0213,0.0504,0.0257,0.0013,0.8661,0.0352,unseen,R2a
+met:436845,Romanticism,Baroque,0.9178,0.9178,0.029,0.0164,0.0143,0.0146,0.0079,unseen,R2a
+met:436846,Baroque,Rococo,0.9178,0.0054,0.0484,0.0164,0.0047,0.9178,0.0071,unseen,R2a
+met:436847,Baroque,Rococo,0.9595,0.0063,0.0196,0.011,0.0003,0.9595,0.0033,unseen,R2a
+met:436850,Romanticism,Rococo,0.5193,0.0343,0.1105,0.0486,0.0097,0.5193,0.2776,seen,R2a
+met:436853,Romanticism,Rococo,0.6091,0.0107,0.0985,0.0675,0.0236,0.6091,0.1905,seen,R2a
+met:436861,Rococo,Baroque,0.3692,0.3692,0.2979,0.0649,0.0048,0.1038,0.1593,unseen,R7
+met:436867,Realism,Realism,0.7314,0.0288,0.0953,0.0671,0.7314,0.0649,0.0126,seen,R2a
+met:436871,Baroque,Rococo,0.453,0.4204,0.0672,0.0529,0.0033,0.453,0.0032,unseen,R2a
+met:436872,Baroque,Baroque,0.6812,0.6812,0.044,0.0329,0.0242,0.1806,0.0371,unseen,R2a
+met:436873,Baroque,Baroque,0.8432,0.8432,0.0634,0.0301,0.0028,0.0462,0.0143,unseen,R2a
+met:436874,Baroque,Baroque,0.6519,0.6519,0.04,0.0351,0.0037,0.2588,0.0106,unseen,R2c
+met:436888,Mannerism (Late Renaissance),Baroque,0.5138,0.5138,0.3831,0.0368,0.0055,0.0418,0.019,unseen,R2a
+met:436889,Baroque,Baroque,0.8276,0.8276,0.0712,0.0344,0.0017,0.0388,0.0262,unseen,R7
+met:436890,Baroque,Romanticism,0.3899,0.1759,0.1565,0.1096,0.0354,0.1328,0.3899,unseen,R7
+met:436891,Baroque,Romanticism,0.6117,0.1678,0.0969,0.0438,0.0013,0.0785,0.6117,unseen,R7
+met:436902,Mannerism (Late Renaissance),Baroque,0.594,0.594,0.2893,0.0477,0.0061,0.0377,0.0252,unseen,R7
+met:436922,Mannerism (Late Renaissance),Baroque,0.674,0.674,0.0975,0.0902,0.0028,0.084,0.0514,unseen,R7
+met:436926,Realism,Romanticism,0.4436,0.0241,0.1328,0.1015,0.2226,0.0754,0.4436,unseen,R2a
+met:436927,Realism,Realism,0.6762,0.0353,0.0638,0.064,0.6762,0.0769,0.0838,unseen,R2a
+met:436928,Realism,Realism,0.6471,0.0687,0.0903,0.0836,0.6471,0.0623,0.048,unseen,R2a
+met:436929,Baroque,Baroque,0.7068,0.7068,0.0744,0.0586,0.0075,0.0543,0.0985,seen,R7
+met:436930,Baroque,Baroque,0.6992,0.6992,0.1542,0.0627,0.0049,0.0736,0.0053,seen,R7
+met:436931,Baroque,Baroque,0.8143,0.8143,0.0615,0.0589,0.0183,0.0302,0.0168,seen,R7
+met:436933,Baroque,Baroque,0.9139,0.9139,0.0229,0.0174,0.0028,0.0333,0.0098,seen,R7
+met:436934,Baroque,Baroque,0.7095,0.7095,0.0627,0.0584,0.0322,0.0282,0.109,seen,R7
+met:436935,Baroque,Baroque,0.5641,0.5641,0.0745,0.0468,0.0277,0.225,0.0619,unseen,R2a
+met:436936,Baroque,Baroque,0.8928,0.8928,0.0283,0.0207,0.0049,0.0477,0.0056,unseen,R2c
+met:436941,Northern Renaissance,Northern Renaissance,0.947,0.0218,0.015,0.947,0.0034,0.0112,0.0017,unseen,R7
+met:436942,Northern Renaissance,Northern Renaissance,0.9746,0.0029,0.0106,0.9746,0.0029,0.0086,0.0004,unseen,R7
+met:436971,Realism,Realism,0.4116,0.1148,0.1541,0.0812,0.4116,0.0887,0.1497,unseen,R2a
+met:436974,Realism,Realism,0.7422,0.0449,0.0692,0.0863,0.7422,0.0267,0.0308,unseen,R2a
+met:436975,Realism,Romanticism,0.454,0.1005,0.1197,0.1298,0.1543,0.0417,0.454,unseen,R2a
+met:436976,Baroque,Romanticism,0.4395,0.0641,0.0865,0.1818,0.18,0.0482,0.4395,unseen,R2a
+met:436984,Northern Renaissance,Northern Renaissance,0.945,0.007,0.0194,0.945,0.0023,0.0136,0.0128,unseen,R2a
+met:436985,Northern Renaissance,Northern Renaissance,0.941,0.0142,0.0317,0.941,0.0022,0.0099,0.0009,unseen,R2c
+met:436986,Northern Renaissance,Northern Renaissance,0.9123,0.0317,0.025,0.9123,0.0069,0.0176,0.0065,unseen,R2a
+met:436987,Northern Renaissance,Northern Renaissance,0.6059,0.0253,0.3264,0.6059,0.0027,0.0322,0.0074,unseen,R2a
+met:436990,Northern Renaissance,Northern Renaissance,0.9161,0.0143,0.0331,0.9161,0.0035,0.0223,0.0107,unseen,R7
+met:436991,Northern Renaissance,Northern Renaissance,0.7746,0.016,0.1694,0.7746,0.0179,0.016,0.0061,unseen,R7
+met:436992,Baroque,Baroque,0.8779,0.8779,0.0503,0.0282,0.008,0.0251,0.0105,seen,R7
+met:436995,Baroque,Baroque,0.8375,0.8375,0.0794,0.0225,0.0097,0.0407,0.0102,unseen,R7
+met:436997,Northern Renaissance,Northern Renaissance,0.7218,0.0106,0.0646,0.7218,0.0039,0.0484,0.1507,unseen,R7
+met:437004,Northern Renaissance,Northern Renaissance,0.9447,0.0095,0.0177,0.9447,0.0043,0.0135,0.0104,unseen,R7
+met:437005,Northern Renaissance,Northern Renaissance,0.7579,0.0043,0.1717,0.7579,0.0022,0.0239,0.04,unseen,R7
+met:437006,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9285,0.0053,0.9285,0.0113,0.014,0.0107,0.0303,unseen,R7
+met:437008,Northern Renaissance,Northern Renaissance,0.9628,0.0071,0.0198,0.9628,0.0019,0.0057,0.0028,unseen,R7
+met:437013,Northern Renaissance,Northern Renaissance,0.8758,0.033,0.0319,0.8758,0.0091,0.0267,0.0235,unseen,R7
+met:437017,Northern Renaissance,Northern Renaissance,0.9362,0.0066,0.0357,0.9362,0.0017,0.0173,0.0025,unseen,R7
+met:437028,Northern Renaissance,Northern Renaissance,0.9614,0.0064,0.0143,0.9614,0.0024,0.0122,0.0033,unseen,R2a
+met:437029,Northern Renaissance,Northern Renaissance,0.8877,0.0247,0.0446,0.8877,0.0095,0.0251,0.0084,unseen,R7
+met:437030,Northern Renaissance,Northern Renaissance,0.916,0.0095,0.0199,0.916,0.0111,0.0389,0.0046,unseen,R1
+met:437032,Northern Renaissance,Northern Renaissance,0.9446,0.0096,0.0287,0.9446,0.0033,0.0108,0.003,unseen,R7
+met:437033,Northern Renaissance,Northern Renaissance,0.7917,0.0075,0.1879,0.7917,0.0025,0.0073,0.003,unseen,R2b
+met:437034,Northern Renaissance,Northern Renaissance,0.7237,0.1652,0.067,0.7237,0.0156,0.0247,0.0038,unseen,R2a
+met:437035,Northern Renaissance,Northern Renaissance,0.8652,0.0205,0.0897,0.8652,0.0022,0.0149,0.0074,unseen,R2c
+met:437039,Baroque,Romanticism,0.5415,0.0391,0.0784,0.0529,0.0063,0.2818,0.5415,unseen,R7
+met:437040,Realism,Realism,0.6753,0.031,0.1062,0.0904,0.6753,0.0773,0.0198,unseen,R2a
+met:437041,Realism,Realism,0.8068,0.0183,0.0762,0.0557,0.8068,0.0388,0.0042,unseen,R2a
+met:437042,Realism,Realism,0.8141,0.0158,0.0733,0.0517,0.8141,0.0396,0.0055,unseen,R2a
+met:437043,Realism,Realism,0.8436,0.0102,0.0652,0.0457,0.8436,0.0327,0.0026,unseen,R2a
+met:437046,Baroque,Baroque,0.941,0.941,0.0233,0.0173,0.0026,0.014,0.0019,unseen,R2a
+met:437055,Northern Renaissance,Northern Renaissance,0.9561,0.004,0.0187,0.9561,0.0049,0.0156,0.0008,unseen,R1
+met:437057,Northern Renaissance,Northern Renaissance,0.8721,0.0059,0.0908,0.8721,0.0033,0.0249,0.0029,unseen,R1
+met:437060,Northern Renaissance,Northern Renaissance,0.5386,0.0142,0.1316,0.5386,0.0198,0.0671,0.2288,unseen,R2c
+met:437061,Northern Renaissance,Mannerism (Late Renaissance),0.977,0.0016,0.977,0.0147,0.0003,0.0057,0.0007,unseen,R2c
+met:437067,Rococo,Rococo,0.9213,0.0053,0.0398,0.0143,0.0037,0.9213,0.0156,unseen,R7
+met:437070,Baroque,Baroque,0.6552,0.6552,0.0541,0.0547,0.0007,0.2331,0.0022,unseen,R2a
+met:437072,Baroque,Baroque,0.9391,0.9391,0.0157,0.0212,0.0022,0.0168,0.0052,unseen,R7
+met:437074,Baroque,Baroque,0.8402,0.8402,0.0308,0.0237,0.0008,0.0968,0.0077,unseen,R2a
+met:437082,Baroque,Baroque,0.8559,0.8559,0.0472,0.0384,0.0249,0.0225,0.0111,unseen,R7
+met:437084,Baroque,Baroque,0.4299,0.4299,0.1409,0.1136,0.01,0.1444,0.1611,unseen,R2a
+met:437085,Baroque,Baroque,0.8785,0.8785,0.0501,0.0397,0.0109,0.0157,0.0051,unseen,R7
+met:437087,Baroque,Baroque,0.8614,0.8614,0.0656,0.0436,0.0045,0.0182,0.0068,unseen,R7
+met:437088,Baroque,Baroque,0.903,0.903,0.039,0.0397,0.0051,0.0088,0.0045,unseen,R2a
+met:437089,Rococo,Rococo,0.7362,0.0972,0.0953,0.0484,0.0052,0.7362,0.0178,unseen,R7
+met:437090,Baroque,Baroque,0.8582,0.8582,0.0883,0.0262,0.0035,0.0173,0.0066,unseen,R7
+met:437093,Baroque,Rococo,0.2733,0.1177,0.0982,0.1863,0.1576,0.2733,0.167,unseen,R2a
+met:437095,Realism,Realism,0.6761,0.035,0.0998,0.0809,0.6761,0.0734,0.0348,seen,R2a
+met:437099,Realism,Realism,0.5366,0.0277,0.1236,0.0919,0.5366,0.1004,0.1198,seen,R2a
+met:437100,Baroque,Northern Renaissance,0.4316,0.1156,0.1181,0.4316,0.0544,0.0828,0.1974,unseen,R7
+met:437101,Baroque,Rococo,0.4618,0.3,0.1793,0.0417,0.0038,0.4618,0.0135,unseen,R2a
+met:437102,Baroque,Baroque,0.439,0.439,0.0812,0.0412,0.0028,0.4148,0.0209,unseen,R7
+met:437103,Baroque,Romanticism,0.345,0.2336,0.1176,0.0763,0.0491,0.1784,0.345,unseen,R2a
+met:437143,Northern Renaissance,Baroque,0.3023,0.3023,0.1009,0.295,0.0143,0.1527,0.1347,unseen,R7
+met:437146,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9164,0.0448,0.9164,0.0261,0.0022,0.0089,0.0015,unseen,R7
+met:437154,Baroque,Baroque,0.8958,0.8958,0.04,0.0249,0.0043,0.0327,0.0023,unseen,R7
+met:437163,Mannerism (Late Renaissance),Baroque,0.8608,0.8608,0.0715,0.036,0.0077,0.0224,0.0016,unseen,R7
+met:437164,Mannerism (Late Renaissance),Baroque,0.467,0.467,0.1864,0.0614,0.1517,0.059,0.0746,unseen,R7
+met:437165,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.7794,0.034,0.7794,0.0412,0.1076,0.026,0.0118,unseen,R7
+met:437168,Northern Renaissance,Northern Renaissance,0.9588,0.0067,0.0181,0.9588,0.0024,0.0078,0.0062,unseen,R7
+met:437171,Baroque,Rococo,0.3806,0.319,0.0653,0.0498,0.0048,0.3806,0.1805,unseen,R7
+met:437174,Baroque,Baroque,0.7844,0.7844,0.0611,0.0318,0.0167,0.0988,0.0071,seen,R2a
+met:437177,Rococo,Rococo,0.8951,0.0352,0.034,0.0298,0.0018,0.8951,0.0042,unseen,R7
+met:437178,Baroque,Mannerism (Late Renaissance),0.4319,0.3741,0.4319,0.0609,0.0106,0.0628,0.0597,unseen,R2a
+met:437179,Realism,Baroque,0.8054,0.8054,0.0378,0.0248,0.003,0.1131,0.016,unseen,R2a
+met:437180,Rococo,Baroque,0.5421,0.5421,0.2106,0.0298,0.0034,0.1333,0.0808,unseen,R2a
+met:437181,Rococo,Rococo,0.9381,0.0065,0.0374,0.0149,0.0021,0.9381,0.0009,seen,R2a
+met:437182,Rococo,Rococo,0.9191,0.0099,0.0376,0.0263,0.0053,0.9191,0.0017,seen,R2a
+met:437183,Rococo,Rococo,0.8872,0.0313,0.0428,0.0286,0.0032,0.8872,0.0069,seen,R2a
+met:437184,Rococo,Rococo,0.8408,0.0156,0.1038,0.026,0.0076,0.8408,0.0062,seen,R2a
+met:437185,Rococo,Rococo,0.899,0.017,0.0433,0.0308,0.0068,0.899,0.0031,seen,R2a
+met:437189,Baroque,Baroque,0.8112,0.8112,0.0808,0.0255,0.0028,0.0326,0.0471,unseen,R7
+met:437190,Baroque,Rococo,0.4625,0.3218,0.0727,0.0589,0.0179,0.4625,0.0661,unseen,R2a
+met:437191,Baroque,Baroque,0.4033,0.4033,0.1576,0.0699,0.022,0.1597,0.1876,unseen,R2a
+met:437192,Baroque,Romanticism,0.6196,0.1157,0.0869,0.0768,0.0464,0.0547,0.6196,unseen,R2a
+met:437193,Baroque,Baroque,0.7818,0.7818,0.0652,0.0587,0.0099,0.0603,0.0241,unseen,R7
+met:437199,Northern Renaissance,Northern Renaissance,0.9685,0.0056,0.0109,0.9685,0.0034,0.0081,0.0034,unseen,R7
+met:437202,Northern Renaissance,Northern Renaissance,0.9722,0.0022,0.0178,0.9722,0.0007,0.0059,0.0012,unseen,R7
+met:437203,Northern Renaissance,Northern Renaissance,0.9361,0.0112,0.0205,0.9361,0.0026,0.025,0.0045,unseen,R7
+met:437204,Northern Renaissance,Northern Renaissance,0.9544,0.0083,0.0149,0.9544,0.0066,0.0132,0.0025,unseen,R7
+met:437205,Northern Renaissance,Mannerism (Late Renaissance),0.8919,0.0056,0.8919,0.0794,0.0019,0.0189,0.0023,unseen,R7
+met:437206,Northern Renaissance,Northern Renaissance,0.633,0.0189,0.1889,0.633,0.0522,0.0481,0.0589,unseen,R7
+met:437207,Northern Renaissance,Northern Renaissance,0.5461,0.0243,0.3226,0.5461,0.0067,0.0715,0.0288,unseen,R7
+met:437208,Northern Renaissance,Northern Renaissance,0.7931,0.0807,0.085,0.7931,0.0129,0.0258,0.0026,unseen,R7
+met:437209,Northern Renaissance,Northern Renaissance,0.9325,0.0097,0.0273,0.9325,0.0068,0.0198,0.0039,unseen,R7
+met:437210,Northern Renaissance,Northern Renaissance,0.8446,0.042,0.0741,0.8446,0.015,0.0212,0.0031,unseen,R7
+met:437211,Northern Renaissance,Northern Renaissance,0.9826,0.0037,0.0076,0.9826,0.0004,0.0049,0.0007,unseen,R7
+met:437212,Northern Renaissance,Northern Renaissance,0.6529,0.0447,0.2775,0.6529,0.0014,0.0219,0.0015,unseen,R7
+met:437213,Northern Renaissance,Northern Renaissance,0.8704,0.0321,0.0661,0.8704,0.0028,0.0184,0.0101,unseen,R7
+met:437214,Northern Renaissance,Northern Renaissance,0.8498,0.0574,0.0366,0.8498,0.0122,0.0103,0.0336,unseen,R7
+met:437216,Northern Renaissance,Baroque,0.7875,0.7875,0.0877,0.0908,0.0028,0.0228,0.0084,unseen,R7
+met:437217,Northern Renaissance,Northern Renaissance,0.4498,0.0915,0.4206,0.4498,0.0067,0.0231,0.0085,unseen,R7
+met:437218,Baroque,Baroque,0.9135,0.9135,0.0425,0.0166,0.0022,0.0241,0.0011,unseen,R7
+met:437227,Baroque,Rococo,0.5774,0.295,0.0537,0.0569,0.0099,0.5774,0.0073,unseen,R7
+met:437229,Northern Renaissance,Northern Renaissance,0.972,0.0047,0.0146,0.972,0.0006,0.007,0.0012,unseen,R7
+met:437230,Northern Renaissance,Northern Renaissance,0.5583,0.0334,0.3673,0.5583,0.0029,0.0271,0.011,unseen,R7
+met:437231,Mannerism (Late Renaissance),Northern Renaissance,0.4559,0.0324,0.4407,0.4559,0.004,0.0341,0.0329,unseen,R7
+met:437233,Baroque,Realism,0.3546,0.3525,0.0882,0.1051,0.3546,0.0889,0.0107,unseen,R7
+met:437235,Rococo,Romanticism,0.3696,0.2928,0.0877,0.1094,0.0612,0.0792,0.3696,seen,R7
+met:437236,Northern Renaissance,Northern Renaissance,0.9362,0.0052,0.0323,0.9362,0.0043,0.0193,0.0028,unseen,R7
+met:437237,Baroque,Baroque,0.9117,0.9117,0.0292,0.0336,0.0072,0.014,0.0042,unseen,R2a
+met:437244,Baroque,Romanticism,0.4797,0.2067,0.1223,0.0558,0.0437,0.0918,0.4797,unseen,R2a
+met:437246,Baroque,Romanticism,0.5254,0.1667,0.1591,0.0502,0.0702,0.0284,0.5254,unseen,R2a
+met:437250,Mannerism (Late Renaissance),Baroque,0.6165,0.6165,0.2691,0.0379,0.005,0.0493,0.0222,unseen,R7
+met:437255,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.5194,0.0732,0.5194,0.0447,0.1716,0.0382,0.1528,unseen,R7
+met:437256,Rococo,Rococo,0.9611,0.0025,0.0207,0.0131,0.0008,0.9611,0.0019,unseen,R7
+met:437257,Rococo,Rococo,0.9378,0.0082,0.0218,0.0248,0.0019,0.9378,0.0055,unseen,R7
+met:437258,Rococo,Rococo,0.5366,0.09,0.215,0.0553,0.0062,0.5366,0.0968,unseen,R7
+met:437259,Rococo,Rococo,0.9219,0.0126,0.0305,0.0249,0.0025,0.9219,0.0076,unseen,R7
+met:437260,Rococo,Rococo,0.9208,0.0107,0.0364,0.0271,0.001,0.9208,0.004,unseen,R7
+met:437262,Baroque,Northern Renaissance,0.885,0.012,0.047,0.885,0.0077,0.0435,0.0048,unseen,R7
+met:437263,Baroque,Baroque,0.599,0.599,0.2524,0.0695,0.0096,0.0509,0.0185,unseen,R7
+met:437265,Rococo,Rococo,0.878,0.0153,0.0565,0.0382,0.0091,0.878,0.003,unseen,R7
+met:437268,Rococo,Rococo,0.6658,0.1313,0.1232,0.039,0.0075,0.6658,0.0332,unseen,R7
+met:437269,Realism,Realism,0.6539,0.0346,0.0909,0.0902,0.6539,0.0445,0.0859,unseen,R2a
+met:437280,Rococo,Rococo,0.4793,0.321,0.0906,0.1003,0.0028,0.4793,0.006,unseen,R7
+met:437281,Rococo,Baroque,0.5628,0.5628,0.0433,0.0612,0.0362,0.0509,0.2456,unseen,R7
+met:437282,Baroque,Baroque,0.8573,0.8573,0.0494,0.0574,0.0032,0.0263,0.0063,unseen,R7
+met:437286,Rococo,Mannerism (Late Renaissance),0.9464,0.0204,0.9464,0.0089,0.0033,0.0165,0.0044,unseen,R2a
+met:437323,Baroque,Rococo,0.5402,0.0965,0.125,0.0812,0.0673,0.5402,0.0897,unseen,R2a
+met:437324,Northern Renaissance,Mannerism (Late Renaissance),0.8995,0.0222,0.8995,0.0391,0.0159,0.0167,0.0067,unseen,R7
+met:437325,Baroque,Rococo,0.6277,0.0657,0.2628,0.0207,0.0147,0.6277,0.0084,unseen,R7
+met:437326,Baroque,Romanticism,0.6145,0.0489,0.1204,0.0657,0.0073,0.1432,0.6145,unseen,R2a
+met:437327,Baroque,Baroque,0.8831,0.8831,0.0449,0.0295,0.001,0.0375,0.0041,unseen,R2a
+met:437328,Baroque,Rococo,0.2809,0.2699,0.1492,0.0743,0.0173,0.2809,0.2084,unseen,R2a
+met:437329,Baroque,Baroque,0.8483,0.8483,0.0626,0.0236,0.0012,0.0598,0.0046,unseen,R2a
+met:437330,Baroque,Mannerism (Late Renaissance),0.5357,0.1174,0.5357,0.1337,0.0195,0.0389,0.1548,unseen,R2a
+met:437331,Baroque,Baroque,0.4333,0.4333,0.1175,0.046,0.0025,0.3918,0.0089,unseen,R7
+met:437336,Baroque,Baroque,0.8826,0.8826,0.0588,0.0351,0.0015,0.0182,0.0038,unseen,R7
+met:437337,Northern Renaissance,Northern Renaissance,0.9621,0.0044,0.0192,0.9621,0.0013,0.0096,0.0034,unseen,R7
+met:437338,Northern Renaissance,Northern Renaissance,0.9512,0.0063,0.0238,0.9512,0.0022,0.0144,0.0021,seen,R7
+met:437342,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9519,0.0182,0.9519,0.0198,0.0013,0.008,0.0007,unseen,R7
+met:437351,Baroque,Mannerism (Late Renaissance),0.5811,0.3293,0.5811,0.0343,0.0062,0.0367,0.0124,unseen,R7
+met:437352,Baroque,Baroque,0.5953,0.5953,0.1643,0.0401,0.004,0.189,0.0072,unseen,R7
+met:437355,Romanticism,Romanticism,0.4023,0.13,0.1691,0.0667,0.0014,0.2305,0.4023,seen,R2a
+met:437357,Romanticism,Romanticism,0.5141,0.005,0.0659,0.0451,0.0077,0.3622,0.5141,seen,R2a
+met:437358,Romanticism,Rococo,0.6295,0.0203,0.0824,0.0675,0.0992,0.6295,0.1012,seen,R2a
+met:437359,Romanticism,Rococo,0.7595,0.0624,0.0545,0.0483,0.0038,0.7595,0.0714,seen,R2a
+met:437360,Romanticism,Rococo,0.5393,0.0227,0.0889,0.0704,0.0136,0.5393,0.2651,seen,R2a
+met:437361,Romanticism,Rococo,0.8506,0.0057,0.0546,0.0421,0.0198,0.8506,0.0272,seen,R2a
+met:437365,Romanticism,Rococo,0.4088,0.3771,0.0686,0.064,0.0124,0.4088,0.0692,seen,R2a
+met:437373,Mannerism (Late Renaissance),Northern Renaissance,0.6295,0.0255,0.194,0.6295,0.009,0.1292,0.0127,unseen,R2c
+met:437374,Baroque,Baroque,0.7689,0.7689,0.1326,0.0483,0.0133,0.0231,0.0138,unseen,R2a
+met:437376,Baroque,Baroque,0.6105,0.6105,0.0949,0.0665,0.0451,0.0896,0.0934,unseen,R7
+met:437389,Baroque,Baroque,0.8732,0.8732,0.0281,0.0253,0.0089,0.0394,0.025,seen,R2a
+met:437396,Baroque,Baroque,0.8904,0.8904,0.0367,0.0266,0.0056,0.0311,0.0096,seen,R2a
+met:437400,Baroque,Baroque,0.8921,0.8921,0.0481,0.0283,0.0042,0.0247,0.0025,seen,R2a
+met:437403,Baroque,Baroque,0.916,0.916,0.025,0.0225,0.0035,0.0214,0.0117,seen,R7
+met:437405,Baroque,Rococo,0.8482,0.0563,0.0436,0.0303,0.0024,0.8482,0.0192,unseen,R2a
+met:437406,Baroque,Baroque,0.8635,0.8635,0.0721,0.0292,0.0034,0.0288,0.0029,seen,R2c
+met:437409,Baroque,Rococo,0.7783,0.1184,0.0523,0.0364,0.0048,0.7783,0.0097,seen,R7
+met:437411,Baroque,Baroque,0.8424,0.8424,0.0644,0.0453,0.0086,0.0201,0.0192,seen,R7
+met:437413,Baroque,Baroque,0.885,0.885,0.055,0.0379,0.0024,0.0155,0.0041,seen,R7
+met:437414,Baroque,Baroque,0.7769,0.7769,0.0468,0.0449,0.0394,0.0511,0.0409,seen,R7
+met:437415,Baroque,Baroque,0.8604,0.8604,0.0546,0.0286,0.0066,0.0226,0.0271,unseen,R2a
+met:437416,Baroque,Baroque,0.8237,0.8237,0.0788,0.0399,0.0054,0.0232,0.0289,seen,R7
+met:437417,Baroque,Baroque,0.8447,0.8447,0.0425,0.0355,0.017,0.0334,0.0268,seen,R2a
+met:437418,Rococo,Baroque,0.907,0.907,0.0433,0.0258,0.0046,0.017,0.0023,seen,R7
+met:437419,Baroque,Baroque,0.7661,0.7661,0.0704,0.0512,0.012,0.0873,0.013,seen,R7
+met:437423,Baroque,Baroque,0.8048,0.8048,0.0417,0.0294,0.0044,0.1083,0.0114,seen,R2a
+met:437456,Realism,Baroque,0.8025,0.8025,0.0923,0.0532,0.0206,0.0276,0.0039,seen,R2a
+met:437457,Baroque,Baroque,0.7035,0.7035,0.215,0.0325,0.0061,0.0323,0.0106,unseen,R2a
+met:437458,Baroque,Mannerism (Late Renaissance),0.4715,0.39,0.4715,0.0436,0.0023,0.0656,0.0269,unseen,R2a
+met:437463,Baroque,Rococo,0.9094,0.0242,0.0347,0.0265,0.0012,0.9094,0.0041,unseen,R1
+met:437464,Baroque,Rococo,0.4288,0.3985,0.0557,0.0867,0.0074,0.4288,0.0228,unseen,R1
+met:437465,Baroque,Baroque,0.7311,0.7311,0.0617,0.0535,0.0069,0.1399,0.0069,unseen,R1
+met:437466,Northern Renaissance,Northern Renaissance,0.7937,0.0512,0.038,0.7937,0.0083,0.0376,0.0713,unseen,R7
+met:437468,Romanticism,Rococo,0.6068,0.2196,0.09,0.0424,0.0017,0.6068,0.0395,unseen,R2a
+met:437470,Romanticism,Romanticism,0.5538,0.0748,0.1428,0.0655,0.0334,0.1297,0.5538,unseen,R2a
+met:437471,Romanticism,Romanticism,0.3158,0.215,0.1116,0.0795,0.0214,0.2567,0.3158,unseen,R2a
+met:437472,Romanticism,Romanticism,0.8272,0.0262,0.0579,0.0297,0.0062,0.0528,0.8272,unseen,R2a
+met:437473,Romanticism,Rococo,0.5609,0.3786,0.038,0.0186,0.0014,0.5609,0.0024,unseen,R2a
+met:437474,Romanticism,Romanticism,0.7592,0.0438,0.1009,0.0409,0.0056,0.0497,0.7592,unseen,R2a
+met:437475,Romanticism,Rococo,0.5155,0.0197,0.0997,0.025,0.0016,0.5155,0.3385,unseen,R2a
+met:437476,Romanticism,Romanticism,0.5301,0.0285,0.1022,0.0878,0.0042,0.2473,0.5301,unseen,R2a
+met:437477,Romanticism,Rococo,0.6296,0.1631,0.1019,0.0657,0.0051,0.6296,0.0346,unseen,R2a
+met:437479,Romanticism,Romanticism,0.6453,0.1155,0.0702,0.0553,0.0041,0.1095,0.6453,unseen,R2a
+met:437480,Romanticism,Baroque,0.7389,0.7389,0.0661,0.0976,0.0267,0.0297,0.0409,unseen,R2a
+met:437481,Romanticism,Baroque,0.5153,0.5153,0.0551,0.0202,0.0007,0.4063,0.0024,unseen,R2a
+met:437487,Northern Renaissance,Northern Renaissance,0.9419,0.0201,0.0156,0.9419,0.0043,0.0143,0.0037,unseen,R1
+met:437488,Northern Renaissance,Northern Renaissance,0.9431,0.005,0.0228,0.9431,0.0068,0.0193,0.003,unseen,R1
+met:437489,Northern Renaissance,Northern Renaissance,0.7437,0.0177,0.2175,0.7437,0.0053,0.0138,0.0019,unseen,R1
+met:437490,Northern Renaissance,Northern Renaissance,0.9599,0.0055,0.0145,0.9599,0.0028,0.0135,0.0037,unseen,R1
+met:437491,Northern Renaissance,Northern Renaissance,0.9375,0.0114,0.0246,0.9375,0.002,0.0163,0.0082,unseen,R2a
+met:437492,Northern Renaissance,Northern Renaissance,0.9384,0.0045,0.0311,0.9384,0.0013,0.0135,0.0112,unseen,R7
+met:437496,Baroque,Baroque,0.8326,0.8326,0.045,0.0749,0.0129,0.0145,0.0201,unseen,R7
+met:437497,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9656,0.0093,0.9656,0.0166,0.0005,0.0063,0.0016,unseen,R2a
+met:437500,Rococo,Rococo,0.9233,0.0026,0.0319,0.0247,0.0061,0.9233,0.0113,seen,R2a
+met:437502,Rococo,Rococo,0.9303,0.0168,0.0313,0.0154,0.0032,0.9303,0.003,seen,R2a
+met:437505,Rococo,Rococo,0.9164,0.0059,0.0321,0.0348,0.0039,0.9164,0.0069,seen,R2a
+met:437506,Baroque,Baroque,0.5165,0.5165,0.0565,0.0265,0.0014,0.3919,0.0071,unseen,R2a
+met:437507,Baroque,Baroque,0.688,0.688,0.1083,0.0639,0.0031,0.0604,0.0762,unseen,R2a
+met:437508,Baroque,Baroque,0.9028,0.9028,0.0317,0.0329,0.0039,0.0257,0.0029,unseen,R2a
+met:437515,Realism,Realism,0.358,0.0545,0.1104,0.0935,0.358,0.2492,0.1345,seen,R2a
+met:437516,Realism,Romanticism,0.4514,0.0232,0.1039,0.0895,0.2411,0.0909,0.4514,seen,R2a
+met:437517,Realism,Realism,0.6773,0.0506,0.0929,0.0734,0.6773,0.0834,0.0225,seen,R2a
+met:437518,Realism,Realism,0.7171,0.0254,0.1075,0.0574,0.7171,0.0844,0.0081,seen,R2a
+met:437519,Realism,Realism,0.5615,0.0407,0.1018,0.0903,0.5615,0.1028,0.1028,seen,R2a
+met:437523,Baroque,Baroque,0.7886,0.7886,0.0868,0.0625,0.0081,0.0379,0.0161,seen,R2a
+met:437524,Baroque,Rococo,0.4018,0.3778,0.0869,0.06,0.0105,0.4018,0.063,seen,R2a
+met:437527,Baroque,Baroque,0.3688,0.3688,0.1402,0.0482,0.0021,0.2218,0.2188,seen,R2a
+met:437529,Baroque,Baroque,0.8206,0.8206,0.1135,0.0179,0.0045,0.0222,0.0213,seen,R2a
+met:437533,Baroque,Baroque,0.675,0.675,0.0491,0.1831,0.0114,0.0432,0.0382,seen,R2a
+met:437534,Baroque,Baroque,0.6756,0.6756,0.0593,0.0234,0.0057,0.0281,0.2079,seen,R2a
+met:437536,Baroque,Baroque,0.7213,0.7213,0.2125,0.0285,0.0061,0.015,0.0167,seen,R2a
+met:437540,Baroque,Baroque,0.5008,0.5008,0.1082,0.122,0.1333,0.0713,0.0644,seen,R2c
+met:437542,Baroque,Baroque,0.7767,0.7767,0.1171,0.035,0.0018,0.0496,0.0197,seen,R2c
+met:437543,Baroque,Baroque,0.4985,0.4985,0.3212,0.0446,0.0077,0.0749,0.0531,seen,R2c
+met:437545,Baroque,Baroque,0.8193,0.8193,0.0307,0.017,0.0013,0.1004,0.0313,seen,R2a
+met:437546,Baroque,Baroque,0.9646,0.9646,0.0085,0.0135,0.0004,0.0089,0.0041,seen,R2a
+met:437547,Baroque,Rococo,0.4558,0.0896,0.1178,0.0735,0.1054,0.4558,0.1578,seen,R2a
+met:437548,Baroque,Baroque,0.5814,0.5814,0.083,0.0399,0.005,0.2408,0.0498,seen,R2a
+met:437549,Baroque,Baroque,0.9188,0.9188,0.0282,0.0106,0.0079,0.0325,0.0019,seen,R2a
+met:437559,Baroque,Romanticism,0.2719,0.0364,0.1057,0.2232,0.2165,0.1462,0.2719,unseen,R7
+met:437567,Baroque,Baroque,0.5224,0.5224,0.1241,0.1505,0.0617,0.0634,0.0779,unseen,R7
+met:437585,Baroque,Baroque,0.6114,0.6114,0.0701,0.0356,0.0464,0.0383,0.1981,unseen,R7
+met:437586,Baroque,Baroque,0.9738,0.9738,0.011,0.0066,0.0017,0.0061,0.0009,unseen,R7
+met:437587,Baroque,Baroque,0.3714,0.3714,0.108,0.0585,0.0364,0.0608,0.365,unseen,R7
+met:437588,Baroque,Baroque,0.9205,0.9205,0.0248,0.0164,0.0027,0.0339,0.0018,unseen,R7
+met:437589,Baroque,Baroque,0.9328,0.9328,0.0214,0.0116,0.0023,0.0282,0.0037,unseen,R7
+met:437590,Baroque,Baroque,0.8678,0.8678,0.0461,0.0166,0.0033,0.0528,0.0134,unseen,R7
+met:437591,Baroque,Baroque,0.7011,0.7011,0.1026,0.0372,0.0076,0.1265,0.025,unseen,R7
+met:437592,Baroque,Baroque,0.7888,0.7888,0.0661,0.0482,0.0166,0.0414,0.0389,unseen,R7
+met:437593,Baroque,Baroque,0.8799,0.8799,0.0352,0.028,0.0031,0.045,0.0089,unseen,R2a
+met:437598,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9217,0.0068,0.9217,0.0103,0.0091,0.0458,0.0063,unseen,R2a
+met:437600,Northern Renaissance,Mannerism (Late Renaissance),0.8117,0.1259,0.8117,0.026,0.0039,0.0278,0.0047,unseen,R7
+met:437607,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9373,0.0018,0.9373,0.0326,0.0125,0.0116,0.0042,unseen,R7
+met:437630,Mannerism (Late Renaissance),Baroque,0.5152,0.5152,0.1028,0.0679,0.1134,0.0651,0.1356,unseen,R7
+met:437631,Realism,Realism,0.5088,0.0407,0.1383,0.089,0.5088,0.0389,0.1842,unseen,R2a
+met:437633,Baroque,Romanticism,0.3378,0.1733,0.0798,0.0603,0.0151,0.3337,0.3378,unseen,R7
+met:437636,Rococo,Rococo,0.6919,0.0441,0.1083,0.0855,0.0234,0.6919,0.0467,unseen,R7
+met:437638,Mannerism (Late Renaissance),Baroque,0.7458,0.7458,0.1389,0.0196,0.0139,0.0538,0.028,unseen,R7
+met:437639,Northern Renaissance,Northern Renaissance,0.9588,0.0095,0.0167,0.9588,0.0022,0.0114,0.0014,unseen,R7
+met:437643,Rococo,Rococo,0.805,0.118,0.0471,0.0278,0.0012,0.805,0.0009,unseen,R7
+met:437648,Rococo,Rococo,0.9667,0.0039,0.0143,0.0094,0.0016,0.9667,0.0041,unseen,R7
+met:437660,Rococo,Rococo,0.4727,0.0183,0.1222,0.1279,0.0049,0.4727,0.254,unseen,R7
+met:437687,Baroque,Baroque,0.8172,0.8172,0.0496,0.0354,0.008,0.0849,0.0049,unseen,R7
+met:437688,Baroque,Baroque,0.5398,0.5398,0.1266,0.0771,0.0268,0.0968,0.1328,unseen,R7
+met:437697,Baroque,Baroque,0.8773,0.8773,0.0352,0.0292,0.0008,0.0249,0.0326,unseen,R7
+met:437700,Baroque,Mannerism (Late Renaissance),0.5804,0.3574,0.5804,0.0203,0.0025,0.036,0.0034,unseen,R2a
+met:437701,Baroque,Baroque,0.646,0.646,0.094,0.0643,0.0053,0.1247,0.0658,unseen,R2a
+met:437703,Baroque,Baroque,0.8465,0.8465,0.0408,0.0535,0.0058,0.0415,0.0119,unseen,R2a
+met:437728,Baroque,Baroque,0.333,0.333,0.0604,0.1284,0.2776,0.0342,0.1663,unseen,R7
+met:437729,Baroque,Baroque,0.6922,0.6922,0.1753,0.0906,0.0012,0.0356,0.0051,unseen,R2a
+met:437745,Baroque,Baroque,0.577,0.577,0.0719,0.0434,0.0035,0.2917,0.0126,unseen,R7
+met:437747,Baroque,Baroque,0.5213,0.5213,0.0746,0.0764,0.0117,0.1685,0.1475,seen,R2a
+met:437748,Baroque,Baroque,0.9399,0.9399,0.0293,0.0191,0.0017,0.0089,0.0012,seen,R2a
+met:437754,Realism,Rococo,0.4971,0.0786,0.1001,0.1044,0.1907,0.4971,0.0291,seen,R2a
+met:437755,Realism,Realism,0.3821,0.3656,0.0882,0.0875,0.3821,0.0394,0.0372,seen,R2a
+met:437756,Realism,Romanticism,0.6184,0.0247,0.0789,0.0613,0.0127,0.2041,0.6184,seen,R2a
+met:437757,Baroque,Baroque,0.5551,0.5551,0.1081,0.0602,0.0764,0.1807,0.0195,seen,R7
+met:437759,Northern Renaissance,Northern Renaissance,0.9535,0.0055,0.0149,0.9535,0.0046,0.016,0.0054,seen,R7
+met:437763,Baroque,Baroque,0.6814,0.6814,0.2411,0.0418,0.0027,0.0268,0.0061,seen,R7
+met:437764,Romanticism,Romanticism,0.416,0.2217,0.1297,0.0689,0.005,0.1588,0.416,seen,R2a
+met:437768,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.3286,0.1259,0.3286,0.1151,0.1652,0.0575,0.2077,unseen,R2a
+met:437769,Baroque,Mannerism (Late Renaissance),0.3198,0.2832,0.3198,0.3124,0.0179,0.0356,0.031,unseen,R2a
+met:437770,Northern Renaissance,Northern Renaissance,0.729,0.0123,0.0287,0.729,0.006,0.0232,0.2008,unseen,R7
+met:437771,Northern Renaissance,Northern Renaissance,0.8017,0.0299,0.0514,0.8017,0.0049,0.0693,0.0428,unseen,R7
+met:437772,Northern Renaissance,Northern Renaissance,0.9434,0.0045,0.0382,0.9434,0.0028,0.0098,0.0013,unseen,R7
+met:437776,Baroque,Baroque,0.8693,0.8693,0.0412,0.0695,0.0027,0.0112,0.0061,seen,R2a
+met:437777,Baroque,Baroque,0.6317,0.6317,0.0936,0.0367,0.0059,0.2196,0.0125,seen,R2a
+met:437778,Baroque,Rococo,0.7282,0.1394,0.0957,0.0323,0.0025,0.7282,0.0019,seen,R2a
+met:437779,Baroque,Baroque,0.7439,0.7439,0.0735,0.033,0.0018,0.1326,0.0151,seen,R2a
+met:437780,Baroque,Baroque,0.762,0.762,0.1425,0.0451,0.0028,0.037,0.0107,seen,R2a
+met:437784,Baroque,Baroque,0.4006,0.4006,0.1091,0.0666,0.0038,0.3707,0.0492,unseen,R2a
+met:437788,Rococo,Baroque,0.6974,0.6974,0.0695,0.1161,0.0017,0.1068,0.0085,unseen,R1
+met:437789,Rococo,Baroque,0.7864,0.7864,0.0817,0.0335,0.0031,0.0609,0.0344,unseen,R1
+met:437791,Rococo,Mannerism (Late Renaissance),0.3709,0.129,0.3709,0.0949,0.0148,0.1073,0.2831,unseen,R1
+met:437792,Rococo,Mannerism (Late Renaissance),0.865,0.029,0.865,0.0274,0.0086,0.0406,0.0294,unseen,R1
+met:437793,Rococo,Romanticism,0.6446,0.1281,0.0648,0.0953,0.0054,0.0617,0.6446,unseen,R1
+met:437795,Rococo,Romanticism,0.6972,0.1217,0.0774,0.0404,0.0094,0.0539,0.6972,unseen,R1
+met:437796,Rococo,Northern Renaissance,0.77,0.0159,0.1086,0.77,0.0119,0.0461,0.0474,unseen,R1
+met:437797,Rococo,Romanticism,0.6152,0.0217,0.0823,0.1991,0.0124,0.0693,0.6152,unseen,R1
+met:437798,Rococo,Rococo,0.8851,0.0355,0.0487,0.0206,0.001,0.8851,0.0092,unseen,R1
+met:437799,Rococo,Northern Renaissance,0.3131,0.0467,0.1937,0.3131,0.0351,0.1277,0.2837,unseen,R1
+met:437800,Rococo,Rococo,0.8909,0.0367,0.0328,0.0274,0.0003,0.8909,0.0118,unseen,R1
+met:437801,Rococo,Romanticism,0.4694,0.0369,0.1068,0.2472,0.0426,0.0972,0.4694,unseen,R1
+met:437802,Rococo,Romanticism,0.6065,0.0854,0.1049,0.0708,0.01,0.1222,0.6065,unseen,R1
+met:437804,Rococo,Northern Renaissance,0.4342,0.0347,0.2436,0.4342,0.0059,0.1063,0.1752,unseen,R1
+met:437805,Rococo,Northern Renaissance,0.3597,0.2526,0.0884,0.3597,0.0781,0.0904,0.1308,unseen,R2c
+met:437806,Rococo,Romanticism,0.2846,0.1863,0.1763,0.1646,0.0368,0.1514,0.2846,unseen,R2c
+met:437808,Rococo,Baroque,0.6527,0.6527,0.0492,0.1741,0.0077,0.0736,0.0426,unseen,R2c
+met:437809,Rococo,Romanticism,0.6068,0.0481,0.133,0.0946,0.0339,0.0836,0.6068,unseen,R7
+met:437810,Rococo,Northern Renaissance,0.963,0.0052,0.0199,0.963,0.0011,0.0084,0.0024,unseen,R7
+met:437811,Rococo,Romanticism,0.7019,0.0991,0.0649,0.0859,0.0053,0.0429,0.7019,unseen,R7
+met:437813,Rococo,Northern Renaissance,0.3375,0.2191,0.0696,0.3375,0.0332,0.0935,0.2471,unseen,R7
+met:437815,Rococo,Rococo,0.3833,0.2496,0.1291,0.0643,0.0059,0.3833,0.1677,unseen,R7
+met:437817,Baroque,Baroque,0.7313,0.7313,0.0595,0.0512,0.0035,0.1223,0.0322,unseen,R7
+met:437819,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.5916,0.0466,0.5916,0.0657,0.0018,0.0758,0.2184,seen,R2a
+met:437821,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9645,0.002,0.9645,0.0209,0.0014,0.009,0.0021,seen,R2a
+met:437826,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.8348,0.0043,0.8348,0.015,0.0399,0.0318,0.0742,unseen,R1
+met:437841,Rococo,Baroque,0.9138,0.9138,0.0287,0.0241,0.0086,0.0198,0.005,unseen,R7
+met:437842,Rococo,Rococo,0.4209,0.2914,0.0645,0.0536,0.021,0.4209,0.1485,unseen,R7
+met:437843,Rococo,Rococo,0.9422,0.0216,0.0182,0.0148,0.0009,0.9422,0.0022,unseen,R7
+met:437844,Rococo,Rococo,0.9629,0.0013,0.0206,0.0089,0.0022,0.9629,0.0041,unseen,R7
+met:437845,Rococo,Baroque,0.3633,0.3633,0.2268,0.042,0.0092,0.1004,0.2583,unseen,R7
+met:437847,Realism,Realism,0.7341,0.0423,0.0886,0.064,0.7341,0.06,0.0109,seen,R2a
+met:437852,Romanticism,Romanticism,0.4742,0.1759,0.114,0.0541,0.1316,0.0502,0.4742,seen,R2a
+met:437861,Baroque,Rococo,0.7583,0.0568,0.0615,0.059,0.0097,0.7583,0.0547,unseen,R7
+met:437865,Rococo,Rococo,0.9626,0.0064,0.0134,0.0126,0.0009,0.9626,0.0041,unseen,R2a
+met:437867,Baroque,Realism,0.3054,0.1554,0.1939,0.1076,0.3054,0.0898,0.1478,unseen,R7
+met:437868,Baroque,Mannerism (Late Renaissance),0.4492,0.1835,0.4492,0.0326,0.006,0.0712,0.2576,unseen,R2a
+met:437872,Baroque,Baroque,0.6737,0.6737,0.0538,0.0489,0.0041,0.2143,0.0053,seen,R2c
+met:437875,Baroque,Baroque,0.6626,0.6626,0.0437,0.0484,0.0132,0.0285,0.2036,seen,R2a
+met:437876,Baroque,Baroque,0.9582,0.9582,0.0174,0.0097,0.0038,0.0067,0.0042,unseen,R7
+met:437883,Northern Renaissance,Northern Renaissance,0.699,0.0078,0.2555,0.699,0.003,0.033,0.0017,unseen,R7
+met:437884,Northern Renaissance,Northern Renaissance,0.9417,0.0075,0.0384,0.9417,0.0017,0.0092,0.0015,unseen,R1
+met:437887,Romanticism,Rococo,0.786,0.0823,0.0712,0.0265,0.0034,0.786,0.0306,unseen,R2a
+met:437897,Baroque,Mannerism (Late Renaissance),0.7328,0.1426,0.7328,0.035,0.0103,0.0235,0.0558,unseen,R7
+met:437902,Realism,Baroque,0.8671,0.8671,0.0381,0.0374,0.0076,0.0398,0.0099,unseen,R2a
+met:437914,Baroque,Baroque,0.8956,0.8956,0.0297,0.0143,0.0175,0.0283,0.0145,unseen,R7
+met:437915,Baroque,Romanticism,0.5244,0.089,0.1376,0.0687,0.0392,0.141,0.5244,unseen,R7
+met:437917,Baroque,Baroque,0.8678,0.8678,0.0451,0.0604,0.0027,0.0163,0.0078,seen,R2a
+met:437919,Baroque,Baroque,0.9175,0.9175,0.024,0.0282,0.0018,0.0183,0.0103,unseen,R2c
+met:437920,Baroque,Baroque,0.2696,0.2696,0.2272,0.0782,0.1523,0.0324,0.2404,unseen,R7
+met:437922,Baroque,Baroque,0.7327,0.7327,0.0758,0.0418,0.0029,0.1152,0.0315,unseen,R7
+met:437927,Baroque,Rococo,0.6563,0.1464,0.1132,0.0359,0.0086,0.6563,0.0396,seen,R7
+met:437928,Baroque,Rococo,0.9575,0.0027,0.0175,0.0124,0.0061,0.9575,0.0037,seen,R7
+met:437937,Baroque,Rococo,0.7286,0.1234,0.0446,0.0604,0.0009,0.7286,0.0421,unseen,R7
+met:437941,Rococo,Rococo,0.5577,0.1599,0.109,0.0747,0.0065,0.5577,0.0922,unseen,R7
+met:437945,Baroque,Baroque,0.5599,0.5599,0.1932,0.0318,0.0019,0.2086,0.0045,unseen,R7
+met:437946,Rococo,Rococo,0.5191,0.0667,0.2693,0.0612,0.0085,0.5191,0.0752,unseen,R7
+met:437947,Rococo,Rococo,0.5621,0.0345,0.1707,0.0708,0.0106,0.5621,0.1511,unseen,R7
+met:437948,Rococo,Rococo,0.5941,0.0239,0.1734,0.0521,0.004,0.5941,0.1525,unseen,R7
+met:437949,Rococo,Romanticism,0.4067,0.0768,0.1207,0.1016,0.1912,0.1031,0.4067,unseen,R7
+met:437953,Baroque,Baroque,0.571,0.571,0.0739,0.0416,0.0048,0.0487,0.26,unseen,R7
+met:437956,Baroque,Baroque,0.739,0.739,0.0818,0.061,0.0039,0.1024,0.0119,unseen,R7
+met:437968,Rococo,Rococo,0.7252,0.0812,0.0665,0.0515,0.011,0.7252,0.0645,unseen,R2a
+met:437969,Baroque,Baroque,0.9097,0.9097,0.0537,0.0232,0.0006,0.0116,0.0011,seen,R1
+met:437970,Baroque,Mannerism (Late Renaissance),0.3447,0.1472,0.3447,0.0733,0.0173,0.2953,0.1221,seen,R2a
+met:437971,Baroque,Baroque,0.6845,0.6845,0.0591,0.1067,0.0078,0.1331,0.0087,seen,R2a
+met:437974,Romanticism,Romanticism,0.4275,0.0253,0.0606,0.0625,0.0064,0.4177,0.4275,seen,R2a
+met:437975,Romanticism,Romanticism,0.4078,0.1803,0.1039,0.0688,0.0225,0.2167,0.4078,unseen,R2a
+met:437977,Baroque,Baroque,0.6771,0.6771,0.2165,0.0275,0.0012,0.0738,0.004,unseen,R2a
+met:437978,Mannerism (Late Renaissance),Northern Renaissance,0.5769,0.2153,0.1028,0.5769,0.0044,0.0358,0.0648,unseen,R2a
+met:437979,Romanticism,Romanticism,0.7331,0.0257,0.1128,0.0666,0.0166,0.0453,0.7331,seen,R2a
+met:437983,Baroque,Rococo,0.9044,0.0504,0.027,0.014,0.0013,0.9044,0.0029,unseen,R7
+met:438023,Rococo,Baroque,0.3258,0.3258,0.1171,0.0653,0.0601,0.2386,0.1931,seen,R2a
+met:438024,Rococo,Baroque,0.5428,0.5428,0.1121,0.1047,0.0202,0.0662,0.1539,seen,R2a
+met:438025,Baroque,Baroque,0.573,0.573,0.1923,0.0767,0.0038,0.1075,0.0467,unseen,R2a
+met:438026,Rococo,Rococo,0.594,0.0443,0.0994,0.0756,0.0062,0.594,0.1805,unseen,R1
+met:438027,Rococo,Romanticism,0.5366,0.0309,0.1691,0.1769,0.0465,0.0401,0.5366,unseen,R1
+met:438030,Realism,Baroque,0.5447,0.5447,0.1056,0.07,0.2243,0.0463,0.0091,seen,R2a
+met:438100,Rococo,Rococo,0.8133,0.0542,0.0633,0.0521,0.0119,0.8133,0.0053,unseen,R2a
+met:438102,Rococo,Rococo,0.8766,0.0418,0.0347,0.0397,0.004,0.8766,0.0032,unseen,R2a
+met:438105,Rococo,Romanticism,0.3996,0.1106,0.1112,0.0949,0.0819,0.2019,0.3996,unseen,R2a
+met:438106,Rococo,Rococo,0.4183,0.1,0.1034,0.0565,0.1948,0.4183,0.127,unseen,R2a
+met:438107,Romanticism,Rococo,0.8416,0.0211,0.0398,0.0494,0.0156,0.8416,0.0326,seen,R2a
+met:438110,Romanticism,Rococo,0.4667,0.2894,0.0872,0.0743,0.0084,0.4667,0.074,seen,R2a
+met:438113,Romanticism,Baroque,0.7584,0.7584,0.0794,0.032,0.0083,0.0247,0.0973,unseen,R2a
+met:438116,Rococo,Realism,0.8191,0.0177,0.0537,0.042,0.8191,0.0462,0.0214,seen,R2a
+met:438117,Rococo,Baroque,0.7461,0.7461,0.0888,0.0619,0.0076,0.0894,0.0063,seen,R2a
+met:438126,Rococo,Rococo,0.7673,0.0525,0.0627,0.0471,0.0056,0.7673,0.0648,unseen,R7
+met:438127,Rococo,Rococo,0.8993,0.0077,0.0625,0.0256,0.0017,0.8993,0.0032,unseen,R7
+met:438128,Rococo,Baroque,0.4489,0.4489,0.1047,0.093,0.0041,0.0375,0.3117,unseen,R2a
+met:438129,Rococo,Baroque,0.9199,0.9199,0.0291,0.018,0.0035,0.0129,0.0165,unseen,R2a
+met:438130,Rococo,Rococo,0.3719,0.0482,0.3016,0.0523,0.0488,0.3719,0.1772,unseen,R7
+met:438134,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9664,0.006,0.9664,0.0081,0.0013,0.0155,0.0028,seen,R2a
+met:438139,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9898,0.0021,0.9898,0.0017,0.0005,0.0049,0.0011,unseen,R7
+met:438169,Baroque,Baroque,0.9254,0.9254,0.0262,0.0215,0.0012,0.0242,0.0016,unseen,R7
+met:438338,Baroque,Baroque,0.7033,0.7033,0.1391,0.0738,0.0151,0.0328,0.0359,unseen,R2a
+met:438373,Baroque,Baroque,0.8771,0.8771,0.0318,0.0268,0.0026,0.056,0.0056,unseen,R7
+met:438374,Baroque,Baroque,0.9152,0.9152,0.0263,0.0123,0.0028,0.036,0.0073,unseen,R2a
+met:438375,Baroque,Baroque,0.8298,0.8298,0.0554,0.034,0.0242,0.0408,0.0157,unseen,R2a
+met:438376,Baroque,Baroque,0.6023,0.6023,0.1103,0.0622,0.1039,0.106,0.0153,unseen,R1
+met:438377,Baroque,Baroque,0.8208,0.8208,0.0773,0.0731,0.0023,0.0232,0.0033,unseen,R7
+met:438378,Baroque,Baroque,0.8503,0.8503,0.0381,0.0453,0.0039,0.046,0.0164,unseen,R7
+met:438379,Baroque,Rococo,0.612,0.2461,0.0612,0.0486,0.0047,0.612,0.0274,seen,R7
+met:438380,Baroque,Baroque,0.8231,0.8231,0.053,0.0242,0.0064,0.0422,0.051,unseen,R7
+met:438385,Northern Renaissance,Northern Renaissance,0.9696,0.0044,0.0147,0.9696,0.0011,0.0089,0.0013,unseen,R1
+met:438387,Baroque,Mannerism (Late Renaissance),0.8838,0.0267,0.8838,0.0091,0.002,0.0739,0.0046,unseen,R7
+met:438407,Baroque,Baroque,0.5063,0.5063,0.0506,0.0244,0.0044,0.0437,0.3707,unseen,R2a
+met:438427,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9334,0.0285,0.9334,0.0129,0.0029,0.0166,0.0057,unseen,R1
+met:438465,Baroque,Rococo,0.3842,0.2564,0.1143,0.066,0.0144,0.3842,0.1647,unseen,R2a
+met:438466,Northern Renaissance,Northern Renaissance,0.7972,0.0088,0.1558,0.7972,0.0052,0.0228,0.0102,unseen,R7
+met:438467,Northern Renaissance,Northern Renaissance,0.7351,0.155,0.0754,0.7351,0.0058,0.0229,0.0059,unseen,R7
+met:438490,Baroque,Romanticism,0.5602,0.2052,0.1354,0.0461,0.018,0.0351,0.5602,unseen,R7
+met:438541,Romanticism,Baroque,0.3507,0.3507,0.2999,0.0514,0.0152,0.1002,0.1827,seen,R2a
+met:438543,Baroque,Baroque,0.3692,0.3692,0.1037,0.1433,0.2079,0.1507,0.0252,unseen,R7
+met:438561,Baroque,Baroque,0.8502,0.8502,0.042,0.0434,0.0054,0.0207,0.0383,unseen,R2a
+met:438616,Realism,Baroque,0.6624,0.6624,0.028,0.0418,0.0073,0.0521,0.2084,seen,R2a
+met:438688,Mannerism (Late Renaissance),Rococo,0.692,0.05,0.1668,0.0394,0.0061,0.692,0.0456,unseen,R2a
+met:438690,Baroque,Baroque,0.8477,0.8477,0.0716,0.048,0.0027,0.0245,0.0056,unseen,R7
+met:438724,Baroque,Baroque,0.9148,0.9148,0.0267,0.0309,0.0018,0.0238,0.002,unseen,R2a
+met:438726,Rococo,Rococo,0.7606,0.0583,0.0732,0.0663,0.0027,0.7606,0.0389,unseen,R7
+met:438727,Rococo,Rococo,0.8607,0.0078,0.0535,0.04,0.0031,0.8607,0.0349,unseen,R7
+met:438761,Northern Renaissance,Northern Renaissance,0.8709,0.0266,0.0378,0.8709,0.0085,0.0251,0.0311,unseen,R7
+met:438776,Baroque,Baroque,0.7646,0.7646,0.1669,0.0305,0.0038,0.0273,0.0068,unseen,R2a
+met:438779,Baroque,Baroque,0.9443,0.9443,0.0189,0.0234,0.0013,0.0115,0.0007,unseen,R7
+met:438813,Baroque,Mannerism (Late Renaissance),0.6419,0.2948,0.6419,0.0279,0.0016,0.0302,0.0036,unseen,R2a
+met:438849,Realism,Realism,0.6637,0.0346,0.0786,0.0983,0.6637,0.0691,0.0557,unseen,R2c
+met:438850,Rococo,Baroque,0.6779,0.6779,0.0986,0.047,0.0027,0.1644,0.0094,unseen,R7
+met:438887,Realism,Realism,0.7826,0.0103,0.043,0.1011,0.7826,0.0175,0.0455,seen,R2a
+met:438951,Realism,Realism,0.6104,0.0372,0.0991,0.0768,0.6104,0.0736,0.1029,unseen,R2a
+met:438953,Realism,Realism,0.3625,0.0694,0.1939,0.0837,0.3625,0.0985,0.1921,unseen,R2a
+met:439081,Northern Renaissance,Northern Renaissance,0.4503,0.0297,0.2439,0.4503,0.0055,0.0317,0.2388,seen,R2a
+met:439117,Rococo,Romanticism,0.7309,0.0682,0.08,0.0542,0.0414,0.0253,0.7309,unseen,R7
+met:439120,Rococo,Mannerism (Late Renaissance),0.3872,0.2856,0.3872,0.13,0.007,0.0661,0.1241,unseen,R7
+met:439327,Northern Renaissance,Northern Renaissance,0.9301,0.0146,0.0296,0.9301,0.0063,0.0114,0.008,unseen,R1
+met:439337,Romanticism,Rococo,0.4602,0.0635,0.0866,0.1615,0.0152,0.4602,0.2131,unseen,R2a
+met:439553,Baroque,Mannerism (Late Renaissance),0.983,0.0028,0.983,0.0094,0.0004,0.004,0.0004,unseen,R7
+met:439933,Baroque,Baroque,0.8843,0.8843,0.0414,0.0328,0.0093,0.026,0.0061,unseen,R2a
+met:439977,Northern Renaissance,Northern Renaissance,0.6778,0.1904,0.0469,0.6778,0.0044,0.0316,0.0489,unseen,R7
+met:440209,Northern Renaissance,Northern Renaissance,0.9468,0.0122,0.0216,0.9468,0.0034,0.0139,0.0021,unseen,R7
+met:440464,Baroque,Baroque,0.4442,0.4442,0.0708,0.0434,0.0037,0.3898,0.0481,unseen,R1
+met:440726,Realism,Romanticism,0.3737,0.2087,0.0625,0.108,0.1767,0.0705,0.3737,unseen,R2a
+met:440729,Realism,Romanticism,0.5211,0.0255,0.1091,0.0758,0.1902,0.0783,0.5211,seen,R2a
+met:440840,Northern Renaissance,Northern Renaissance,0.8212,0.0259,0.1286,0.8212,0.0029,0.019,0.0024,seen,R2a
+met:440847,Rococo,Rococo,0.3951,0.0866,0.073,0.0762,0.1415,0.3951,0.2276,unseen,R7
+met:440900,Baroque,Baroque,0.8778,0.8778,0.0436,0.0254,0.0173,0.032,0.0038,unseen,R7
+met:441024,Baroque,Baroque,0.8341,0.8341,0.0302,0.0294,0.0144,0.0772,0.0147,unseen,R7
+met:441115,Rococo,Rococo,0.9532,0.0067,0.0156,0.0135,0.003,0.9532,0.0081,unseen,R7
+met:441229,Baroque,Rococo,0.551,0.3159,0.0656,0.0438,0.0016,0.551,0.0222,unseen,R7
+met:441230,Baroque,Rococo,0.9189,0.0253,0.0314,0.0206,0.002,0.9189,0.0018,unseen,R7
+met:441233,Mannerism (Late Renaissance),Rococo,0.4039,0.1357,0.1729,0.1023,0.015,0.4039,0.1702,unseen,R7
+met:441234,Rococo,Baroque,0.7333,0.7333,0.0987,0.0285,0.0033,0.1152,0.0211,unseen,R7
+met:441672,Northern Renaissance,Northern Renaissance,0.9323,0.0075,0.0432,0.9323,0.002,0.0118,0.0033,unseen,R7
+met:441965,Baroque,Baroque,0.6119,0.6119,0.0735,0.0673,0.0032,0.2315,0.0126,unseen,R7
+met:441971,Baroque,Baroque,0.6975,0.6975,0.1872,0.0479,0.0057,0.0522,0.0095,unseen,R2a
+met:442183,Baroque,Baroque,0.7407,0.7407,0.1121,0.0477,0.0019,0.0945,0.0032,unseen,R7
+met:442356,Baroque,Baroque,0.3878,0.3878,0.2401,0.105,0.0089,0.1957,0.0625,unseen,R7
+met:442488,Baroque,Rococo,0.772,0.0917,0.0324,0.0378,0.0054,0.772,0.0608,unseen,R2a
+met:442491,Baroque,Baroque,0.6981,0.6981,0.0532,0.0317,0.0093,0.1398,0.068,unseen,R7
+met:442761,Baroque,Rococo,0.5221,0.2889,0.1388,0.0394,0.002,0.5221,0.0088,unseen,R2a
+met:459029,Baroque,Romanticism,0.2736,0.2489,0.1649,0.0702,0.1434,0.099,0.2736,unseen,R7
+met:459030,Baroque,Romanticism,0.2934,0.2517,0.1077,0.0565,0.0543,0.2363,0.2934,unseen,R7
+met:459031,Baroque,Romanticism,0.3132,0.274,0.1446,0.0615,0.0171,0.1896,0.3132,unseen,R7
+met:459032,Baroque,Baroque,0.303,0.303,0.1553,0.064,0.0521,0.1279,0.2977,unseen,R7
+met:459034,Rococo,Rococo,0.4799,0.2981,0.0757,0.0719,0.0169,0.4799,0.0575,seen,R2c
+met:459035,Rococo,Rococo,0.5034,0.2863,0.0816,0.0516,0.0524,0.5034,0.0247,seen,R2c
+met:459036,Rococo,Rococo,0.4332,0.419,0.055,0.0628,0.0061,0.4332,0.0239,seen,R2c
+met:459054,Northern Renaissance,Northern Renaissance,0.7816,0.044,0.0576,0.7816,0.0153,0.0306,0.071,unseen,R1
+met:459056,Northern Renaissance,Northern Renaissance,0.9396,0.0081,0.024,0.9396,0.0045,0.0199,0.004,unseen,R7
+met:459057,Northern Renaissance,Northern Renaissance,0.7283,0.0127,0.0789,0.7283,0.0014,0.1615,0.0172,unseen,R1
+met:459058,Northern Renaissance,Northern Renaissance,0.9295,0.0138,0.0272,0.9295,0.0031,0.0183,0.0081,unseen,R7
+met:459059,Northern Renaissance,Northern Renaissance,0.9623,0.0065,0.016,0.9623,0.0017,0.0115,0.002,unseen,R7
+met:459060,Northern Renaissance,Northern Renaissance,0.942,0.006,0.0339,0.942,0.0019,0.0132,0.003,unseen,R2c
+met:459061,Northern Renaissance,Northern Renaissance,0.9444,0.007,0.0289,0.9444,0.003,0.0139,0.0028,unseen,R2a
+met:459063,Northern Renaissance,Northern Renaissance,0.9597,0.0051,0.0248,0.9597,0.001,0.0084,0.001,unseen,R7
+met:459064,Baroque,Northern Renaissance,0.8309,0.0492,0.0271,0.8309,0.0223,0.03,0.0405,unseen,R7
+met:459065,Northern Renaissance,Northern Renaissance,0.8102,0.0131,0.0607,0.8102,0.0044,0.0364,0.0752,unseen,R7
+met:459066,Northern Renaissance,Northern Renaissance,0.5265,0.0639,0.2691,0.5265,0.0046,0.0512,0.0847,unseen,R7
+met:459067,Baroque,Baroque,0.8671,0.8671,0.0411,0.0462,0.0065,0.0308,0.0085,unseen,R7
+met:459068,Baroque,Baroque,0.8121,0.8121,0.0991,0.0315,0.0017,0.0471,0.0086,seen,R2a
+met:459069,Baroque,Rococo,0.419,0.3609,0.0461,0.0911,0.0021,0.419,0.0807,seen,R2a
+met:459070,Northern Renaissance,Northern Renaissance,0.9213,0.0043,0.0415,0.9213,0.0041,0.0207,0.0082,unseen,R2a
+met:459071,Northern Renaissance,Northern Renaissance,0.963,0.0065,0.0154,0.963,0.0048,0.0077,0.0026,unseen,R1
+met:459072,Northern Renaissance,Northern Renaissance,0.91,0.0107,0.0434,0.91,0.0031,0.029,0.0039,seen,R7
+met:459073,Northern Renaissance,Northern Renaissance,0.9336,0.006,0.0421,0.9336,0.0019,0.014,0.0024,unseen,R7
+met:459074,Northern Renaissance,Northern Renaissance,0.872,0.0127,0.0705,0.872,0.0156,0.02,0.0091,unseen,R7
+met:459075,Northern Renaissance,Northern Renaissance,0.9503,0.0105,0.0188,0.9503,0.0041,0.0113,0.005,unseen,R7
+met:459077,Baroque,Northern Renaissance,0.9643,0.0048,0.0142,0.9643,0.0018,0.0121,0.0028,seen,R7
+met:459079,Northern Renaissance,Northern Renaissance,0.9345,0.0163,0.0144,0.9345,0.0136,0.0174,0.0038,unseen,R7
+met:459081,Baroque,Baroque,0.8264,0.8264,0.0597,0.0583,0.0064,0.0425,0.0067,unseen,R7
+met:459082,Baroque,Baroque,0.9015,0.9015,0.0317,0.0304,0.0066,0.0247,0.0051,seen,R2a
+met:459083,Baroque,Baroque,0.8703,0.8703,0.0441,0.0432,0.0118,0.0192,0.0113,unseen,R2a
+met:459084,Baroque,Baroque,0.7408,0.7408,0.0784,0.0486,0.033,0.0898,0.0094,unseen,R2a
+met:459085,Baroque,Baroque,0.6617,0.6617,0.0565,0.0697,0.088,0.0586,0.0655,unseen,R2a
+met:459088,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9258,0.0042,0.9258,0.0484,0.009,0.0081,0.0045,seen,R2a
+met:459090,Rococo,Rococo,0.9044,0.022,0.0389,0.0185,0.0124,0.9044,0.0037,unseen,R2a
+met:459096,Realism,Realism,0.8031,0.0206,0.0744,0.0404,0.8031,0.0345,0.027,seen,R2a
+met:459105,Romanticism,Baroque,0.8756,0.8756,0.06,0.0311,0.0048,0.0226,0.0059,unseen,R2a
+met:459114,Realism,Realism,0.7497,0.0571,0.086,0.0631,0.7497,0.0397,0.0044,seen,R2a
+met:459115,Realism,Realism,0.7595,0.0424,0.0882,0.0526,0.7595,0.0514,0.006,seen,R2a
+met:459122,Realism,Realism,0.802,0.0121,0.0614,0.0616,0.802,0.0427,0.0202,unseen,R2a
+met:459124,Realism,Baroque,0.246,0.246,0.1281,0.1048,0.2442,0.1814,0.0954,unseen,R2a
+met:459125,Northern Renaissance,Baroque,0.47,0.47,0.1727,0.1883,0.0211,0.027,0.1209,unseen,R7
+met:459127,Rococo,Rococo,0.9498,0.0022,0.0244,0.02,0.0022,0.9498,0.0014,seen,R2a
+met:459128,Realism,Baroque,0.3583,0.3583,0.0997,0.0589,0.053,0.2911,0.139,unseen,R2a
+met:626692,Baroque,Baroque,0.647,0.647,0.1628,0.0447,0.0045,0.1308,0.0101,unseen,R2a
+met:643540,Baroque,Romanticism,0.3885,0.2161,0.1043,0.0513,0.0112,0.2286,0.3885,unseen,R7
+met:647338,Baroque,Rococo,0.7488,0.0886,0.0626,0.0325,0.001,0.7488,0.0665,unseen,R2a
+met:652416,Baroque,Mannerism (Late Renaissance),0.8497,0.0327,0.8497,0.0578,0.0054,0.049,0.0054,unseen,R7
+met:659875,Rococo,Baroque,0.8673,0.8673,0.0262,0.0342,0.0023,0.0378,0.0322,unseen,R7
+met:670765,Baroque,Baroque,0.7265,0.7265,0.0711,0.0516,0.0086,0.1204,0.0217,unseen,R7
+met:679844,Northern Renaissance,Baroque,0.7396,0.7396,0.0824,0.1607,0.0029,0.0137,0.0008,unseen,R7
+met:687513,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.8001,0.0072,0.8001,0.1762,0.0024,0.0115,0.0026,unseen,R2a
+met:695496,Baroque,Baroque,0.7403,0.7403,0.0545,0.0679,0.0464,0.0349,0.0561,unseen,R7
+met:702752,Baroque,Baroque,0.596,0.596,0.1459,0.0606,0.0029,0.1517,0.0429,unseen,R2a
+met:712013,Baroque,Realism,0.357,0.0876,0.1136,0.1566,0.357,0.0755,0.2097,unseen,R7
+met:712539,Baroque,Mannerism (Late Renaissance),0.4544,0.4137,0.4544,0.0851,0.015,0.023,0.0088,unseen,R2a
+met:712946,Baroque,Baroque,0.9024,0.9024,0.0536,0.0227,0.0052,0.012,0.0041,unseen,R7
+met:724811,Rococo,Baroque,0.7323,0.7323,0.1088,0.0261,0.0028,0.1037,0.0262,unseen,R7
+met:743039,Romanticism,Mannerism (Late Renaissance),0.9144,0.0218,0.9144,0.0404,0.0015,0.0111,0.011,unseen,R1
+met:747559,Romanticism,Baroque,0.4788,0.4788,0.0914,0.0501,0.2971,0.0363,0.0462,seen,R2a
+met:747607,Baroque,Baroque,0.9316,0.9316,0.0218,0.0264,0.0025,0.012,0.0057,unseen,R2a
+met:748947,Mannerism (Late Renaissance),Rococo,0.4566,0.0684,0.41,0.0384,0.0206,0.4566,0.006,unseen,R7
+met:761570,Mannerism (Late Renaissance),Realism,0.4373,0.0734,0.201,0.1116,0.4373,0.0739,0.1029,unseen,R2a
+met:769294,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.4019,0.3358,0.4019,0.1157,0.0035,0.0352,0.108,unseen,R7
+met:769297,Baroque,Baroque,0.6705,0.6705,0.2595,0.0387,0.0023,0.018,0.011,unseen,R1
+met:782303,Rococo,Rococo,0.372,0.2926,0.1299,0.0517,0.1118,0.372,0.042,unseen,R2a
+met:782306,Romanticism,Romanticism,0.2708,0.0679,0.1555,0.1536,0.1475,0.2047,0.2708,unseen,R2a
+met:782307,Romanticism,Romanticism,0.4804,0.1108,0.1078,0.1433,0.0315,0.1263,0.4804,unseen,R2a
+met:816514,Baroque,Mannerism (Late Renaissance),0.7716,0.1403,0.7716,0.0422,0.0016,0.0383,0.0061,unseen,R2a
+met:816515,Baroque,Baroque,0.9503,0.9503,0.0186,0.0154,0.0009,0.0124,0.0023,unseen,R7
+met:816519,Baroque,Baroque,0.5504,0.5504,0.1874,0.0417,0.0339,0.177,0.0096,unseen,R7
+met:816520,Baroque,Baroque,0.7168,0.7168,0.189,0.022,0.0214,0.0433,0.0076,unseen,R7
+met:816522,Baroque,Northern Renaissance,0.4532,0.2802,0.0985,0.4532,0.0258,0.0919,0.0505,unseen,R2a
+met:816523,Baroque,Mannerism (Late Renaissance),0.5155,0.1431,0.5155,0.0576,0.21,0.0395,0.0342,unseen,R2a
+met:816618,Baroque,Mannerism (Late Renaissance),0.4564,0.4056,0.4564,0.06,0.0234,0.025,0.0296,unseen,R2a
+met:816621,Baroque,Baroque,0.6087,0.6087,0.0811,0.0501,0.0074,0.2134,0.0393,unseen,R2a
+met:816624,Baroque,Baroque,0.4016,0.4016,0.3929,0.0383,0.1025,0.0394,0.0253,unseen,R7
+met:816629,Baroque,Baroque,0.4564,0.4564,0.1057,0.0553,0.0043,0.3696,0.0087,unseen,R7
+met:816630,Baroque,Rococo,0.6688,0.1018,0.1299,0.052,0.0068,0.6688,0.0406,unseen,R2a
+met:817124,Baroque,Baroque,0.7859,0.7859,0.0564,0.0475,0.0048,0.0792,0.0262,unseen,R2a
+met:822083,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.7935,0.0232,0.7935,0.0792,0.0075,0.028,0.0685,unseen,R2a
+met:827660,Baroque,Realism,0.3372,0.2679,0.1603,0.0824,0.3372,0.0484,0.1037,unseen,R2a
+met:828241,Baroque,Rococo,0.4608,0.4353,0.0543,0.0312,0.0071,0.4608,0.0113,unseen,R7
+met:828497,Baroque,Rococo,0.5577,0.1581,0.092,0.0642,0.0042,0.5577,0.1238,unseen,R2a
+met:834308,Baroque,Baroque,0.8653,0.8653,0.0449,0.049,0.0068,0.02,0.0139,unseen,R2a
+met:839045,Realism,Realism,0.5079,0.2525,0.0958,0.0795,0.5079,0.0368,0.0274,unseen,R2a
+met:848137,Realism,Baroque,0.5891,0.5891,0.1612,0.0753,0.0209,0.115,0.0385,unseen,R2c
+met:854370,Romanticism,Romanticism,0.33,0.2261,0.211,0.0528,0.0098,0.1702,0.33,unseen,R2a
+met:875634,Rococo,Baroque,0.8375,0.8375,0.0723,0.038,0.0053,0.0407,0.0062,unseen,R2a
+met:890822,Baroque,Baroque,0.7446,0.7446,0.0483,0.0341,0.0014,0.1675,0.004,unseen,R2a
+met:904343,Northern Renaissance,Northern Renaissance,0.8029,0.0584,0.1029,0.8029,0.0029,0.0273,0.0056,unseen,R7
+met:906341,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.9674,0.0065,0.9674,0.0115,0.0027,0.0108,0.0011,unseen,R7
+met:910384,Baroque,Baroque,0.8682,0.8682,0.0425,0.0321,0.002,0.0535,0.0017,unseen,R7
+met:910391,Baroque,Realism,0.5259,0.0373,0.1323,0.1306,0.5259,0.0439,0.13,seen,R7
+met:912940,Baroque,Romanticism,0.7319,0.0234,0.1513,0.041,0.0114,0.0411,0.7319,unseen,R2a
+met:922227,Baroque,Northern Renaissance,0.5511,0.0366,0.1033,0.5511,0.1947,0.0325,0.0819,unseen,R7
+met:925118,Rococo,Rococo,0.8906,0.0394,0.0253,0.0343,0.0021,0.8906,0.0083,unseen,R7
+met:925165,Rococo,Rococo,0.9164,0.004,0.0274,0.0303,0.0045,0.9164,0.0174,seen,R7
+met:925168,Rococo,Rococo,0.9675,0.0039,0.0144,0.0109,0.0012,0.9675,0.0022,seen,R7
+met:928091,Mannerism (Late Renaissance),Mannerism (Late Renaissance),0.6787,0.2876,0.6787,0.0156,0.0024,0.0099,0.0057,unseen,R2a
+met:928532,Baroque,Romanticism,0.3819,0.0497,0.2179,0.1174,0.1745,0.0586,0.3819,unseen,R7

@@ -1,14 +1,14 @@
 # Data notes: sources, versions and decisions
 
-The download and harvest dates in [brackets] are still to be filled from the log files (`data/wikiart/download_log.json`, `data/met/harvest_log.json`, `data/rijks/harvest_log.json`), which are not in this repository yet.
+The download and harvest dates below come from the log files `data/wikiart/download_log.json`, `data/met/harvest_log.json` and `data/rijks/harvest_log.json` (times in UTC).
 
 ## 1. Sources and versions
 
 | Dataset | Source | Version / export date | Licence |
 |---|---|---|---|
-| WikiArt | Hugging Face `Artificio/WikiArt_Full`, ~103,250 images, 256 x 256 | Downloaded [date] | Non-commercial research use only; images not redistributed |
-| Met | Met Collection API (`collectionapi.metmuseum.org`), departments European Paintings and The Robert Lehman Collection | Harvested [date] | Open Access, public-domain images (CC0) |
-| Rijksmuseum | Rijksmuseum Search API (`data.rijksmuseum.nl`, `type=painting&imageAvailable=true`), Linked Art `la-framed` records, IIIF images | Harvested [date] | Public domain / CC0 |
+| WikiArt | Hugging Face `Artificio/WikiArt_Full`, ~103,250 images, 256 x 256 | Downloaded 2026-10-20 (19:01 UTC, 103,250 images) | Non-commercial research use only; images not redistributed |
+| Met | Met Collection API (`collectionapi.metmuseum.org`), departments European Paintings and The Robert Lehman Collection | Harvested 2026-10-20 (IDs 18:25, images done 21:59 UTC); 2,214 paintings kept | Open Access, public-domain images (CC0) |
+| Rijksmuseum | Rijksmuseum Search API (`data.rijksmuseum.nl`, `type=painting&imageAvailable=true`), Linked Art `la-framed` records, IIIF images | Harvested 2026-10-20 (IDs 13:50, metadata and images done 18:03, SK filter 22:21 UTC); 4,914 IDs, 4,695 paintings kept | Public domain / CC0 |
 
 **Why this WikiArt release.** The project needs an artist name for every image, for an artist-disjoint split. `huggan/wikiart`, the common 27-style release, was tested first: in a random sample of 3,000 images, 58% were "Unknown Artist", because its artist field covers only 129 artists. `Artificio/WikiArt_Full` named an artist for 100% of a 3,000-image sample (1,033 different artists). Its trade-off is that every image is 256 x 256 with the shape squashed, so the museum images are processed the same way (see section 4).
 

@@ -28,7 +28,7 @@ Ordered by priority. Details for each code item are in `code_review.md` (section
 - [ ] RQ2 few-shot curve: 5, 10, 25, 50 per style, Met → Rijks and Rijks → Met
 - [ ] CORAL domain adaptation in `train.py`, compared with each simple fix on its own
 - [x] (done 2026-10-28, see rq1_results.md) DINOv2 and CLIP linear probes (note CLIP may have seen these paintings)
-- [ ] Decide on an in-gallery test set (recommended: Met Dataset visitor photos, if licensed for research)
+- [x] Decide on an in-gallery test set: left out (Nov 16); stated as a threat to external validity and future work
 
 ## E. Statistics
 

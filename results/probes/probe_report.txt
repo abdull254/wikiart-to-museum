@@ -1,0 +1,27 @@
+
+CLIP probe
+  wikiart_test        bal acc  70.9 [ 69.1,  72.8]
+  met    seen    n=  206  bal acc  80.2 [ 74.3,  85.7]
+  met    unseen  n=  731  bal acc  68.2 [ 63.7,  72.8]
+         gap vs WikiArt test   2.7 points  95% CI [ -2.1,   7.5]  p = 0.264
+  rijks  seen    n=   98  bal acc  62.9 [ 45.5,  80.0]
+  rijks  unseen  n= 2994  bal acc  66.4 [ 62.8,  69.8]
+         gap vs WikiArt test   4.5 points  95% CI [  0.5,   8.6]  p = 0.029
+
+DINOv2 probe
+  wikiart_test        bal acc  58.7 [ 56.8,  60.7]
+  met    seen    n=  206  bal acc  73.0 [ 66.0,  80.3]
+  met    unseen  n=  731  bal acc  61.1 [ 56.4,  65.4]
+         gap vs WikiArt test  -2.4 points  95% CI [ -7.2,   2.6]  p = 0.349
+  rijks  seen    n=   98  bal acc  56.4 [ 41.1,  72.1]
+  rijks  unseen  n= 2994  bal acc  57.3 [ 53.6,  61.2]
+         gap vs WikiArt test   1.4 points  95% CI [ -2.8,   5.5]  p = 0.531
+
+CLIP zero-shot
+  wikiart_test        bal acc  44.6 [ 43.1,  46.1]
+  met    seen    n=  206  bal acc  46.7 [ 40.9,  53.0]
+  met    unseen  n=  731  bal acc  39.1 [ 35.5,  42.9]
+         gap vs WikiArt test   5.6 points  95% CI [  1.4,   9.4]  p = 0.010
+  rijks  seen    n=   98  bal acc  37.2 [ 24.2,  52.2]
+  rijks  unseen  n= 2994  bal acc  47.2 [ 43.9,  50.4]
+         gap vs WikiArt test  -2.6 points  95% CI [ -6.1,   1.1]  p = 0.181

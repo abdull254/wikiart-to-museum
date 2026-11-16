@@ -75,7 +75,7 @@ Notebook ready ([notebooks/rq2_fewshot.ipynb](notebooks/rq2_fewshot.ipynb)), **n
 src/          Python scripts
 notebooks/    Colab notebooks
 docs/         results write-up, related work, code review, to-do list
-results/      small result tables (CSV)
+results/      result files behind every table, labels
 slides/       latest presentation deck
 reports/      progress reports
 ```
@@ -100,7 +100,12 @@ reports/      progress reports
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |
 | `docs/settings.md` | Split, seeds, model, probe and RQ2 settings |
 | `docs/code_review.md`, `docs/todo.md` | Code review and the to-do list |
+| `src/stats.py` | Bootstrap intervals, museum-gap test, seen-artist boost, paired comparison |
 | `results/style_date_conflicts.csv` | Labels that conflicted with the painting's date |
+| `results/stats_summary.csv`, `stats_per_class.csv`, `stats_report.txt` | 3-seed ResNet-50 statistics (RQ1 table) |
+| `results/runs/resnet50_seed{1,2,3}/` | Config, training history, metrics, ablations and per-painting predictions |
+| `results/probes/` | CLIP and DINOv2 probe metrics, report and predictions |
+| `results/labels/` | Museum test labels with rules, hand-check record |
 
 ### Which numbers are current
 
@@ -110,23 +115,23 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 
 | Requested | Status | Where |
 |---|---|---|
-| All code and notebooks, including RQ2 | Partly | `src/`, `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: download and harvest scripts, `train.py`, `stats.py`, `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
-| `labeling_rules.md` | Missing | On Drive / local copy |
-| Label and rule for every museum painting | Missing | `data/labels/museum_labels.csv` (on Drive) |
-| Met and Rijksmuseum object IDs with export dates | Missing | `data/met/`, `data/rijks/` metadata CSVs (on Drive) |
-| Removed WikiArt-museum overlaps; near-duplicate list | Missing | `data/final/` (on Drive) |
-| Artist-disjoint split, seeds, model and probe settings | Settings done; split file missing | [docs/settings.md](docs/settings.md); split CSVs in `data/final/` (on Drive) |
-| Result files behind every table, incl. `rq1_results.md` | Partly | `docs/rq1_results.md`. Missing: `wikiart_runs/stats_*.csv`, `stats_report.txt`, ablation CSVs, `probes/` results, per-run `metrics.json` |
-| README with library versions and steps to reproduce | Steps done; exact versions missing | Below. Exact versions need `pip freeze` from the Colab runtime |
+| All code and notebooks, including RQ2 | Partly | `src/` (incl. `stats.py`), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). Missing: `train.py`, download and harvest scripts (`wikiart_download.py`, `main.py`, `met_harvest.py`), `squash_museums.py`, `pack_for_colab.py`, `check.py`, `filter_rijks.py` |
+| `labeling_rules.md` | Partly | Rules summarized in [results/labels/README.md](results/labels/README.md) from `src/label_museums.py`; the original `labeling_rules.md` is missing |
+| Label and rule for every museum painting | Done for the test sets | [results/labels/museum_test_labels.csv](results/labels/museum_test_labels.csv) (Met 937, Rijks 3,092). Full `museum_labels.csv` incl. unlabeled rows missing |
+| Met and Rijksmuseum object IDs with export dates | IDs done; export dates missing | Object IDs in `museum_test_labels.csv`. Harvest logs with dates are in `data/` on the author's computer |
+| Removed WikiArt-museum overlaps; near-duplicate list | Missing | `data/final/` (inside `colab_data.zip`, too large to fetch) |
+| Artist-disjoint split, seeds, model and probe settings | Settings done; split file missing | [docs/settings.md](docs/settings.md), `results/runs/*/config.json` (split file hash `d5bb835c8cd9526a`); split CSVs in `data/final/` |
+| Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations and probes | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/` |
+| README with library versions and steps to reproduce | Mostly | Below. Python and PyTorch versions are recorded; the full `pip freeze` is still to be saved |
 
 ## Reproducing the main tables
 
-Library versions: `requirements.txt` lists the libraries. The exact versions used in Colab are still to be saved: in a Colab cell, run `!pip freeze > /content/drive/MyDrive/wikiart_runs/colab_versions.txt` and add that file to `results/`.
+Library versions recorded in the run configs: Python 3.13.16, PyTorch 2.11.0+cu130 (Colab, CUDA GPU). `requirements.txt` lists the other libraries. To save the full list, run `!pip freeze > /content/drive/MyDrive/wikiart_runs/colab_versions.txt` in Colab and add the file to `results/`.
 
 1. **Data (computer).** Build the datasets and `colab_data.zip` with the pipeline scripts (download, harvest, `src/label_museums.py`, `src/prepare_dataset.py all`). Upload the zip to Google Drive.
 2. **ResNet-50 table (Colab).** Run `notebooks/wikiart_colab.ipynb` with `SEED = 1`, `2` and `3`.
 3. **Ablation table (Colab).** For each seed, run `python src/evaluate.py --run runs/resnet50_seed<N>`.
-4. **Statistics (Colab).** Run `python stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3` (script still to be added).
+4. **Statistics (Colab).** Run `python src/stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3`. Output matches `results/stats_report.txt`.
 5. **Foundation-model table (Colab).** Run `notebooks/foundation_probes.ipynb`.
 6. **RQ2 curve (Colab).** Run `notebooks/rq2_fewshot.ipynb`.
 

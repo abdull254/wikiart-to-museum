@@ -39,9 +39,7 @@ Only the styles that pass the minimum count in all three datasets are used (`dat
 
 Both museum test sets are **professional digitizations**, not photographs taken in the gallery. The Met and the Rijksmuseum publish images made by their own photography studios: the painting is lit evenly, photographed straight on, color-calibrated, and usually cropped to the painted surface without the frame. Visitor-style conditions such as glare, visible frames, angled views, uneven lighting and phone-camera processing are therefore mostly absent. Any accuracy drop measured on these sets reflects differences between digitization pipelines (color handling, resolution, compression, cropping, collection mix), not the effect of photographing a painting in the room. Results are reported as transfer to museum digitizations, and claims about in-gallery photos are not made from these sets.
 
-**Decision on an in-gallery set:** [still to decide, choose one]
-- **Add a small set** (for example 100–200 photos of paintings in the project's styles, taken at a local museum where photography is permitted, or taken from a dataset licensed for research). This allows a separate "photographed in the room" result. Check the museum's photography policy before using the photos for research.
-- **Leave it out** and state the limitation in threats to validity.
+**Decision on an in-gallery set: left out.** No in-gallery photo set is used in this study. Both test sets are professional digitizations, so the results cannot separate the museum's digitization pipeline from the effect of photographing a painting in the room. Collecting a licensed or self-taken set of in-gallery photos was not feasible within the course timeline. This is listed as a threat to external validity: the results apply to museum digitizations, not to visitor photos. Testing on a small in-gallery set is future work.
 
 ## 4. Image processing
 

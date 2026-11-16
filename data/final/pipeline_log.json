@@ -1,0 +1,630 @@
+[
+  {
+    "step": "wikiart",
+    "at": "2026-10-20T22:14:45+00:00",
+    "total": 103250,
+    "kept": 51180,
+    "reasons": {
+      "style not in project list": 45115,
+      "kept": 51180,
+      "not a painting": 4294,
+      "black-and-white image": 2661
+    }
+  },
+  {
+    "step": "wikiart",
+    "at": "2026-10-20T22:23:31+00:00",
+    "total": 103250,
+    "kept": 51180,
+    "reasons": {
+      "style not in project list": 45115,
+      "kept": 51180,
+      "not a painting": 4294,
+      "black-and-white image": 2661
+    }
+  },
+  {
+    "step": "dedup",
+    "at": "2026-10-20T22:24:03+00:00",
+    "threshold": 4,
+    "removed_duplicates": 337,
+    "removed_conflicting": 88
+  },
+  {
+    "step": "overlap",
+    "at": "2026-10-20T22:24:05+00:00",
+    "thresholds": {
+      "image": 8,
+      "same_artist_image": 14,
+      "title_jaccard": 0.6
+    },
+    "removed": {
+      "met:artist + title match": 235,
+      "met:image match": 262,
+      "met:artist + similar image": 53,
+      "rijks:image match": 259,
+      "rijks:artist + similar image": 14,
+      "rijks:artist + title match": 20
+    }
+  },
+  {
+    "step": "styles",
+    "at": "2026-10-20T22:24:06+00:00",
+    "min_museum": 30,
+    "min_wikiart": 200,
+    "final_styles": [
+      "Northern Renaissance",
+      "Mannerism (Late Renaissance)",
+      "Baroque",
+      "Rococo",
+      "Romanticism",
+      "Realism"
+    ],
+    "counts": {
+      "Proto Renaissance": [
+        272,
+        7,
+        2
+      ],
+      "International Gothic": [
+        62,
+        7,
+        0
+      ],
+      "Early Renaissance": [
+        1215,
+        176,
+        9
+      ],
+      "Northern Renaissance": [
+        1769,
+        175,
+        106
+      ],
+      "High Renaissance": [
+        1085,
+        55,
+        6
+      ],
+      "Mannerism (Late Renaissance)": [
+        1238,
+        53,
+        74
+      ],
+      "Baroque": [
+        4165,
+        380,
+        2121
+      ],
+      "Rococo": [
+        2501,
+        154,
+        472
+      ],
+      "Neoclassicism": [
+        1351,
+        20,
+        3
+      ],
+      "Romanticism": [
+        7820,
+        52,
+        38
+      ],
+      "Academicism": [
+        898,
+        78,
+        2
+      ],
+      "Realism": [
+        8651,
+        102,
+        289
+      ],
+      "Symbolism": [
+        2854,
+        20,
+        4
+      ],
+      "Impressionism": [
+        10326,
+        41,
+        19
+      ],
+      "Post-Impressionism": [
+        6548,
+        27,
+        8
+      ]
+    }
+  },
+  {
+    "step": "split",
+    "at": "2026-10-20T22:24:13+00:00",
+    "seed": 42,
+    "sizes": {
+      "test": 3857,
+      "train": 18501,
+      "val": 3786
+    },
+    "artists": {
+      "test": 81,
+      "train": 439,
+      "val": 81
+    },
+    "leaked_artists": 0
+  },
+  {
+    "step": "seen",
+    "at": "2026-10-20T22:24:14+00:00",
+    "counts": {
+      "met:seen": 176,
+      "met:unseen": 740,
+      "rijks:unseen": 3008,
+      "rijks:seen": 92
+    }
+  },
+  {
+    "step": "wikiart",
+    "at": "2026-10-20T22:29:33+00:00",
+    "total": 103250,
+    "kept": 51180,
+    "reasons": {
+      "style not in project list": 45115,
+      "kept": 51180,
+      "not a painting": 4294,
+      "black-and-white image": 2661
+    }
+  },
+  {
+    "step": "dedup",
+    "at": "2026-10-20T22:29:35+00:00",
+    "threshold": 4,
+    "removed_duplicates": 337,
+    "removed_conflicting": 88
+  },
+  {
+    "step": "overlap",
+    "at": "2026-10-20T22:29:36+00:00",
+    "thresholds": {
+      "image": 8,
+      "same_artist_image": 14,
+      "title_jaccard": 0.6,
+      "title_min_words": 2,
+      "title_max_hash": 22
+    },
+    "removed": {
+      "met:image match": 262,
+      "met:artist + similar image": 85,
+      "met:artist + title + loosely similar image": 99,
+      "rijks:image match": 259,
+      "rijks:artist + similar image": 16,
+      "rijks:artist + title + loosely similar image": 7
+    }
+  },
+  {
+    "step": "styles",
+    "at": "2026-10-20T22:29:37+00:00",
+    "min_museum": 30,
+    "min_wikiart": 200,
+    "final_styles": [
+      "Northern Renaissance",
+      "Mannerism (Late Renaissance)",
+      "Baroque",
+      "Rococo",
+      "Romanticism",
+      "Realism"
+    ],
+    "counts": {
+      "Proto Renaissance": [
+        272,
+        10,
+        2
+      ],
+      "International Gothic": [
+        62,
+        8,
+        0
+      ],
+      "Early Renaissance": [
+        1215,
+        184,
+        11
+      ],
+      "Northern Renaissance": [
+        1769,
+        192,
+        106
+      ],
+      "High Renaissance": [
+        1085,
+        59,
+        8
+      ],
+      "Mannerism (Late Renaissance)": [
+        1238,
+        62,
+        73
+      ],
+      "Baroque": [
+        4165,
+        398,
+        2128
+      ],
+      "Rococo": [
+        2501,
+        166,
+        472
+      ],
+      "Neoclassicism": [
+        1351,
+        20,
+        3
+      ],
+      "Romanticism": [
+        7820,
+        53,
+        38
+      ],
+      "Academicism": [
+        898,
+        83,
+        2
+      ],
+      "Realism": [
+        8651,
+        113,
+        291
+      ],
+      "Symbolism": [
+        2854,
+        22,
+        4
+      ],
+      "Impressionism": [
+        10326,
+        48,
+        19
+      ],
+      "Post-Impressionism": [
+        6548,
+        32,
+        9
+      ]
+    }
+  },
+  {
+    "step": "split",
+    "at": "2026-10-20T22:29:39+00:00",
+    "seed": 42,
+    "sizes": {
+      "test": 3857,
+      "train": 18501,
+      "val": 3786
+    },
+    "artists": {
+      "test": 81,
+      "train": 439,
+      "val": 81
+    },
+    "leaked_artists": 0
+  },
+  {
+    "step": "seen",
+    "at": "2026-10-20T22:29:39+00:00",
+    "counts": {
+      "met:seen": 208,
+      "met:unseen": 776,
+      "rijks:unseen": 3010,
+      "rijks:seen": 98
+    }
+  },
+  {
+    "step": "wikiart",
+    "at": "2026-10-26T11:47:11+00:00",
+    "total": 103250,
+    "kept": 51180,
+    "reasons": {
+      "style not in project list": 45115,
+      "kept": 51180,
+      "not a painting": 4294,
+      "black-and-white image": 2661
+    }
+  },
+  {
+    "step": "museum_color",
+    "at": "2026-10-26T11:47:15+00:00",
+    "kept": 5236,
+    "black_and_white": {
+      "met": 88,
+      "rijks": 18
+    }
+  },
+  {
+    "step": "dedup",
+    "at": "2026-10-26T11:47:17+00:00",
+    "threshold": 4,
+    "removed_duplicates": 337,
+    "removed_conflicting": 88
+  },
+  {
+    "step": "overlap",
+    "at": "2026-10-26T11:47:19+00:00",
+    "thresholds": {
+      "image": 8,
+      "same_artist_image": 14,
+      "title_jaccard": 0.6,
+      "title_min_words": 2,
+      "title_max_hash": 22
+    },
+    "removed": {
+      "met:image match": 259,
+      "met:artist + similar image": 85,
+      "met:artist + title + loosely similar image": 99,
+      "rijks:image match": 256,
+      "rijks:artist + similar image": 16,
+      "rijks:artist + title + loosely similar image": 7
+    }
+  },
+  {
+    "step": "styles",
+    "at": "2026-10-26T11:47:20+00:00",
+    "min_museum": 30,
+    "min_wikiart": 200,
+    "final_styles": [
+      "Northern Renaissance",
+      "Mannerism (Late Renaissance)",
+      "Baroque",
+      "Rococo",
+      "Romanticism",
+      "Realism"
+    ],
+    "counts": {
+      "Proto Renaissance": [
+        272,
+        10,
+        2
+      ],
+      "International Gothic": [
+        62,
+        8,
+        0
+      ],
+      "Early Renaissance": [
+        1215,
+        167,
+        11
+      ],
+      "Northern Renaissance": [
+        1769,
+        180,
+        106
+      ],
+      "High Renaissance": [
+        1085,
+        49,
+        8
+      ],
+      "Mannerism (Late Renaissance)": [
+        1238,
+        58,
+        73
+      ],
+      "Baroque": [
+        4165,
+        369,
+        2120
+      ],
+      "Rococo": [
+        2501,
+        159,
+        467
+      ],
+      "Neoclassicism": [
+        1351,
+        20,
+        3
+      ],
+      "Romanticism": [
+        7820,
+        53,
+        38
+      ],
+      "Academicism": [
+        898,
+        82,
+        2
+      ],
+      "Realism": [
+        8651,
+        108,
+        288
+      ],
+      "Symbolism": [
+        2854,
+        22,
+        4
+      ],
+      "Impressionism": [
+        10326,
+        48,
+        18
+      ],
+      "Post-Impressionism": [
+        6548,
+        32,
+        9
+      ]
+    }
+  },
+  {
+    "step": "wikiart",
+    "at": "2026-10-26T11:49:00+00:00",
+    "total": 103250,
+    "kept": 51180,
+    "reasons": {
+      "style not in project list": 45115,
+      "kept": 51180,
+      "not a painting": 4294,
+      "black-and-white image": 2661
+    }
+  },
+  {
+    "step": "museum_color",
+    "at": "2026-10-26T11:49:04+00:00",
+    "kept": 5218,
+    "black_and_white": {
+      "met": 85,
+      "rijks": 18
+    }
+  },
+  {
+    "step": "dedup",
+    "at": "2026-10-26T11:49:06+00:00",
+    "threshold": 4,
+    "removed_duplicates": 337,
+    "removed_conflicting": 88
+  },
+  {
+    "step": "overlap",
+    "at": "2026-10-26T11:49:07+00:00",
+    "thresholds": {
+      "image": 8,
+      "same_artist_image": 14,
+      "title_jaccard": 0.6,
+      "title_min_words": 2,
+      "title_max_hash": 22
+    },
+    "removed": {
+      "met:image match": 259,
+      "met:artist + similar image": 85,
+      "met:artist + title + loosely similar image": 99,
+      "rijks:image match": 255,
+      "rijks:artist + similar image": 16,
+      "rijks:artist + title + loosely similar image": 7
+    }
+  },
+  {
+    "step": "styles",
+    "at": "2026-10-26T11:49:08+00:00",
+    "min_museum": 30,
+    "min_wikiart": 200,
+    "final_styles": [
+      "Northern Renaissance",
+      "Mannerism (Late Renaissance)",
+      "Baroque",
+      "Rococo",
+      "Romanticism",
+      "Realism"
+    ],
+    "counts": {
+      "Proto Renaissance": [
+        272,
+        6,
+        0
+      ],
+      "International Gothic": [
+        62,
+        4,
+        0
+      ],
+      "Early Renaissance": [
+        1215,
+        164,
+        11
+      ],
+      "Northern Renaissance": [
+        1769,
+        180,
+        107
+      ],
+      "High Renaissance": [
+        1085,
+        49,
+        5
+      ],
+      "Mannerism (Late Renaissance)": [
+        1238,
+        59,
+        72
+      ],
+      "Baroque": [
+        4165,
+        376,
+        2124
+      ],
+      "Rococo": [
+        2501,
+        165,
+        470
+      ],
+      "Neoclassicism": [
+        1351,
+        20,
+        3
+      ],
+      "Romanticism": [
+        7820,
+        53,
+        38
+      ],
+      "Academicism": [
+        898,
+        71,
+        2
+      ],
+      "Realism": [
+        8651,
+        104,
+        281
+      ],
+      "Symbolism": [
+        2854,
+        22,
+        4
+      ],
+      "Impressionism": [
+        10326,
+        48,
+        18
+      ],
+      "Post-Impressionism": [
+        6548,
+        32,
+        9
+      ]
+    }
+  },
+  {
+    "step": "split",
+    "at": "2026-10-26T11:49:12+00:00",
+    "seed": 42,
+    "sizes": {
+      "test": 3857,
+      "train": 18501,
+      "val": 3786
+    },
+    "artists": {
+      "test": 81,
+      "train": 439,
+      "val": 81
+    },
+    "leaked_artists": 0
+  },
+  {
+    "step": "seen",
+    "at": "2026-10-26T11:49:12+00:00",
+    "counts": {
+      "met:seen": 206,
+      "met:unseen": 731,
+      "rijks:unseen": 2994,
+      "rijks:seen": 98
+    }
+  },
+  {
+    "step": "handcheck_report",
+    "at": "2026-10-26T13:50:47+00:00",
+    "checked": 92,
+    "correct": 92
+  }
+]

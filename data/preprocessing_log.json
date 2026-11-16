@@ -1,0 +1,50 @@
+[
+  {
+    "step": "resize",
+    "museum": "rijks",
+    "mode": "squash",
+    "size": 256,
+    "filter": "LANCZOS",
+    "jpeg_quality": 90,
+    "results": {
+      "ok": 4912
+    },
+    "at": "2026-10-20T19:19:18+00:00"
+  },
+  {
+    "step": "resize",
+    "museum": "rijks",
+    "mode": "crop",
+    "size": 256,
+    "filter": "LANCZOS",
+    "jpeg_quality": 90,
+    "results": {
+      "ok": 4912
+    },
+    "at": "2026-10-20T19:19:22+00:00"
+  },
+  {
+    "step": "resize",
+    "museum": "met",
+    "mode": "squash",
+    "size": 256,
+    "filter": "LANCZOS",
+    "jpeg_quality": 90,
+    "results": {
+      "ok": 2214
+    },
+    "at": "2026-10-20T21:59:11+00:00"
+  },
+  {
+    "step": "resize",
+    "museum": "met",
+    "mode": "crop",
+    "size": 256,
+    "filter": "LANCZOS",
+    "jpeg_quality": 90,
+    "results": {
+      "ok": 2214
+    },
+    "at": "2026-10-20T21:59:13+00:00"
+  }
+]

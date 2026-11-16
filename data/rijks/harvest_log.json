@@ -1,0 +1,133 @@
+[
+  {
+    "step": "ids",
+    "search_url": "https://data.rijksmuseum.nl/search/collection?type=painting&imageAvailable=true",
+    "total_reported": 4914,
+    "ids_saved": 4914,
+    "pages": 50,
+    "at": "2026-10-20T13:47:40+00:00"
+  },
+  {
+    "step": "ids",
+    "search_url": "https://data.rijksmuseum.nl/search/collection?type=painting&imageAvailable=true",
+    "total_reported": 4914,
+    "ids_saved": 4914,
+    "pages": 50,
+    "at": "2026-10-20T13:50:44+00:00"
+  },
+  {
+    "step": "meta",
+    "rows": 20,
+    "errors": 20,
+    "missing_artist_wikidata": 20,
+    "at": "2026-10-20T13:56:05+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {},
+    "at": "2026-10-20T13:57:20+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {},
+    "at": "2026-10-20T13:57:39+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {},
+    "at": "2026-10-20T14:05:55+00:00"
+  },
+  {
+    "step": "meta",
+    "rows": 20,
+    "errors": 0,
+    "missing_artist_wikidata": 7,
+    "at": "2026-10-20T14:09:51+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {
+      "ok": 20
+    },
+    "at": "2026-10-20T14:09:58+00:00"
+  },
+  {
+    "step": "meta",
+    "rows": 4914,
+    "errors": 22,
+    "missing_artist_wikidata": 1595,
+    "at": "2026-10-20T14:22:59+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {
+      "skipped": 84,
+      "ok": 4800,
+      "http 404": 8
+    },
+    "at": "2026-10-20T14:42:50+00:00"
+  },
+  {
+    "step": "rename",
+    "renamed": 4808,
+    "collided_files_moved": 12,
+    "at": "2026-10-20T15:07:29+00:00"
+  },
+  {
+    "step": "meta",
+    "rows": 4914,
+    "errors": 1,
+    "missing_artist_wikidata": 1366,
+    "no_artist": 1247,
+    "at": "2026-10-20T15:07:56+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {
+      "skipped": 4808,
+      "ok": 103,
+      "http 404": 2
+    },
+    "at": "2026-10-20T15:08:26+00:00"
+  },
+  {
+    "step": "meta",
+    "rows": 4914,
+    "errors": 0,
+    "missing_artist_wikidata": 1528,
+    "no_artist": 1428,
+    "at": "2026-10-20T18:02:51+00:00"
+  },
+  {
+    "step": "images",
+    "size_long_side": 512,
+    "results": {
+      "skipped": 4911,
+      "http 404": 2,
+      "ok": 1
+    },
+    "at": "2026-10-20T18:03:11+00:00"
+  },
+  {
+    "step": "filter_sk",
+    "kept": 4695,
+    "removed": 219,
+    "removed_by_prefix": {
+      "AK": 105,
+      "NG": 38,
+      "RP": 24,
+      "BK": 48,
+      "BI": 1,
+      "KOG": 2,
+      "V": 1
+    },
+    "kept_with_image": 4693,
+    "at": "2026-10-20T22:21:37+00:00"
+  }
+]

@@ -32,7 +32,7 @@ MET = BASE / "met" / "metadata.csv"
 OUT = BASE / "labels"
 CACHE = OUT / "wikidata_cache.json"
 SPARQL = "https://query.wikidata.org/sparql"
-HEADERS = {"User-Agent": "MSU-Mankato CIS631 research (wikiart-museum-style)",
+HEADERS = {"User-Agent": "MSU-Mankato CIS631 research (wikiart-to-museum)",
            "Accept": "application/sparql-results+json"}
 
 # ---------------------------------------------------------------------------

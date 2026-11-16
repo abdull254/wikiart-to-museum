@@ -55,7 +55,7 @@ FIELDS = [
 session = requests.Session()
 session.headers.update({
     "Accept": "application/ld+json, application/json",
-    "User-Agent": "MSU-Mankato CIS631 research harvest (wikiart-museum-style)",
+    "User-Agent": "MSU-Mankato CIS631 research harvest (wikiart-to-museum)",
 })
 
 

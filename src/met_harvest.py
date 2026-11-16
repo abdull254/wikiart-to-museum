@@ -56,7 +56,7 @@ FIELDS = [
 ]
 
 session = requests.Session()
-session.headers.update({"User-Agent": "MSU-Mankato CIS631 research harvest (wikiart-museum-style)"})
+session.headers.update({"User-Agent": "MSU-Mankato CIS631 research harvest (wikiart-to-museum)"})
 
 
 # ---------- HTTP ----------

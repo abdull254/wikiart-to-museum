@@ -148,11 +148,30 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 | Removed WikiArt-museum overlaps; near-duplicate list | Done | [data/final/museum_wikiart_overlap.csv](data/final/museum_wikiart_overlap.csv) (721), [data/final/wikiart_near_duplicates.csv](data/final/wikiart_near_duplicates.csv) (425); method in [docs/data_notes.md](docs/data_notes.md) section 5 |
 | Artist-disjoint split, seeds, model and probe settings | Done | [data/final/wikiart_split.csv](data/final/wikiart_split.csv) (hash `d5bb835c8cd9526a`, matches `results/runs/*/config.json`), [docs/settings.md](docs/settings.md) |
 | Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations and probes | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/` |
-| README with library versions and steps to reproduce | Mostly | Below. Python and PyTorch versions are recorded; the full `pip freeze` is still to be saved |
+| README with library versions and steps to reproduce | Done | Below. Training versions from the run configs; full Colab `pip freeze` in [requirements_colab.txt](requirements_colab.txt) |
 
 ## Reproducing the main tables
 
-Library versions recorded in the run configs: Python 3.13.16, PyTorch 2.11.0+cu130 (Colab, CUDA GPU). `requirements.txt` lists the other libraries. To save the full list, run `!pip freeze > /content/drive/MyDrive/wikiart_runs/colab_versions.txt` in Colab and add the file to `results/`.
+**Versions used for the training runs** (authoritative, recorded in every `results/runs/*/config.json`): Python 3.13.16, PyTorch 2.11.0+cu130 (Colab, CUDA GPU).
+
+**Current Colab environment** ([requirements_colab.txt](requirements_colab.txt), full `pip freeze` taken Nov 16 on a CPU runtime). This is a newer runtime than the training runs (it has torch 2.14.1+cpu), so use it for the other library versions, not for PyTorch. Key libraries in it:
+
+| Library | Version |
+|---|---|
+| numpy | 2.4.6 |
+| pandas | 2.2.3 |
+| scikit-learn | 1.6.1 |
+| scipy | 1.16.3 |
+| pillow | 11.3.0 |
+| timm | 1.0.31 |
+| transformers | 5.22.1 |
+| datasets | 4.8.5 |
+| huggingface_hub | 1.33.0 |
+| matplotlib | 3.10.0 |
+| tqdm | 4.67.3 |
+| requests | 2.32.4 |
+
+`imagehash` (used by `src/prepare_dataset.py` on the computer) is not in the Colab freeze; install it with `pip install imagehash`. `requirements.txt` lists the libraries the scripts need.
 
 1. **Data (computer).** The scripts look for `data/` next to themselves, so run them from one folder (for example copy `src/*.py` to the project folder). In order:
    - `python wikiart_download.py probe`, then `python wikiart_download.py download`
@@ -179,7 +198,6 @@ Library versions recorded in the run configs: Python 3.13.16, PyTorch 2.11.0+cu1
 
 - Images, datasets, caches and model checkpoints (`.pt`, `.zip`).
 - `data/final/wikiart_table.csv` (16 MB, full WikiArt table) and `data/final/hashes.json` (perceptual hashes); both are rebuilt by `src/prepare_dataset.py`.
-- The full `pip freeze` from Colab.
 
 ## Next steps
 

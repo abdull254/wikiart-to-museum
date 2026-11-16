@@ -62,7 +62,9 @@ def set_seed(seed):
         torch.backends.cudnn.deterministic = True
 
 
-def pick_device():
+def pick_device(choice="auto"):
+    if choice != "auto":
+        return torch.device(choice)
     if torch.cuda.is_available():
         return torch.device("cuda")
     if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
@@ -203,10 +205,12 @@ def main():
                     help="museum image version: squashed 256 (default), center crop, or 512 originals")
     ap.add_argument("--no-pretrained", action="store_true", help="random weights (for code tests only)")
     ap.add_argument("--name", default=None)
+    ap.add_argument("--device", default="auto", choices=["auto", "mps", "cuda", "cpu"],
+                    help="force a device (auto picks cuda, then mps, then cpu)")
     args = ap.parse_args()
 
     set_seed(args.seed)
-    device = pick_device()
+    device = pick_device(args.device)
     classes = load_classes()
     name = args.name or (f"{'quick_' if args.quick else ''}resnet50"
                          f"{'_gray' + str(args.grayscale_aug) if args.grayscale_aug else ''}_seed{args.seed}")
@@ -259,7 +263,11 @@ def main():
     for epoch in range(1, args.epochs + 1):
         model.train()
         total, n, te = 0.0, 0, time.time()
+        if epoch == 1:
+            print("  loading the first batch of images...", flush=True)
         for b, (x, y, _) in enumerate(dl_train, 1):
+            if epoch == 1 and b <= 3:
+                print(f"  batch {b} loaded after {time.time() - te:.1f} s, training on it...", flush=True)
             x, y = x.to(device, non_blocking=True), y.to(device, non_blocking=True)
             opt.zero_grad(set_to_none=True)
             with torch.autocast(device_type="cuda", dtype=torch.float16, enabled=use_amp):
@@ -270,11 +278,13 @@ def main():
             sched.step()
             total += loss.item() * len(y)
             n += len(y)
+            if epoch == 1 and b <= 3:
+                print(f"  batch {b} done after {time.time() - te:.1f} s (loss {loss.item():.3f})", flush=True)
             if b == 10 and epoch == 1:
                 per_batch = (time.time() - te) / 10
                 full = per_batch * (len(split[split['split'] == 'train']) / args.batch_size)
                 print(f"  speed: {per_batch:.2f} s per batch -> about {full / 60:.0f} min per full epoch, "
-                      f"{full * 12 / 3600:.1f} h for a 12-epoch run")
+                      f"{full * 12 / 3600:.1f} h for a 12-epoch run", flush=True)
             if b % 50 == 0:
                 print(f"  epoch {epoch} batch {b}/{len(dl_train)}  loss {total / n:.3f}")
         y, probs, _ = predict(model, dl_val, device)
@@ -300,6 +310,12 @@ def main():
         for mus in ("met", "rijks"):
             sets[mus] = (m[m["museum"] == mus], args.museum_image)
     metrics = {}
+    for set_name, (df, col) in list(sets.items()):
+        exists = df[col].map(lambda p: (DATA / p).exists())
+        if not exists.all():
+            print(f"  {set_name}: skipping {int((~exists).sum())} painting(s) with no image file")
+            df = df[exists]
+            sets[set_name] = (df, col)
     for set_name, (df, col) in sets.items():
         ds = Images(df, col, classes, tf_test)
         y, probs, idx = predict(model, loader(ds, args, shuffle=False), device)

@@ -56,7 +56,7 @@ out["top3_accuracy"] = float((top3 == y[:, None]).any(axis=1).mean())
 - Download and harvest dates: from `harvest_log.json` and `download_log.json`; pipeline ran 2026-10-20.
 - Overlap review: 46 of 60 removed pairs were the same painting or another version.
 - Minimum per style: 200 in WikiArt, 30 in each museum.
-- In-gallery set decision: still open.
+- In-gallery set decision: left out (Nov 16), see data_notes.md section 3.
 
 ## 7. Still missing from the repo
 

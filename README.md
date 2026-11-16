@@ -209,7 +209,7 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 
 ## Limitations
 
-- Museum images are professional digitizations, not gallery photos.
+- Museum images are professional digitizations, not gallery photos. No in-gallery set is used (decided Nov 16), so results do not cover visitor photos; that is a threat to external validity and future work (see [docs/data_notes.md](docs/data_notes.md) section 3).
 - Labels come from Wikidata and date rules.
 - Romanticism and Mannerism have few museum examples.
 - Only two Western museums.

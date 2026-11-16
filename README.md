@@ -29,7 +29,7 @@ The museum images are professional collection digitizations, not photographs tak
 
 - **Paintings only.** Non-paintings, black-and-white images (including 103 B&W museum images removed on Oct 26) and near-duplicates (perceptual hash) are removed.
 - **Artist-disjoint split.** WikiArt train / val / test = 18,501 / 3,786 / 3,857, with no artist in more than one split.
-- **No overlap.** Museum paintings that also appear in WikiArt were removed (446 Met, 282 Rijks).
+- **No overlap.** Museum paintings that also appear in WikiArt were removed (443 Met, 278 Rijks in the final Oct 26 run; list in `data/final/museum_wikiart_overlap.csv`).
 - **Six shared styles:** Northern Renaissance, Mannerism, Baroque, Rococo, Romanticism, Realism.
 - **Museum labels** come from Wikidata movements (P135), the painter's movement and a date rule. Since Oct 26 a movement that does not fit the painting's date is dropped. A blind human hand check found 92 of 92 decided labels correct (8 unsure).
 - **Test sets:** Met 937 paintings, Rijksmuseum 3,092.
@@ -76,6 +76,7 @@ src/          Python scripts
 notebooks/    Colab notebooks
 docs/         results write-up, related work, code review, to-do list
 results/      result files behind every table, labels
+data/         split, labels, object IDs, overlap and near-duplicate lists, logs (no images)
 slides/       latest presentation deck
 reports/      progress reports
 ```
@@ -118,6 +119,19 @@ reports/      progress reports
 | `results/runs/resnet50_seed{1,2,3}/` | Config, training history, metrics, ablations and per-painting predictions |
 | `results/probes/` | CLIP and DINOv2 probe metrics, report and predictions |
 | `results/labels/` | Museum test labels with rules, hand-check record |
+| `data/final/wikiart_split.csv` | Artist-disjoint WikiArt split (train / val / test), SHA-256 starts `d5bb835c8cd9526a`, as in every run config |
+| `data/final/museum_table.csv` | All 6,909 museum paintings with label, rule and the reason each excluded one was dropped |
+| `data/final/museum_test.csv` | Final museum test sets (Met 937, Rijks 3,092) with seen/unseen artist group |
+| `data/final/museum_wikiart_overlap.csv` | 721 museum paintings removed because they are also in WikiArt (match type, hash distance, WikiArt index) |
+| `data/final/wikiart_near_duplicates.csv` | 425 WikiArt near-duplicates removed (337 duplicates, 88 with conflicting labels) |
+| `data/final/overlap_review.html` | 60-pair overlap review page (needs the local images) |
+| `data/final/final_styles.csv` | Style counts per dataset and why styles were dropped |
+| `data/final/pipeline_log.json` | Counts and settings for every `prepare_dataset.py` step |
+| `data/labels/museum_labels.csv` | Label, rule and source for every museum painting, including unlabeled ones |
+| `data/labels/` (other files) | Style counts, Wikidata movements with no mapping, labeling log |
+| `data/met/ids.txt`, `data/rijks/ids.txt` | Object IDs used for the harvest |
+| `data/*/harvest_log.json`, `data/wikiart/download_log.json`, `data/preprocessing_log.json` | Export dates and step counts |
+| `data/rijks/excluded_not_sk.csv`, `data/rijks/checks/` | Rijksmuseum exclusions and harvest checks |
 
 ### Which numbers are current
 
@@ -129,10 +143,10 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 |---|---|---|
 | All code and notebooks, including RQ2 | Done | `src/` (harvest, labeling, dataset, training, evaluation, statistics), `notebooks/` (RQ2 in `notebooks/rq2_fewshot.ipynb`). See the pipeline below |
 | `labeling_rules.md` | Done | [docs/labeling_rules.md](docs/labeling_rules.md); rule counts in [results/labels/README.md](results/labels/README.md) |
-| Label and rule for every museum painting | Done for the test sets | [results/labels/museum_test_labels.csv](results/labels/museum_test_labels.csv) (Met 937, Rijks 3,092). Full `museum_labels.csv` incl. unlabeled rows missing |
-| Met and Rijksmuseum object IDs with export dates | IDs done; export dates missing | Object IDs in `results/labels/museum_test_labels.csv`. Dates are in the harvest logs (`data/*/harvest_log.json`, `data/wikiart/download_log.json`), not yet added; placeholders in [docs/data_notes.md](docs/data_notes.md) |
-| Removed WikiArt-museum overlaps; near-duplicate list | Method done; lists missing | Method and thresholds in [docs/data_notes.md](docs/data_notes.md) section 5. The lists are outputs of `src/prepare_dataset.py` in `data/final/`, not yet added |
-| Artist-disjoint split, seeds, model and probe settings | Settings done; split file missing | [docs/settings.md](docs/settings.md), `results/runs/*/config.json` (split file hash `d5bb835c8cd9526a`); split CSVs in `data/final/` |
+| Label and rule for every museum painting | Done | [data/labels/museum_labels.csv](data/labels/museum_labels.csv) (all 6,909), test sets in [results/labels/museum_test_labels.csv](results/labels/museum_test_labels.csv) (Met 937, Rijks 3,092) |
+| Met and Rijksmuseum object IDs with export dates | Done | `data/met/ids.txt`, `data/rijks/ids.txt`; all harvested on 2026-10-20 (logs in `data/*/harvest_log.json`, dates in [docs/data_notes.md](docs/data_notes.md)) |
+| Removed WikiArt-museum overlaps; near-duplicate list | Done | [data/final/museum_wikiart_overlap.csv](data/final/museum_wikiart_overlap.csv) (721), [data/final/wikiart_near_duplicates.csv](data/final/wikiart_near_duplicates.csv) (425); method in [docs/data_notes.md](docs/data_notes.md) section 5 |
+| Artist-disjoint split, seeds, model and probe settings | Done | [data/final/wikiart_split.csv](data/final/wikiart_split.csv) (hash `d5bb835c8cd9526a`, matches `results/runs/*/config.json`), [docs/settings.md](docs/settings.md) |
 | Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations and probes | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/` |
 | README with library versions and steps to reproduce | Mostly | Below. Python and PyTorch versions are recorded; the full `pip freeze` is still to be saved |
 
@@ -164,7 +178,8 @@ Library versions recorded in the run configs: Python 3.13.16, PyTorch 2.11.0+cu1
 ## What is not in this repo
 
 - Images, datasets, caches and model checkpoints (`.pt`, `.zip`).
-- Files still on Google Drive or the author's computer: see the "Missing" rows in the instructor checklist above.
+- `data/final/wikiart_table.csv` (16 MB, full WikiArt table) and `data/final/hashes.json` (perceptual hashes); both are rebuilt by `src/prepare_dataset.py`.
+- The full `pip freeze` from Colab.
 
 ## Next steps
 

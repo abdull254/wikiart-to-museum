@@ -1,6 +1,6 @@
 # Data notes: sources, versions and decisions
 
-Fill in the dates in [brackets] from the log files (`harvest_log.json`, `download_log.json`, `pipeline_log.json`).
+The download and harvest dates in [brackets] are still to be filled from the log files (`data/wikiart/download_log.json`, `data/met/harvest_log.json`, `data/rijks/harvest_log.json`), which are not in this repository yet.
 
 ## 1. Sources and versions
 
@@ -39,7 +39,7 @@ Only the styles that pass the minimum count in all three datasets are used (`dat
 
 Both museum test sets are **professional digitizations**, not photographs taken in the gallery. The Met and the Rijksmuseum publish images made by their own photography studios: the painting is lit evenly, photographed straight on, color-calibrated, and usually cropped to the painted surface without the frame. Visitor-style conditions such as glare, visible frames, angled views, uneven lighting and phone-camera processing are therefore mostly absent. Any accuracy drop measured on these sets reflects differences between digitization pipelines (color handling, resolution, compression, cropping, collection mix), not the effect of photographing a painting in the room. Results are reported as transfer to museum digitizations, and claims about in-gallery photos are not made from these sets.
 
-**Decision on an in-gallery set:** [choose one]
+**Decision on an in-gallery set:** [still to decide, choose one]
 - **Add a small set** (for example 100–200 photos of paintings in the project's styles, taken at a local museum where photography is permitted, or taken from a dataset licensed for research). This allows a separate "photographed in the room" result. Check the museum's photography policy before using the photos for research.
 - **Leave it out** and state the limitation in threats to validity.
 
@@ -55,8 +55,8 @@ All counts are written to `data/final/pipeline_log.json` by `prepare_dataset.py`
 1. **Paintings only.** Met: objects classified as Paintings and public domain. Rijksmuseum: object numbers starting with `SK-` (the paintings collection). WikiArt: genres such as sketch and study, illustration, design and poster removed.
 2. **Black-and-white images removed from WikiArt** (colorfulness below 10, Hasler & Süsstrunk 2003), so the model cannot use "black-and-white" as a style cue.
 3. **Near-duplicates inside WikiArt removed** (perceptual hash, Hamming distance 4 or less). When duplicates carried different style labels, all copies were removed.
-4. **Museum paintings that are also in WikiArt removed** from the museum sets, when any of these hold: perceptual hash distance 8 or less; same artist and hash distance 14 or less; same artist, title word overlap (Jaccard) 0.6 or more on a title of at least two meaningful words, and hash distance 22 or less. The last condition stops generic titles such as "Madonna and Child" from matching different paintings by the same artist. A random sample of removed pairs was checked by eye (`overlap_review.html`): [N] of [N] were the same painting.
-5. **Minimum per style:** [N] images per style in WikiArt and [N] per style in each museum. Styles below it in any dataset are dropped.
+4. **Museum paintings that are also in WikiArt removed** from the museum sets, when any of these hold: perceptual hash distance 8 or less; same artist and hash distance 14 or less; same artist, title word overlap (Jaccard) 0.6 or more on a title of at least two meaningful words, and hash distance 22 or less. The last condition stops generic titles such as "Madonna and Child" from matching different paintings by the same artist. A random sample of removed pairs was checked by eye (`overlap_review.html`): 46 of 60 showed the same painting or another version of it.
+5. **Minimum per style:** 200 images per style in WikiArt and 30 per style in each museum. Styles below it in any dataset are dropped.
 6. **Artist-disjoint WikiArt split:** `StratifiedGroupKFold` (20 folds, seed 42) grouped by artist: 3 folds test, 3 folds validation, 14 folds train (70/15/15). No artist appears in more than one split.
 7. **Seen versus unseen artists:** a museum painting is "seen" if its artist appears in the WikiArt training split.
 

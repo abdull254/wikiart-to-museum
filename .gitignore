@@ -1,0 +1,19 @@
+# images and caches (rebuilt by the scripts; WikiArt images may not be redistributed)
+data/wikiart/images/
+data/met/images*/
+data/rijks/images*/
+data/*/cache/
+data/final/hashes.json
+
+# model weights and bundles
+*.pt
+*.zip
+runs/*/best.pt
+
+# Python and OS
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

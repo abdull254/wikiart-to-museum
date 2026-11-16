@@ -1,0 +1,23 @@
+[
+  {
+    "step": "probe",
+    "n": 3000,
+    "unknown_artist_share": 0.583,
+    "at": "2026-10-20T18:48:35+00:00"
+  },
+  {
+    "step": "probe",
+    "repo": "Artificio/WikiArt_Full",
+    "n": 3000,
+    "named_artist_share": 1.0,
+    "median_long_side": 256,
+    "at": "2026-10-20T18:51:42+00:00"
+  },
+  {
+    "step": "download",
+    "repo": "Artificio/WikiArt_Full",
+    "size_long_side": 256,
+    "saved_this_run": 103250,
+    "at": "2026-10-20T19:01:09+00:00"
+  }
+]

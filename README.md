@@ -190,6 +190,17 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 - No personal data is collected.
 - CLIP and DINOv2 were pretrained on web-scale data that likely includes WikiArt and museum images. The ImageNet-initialized ResNet-50 does not have this problem, so it is the cleanest test of transfer.
 
+## Why Google Drive is still used
+
+The project started on Google Drive because the training runs in Google Colab, and Colab reads its data from Drive. The code and results moved to GitHub on Nov 16, at the instructor's request. Drive still holds the files that cannot or should not go on GitHub:
+
+- **Images.** `colab_data.zip` (about 784 MB) holds the WikiArt and museum images at 256 px. WikiArt images are for non-commercial research only and may not be shared publicly, so they are kept out of this public repo (see `.gitignore`).
+- **Trained models.** Each ResNet-50 checkpoint (`best.pt`, about 94 MB per seed) is too large for a normal Git repository.
+- **Feature files.** The CLIP and DINOv2 feature files (`features_*.npz`) are large and only needed to rerun the probes.
+- **Colab runs.** Every notebook (training, probes, accuracy boost, RQ2 few-shot) mounts Drive to load `colab_data.zip` and saves new runs to `MyDrive/wikiart_runs/`.
+
+This repository keeps everything needed to check and rebuild the work: all code and notebooks, the split, labels, object IDs, overlap lists, logs and the result files behind every table. Anyone can rebuild the image sets from the IDs with the scripts in `src/`.
+
 ## What is not in this repo
 
 - Images, datasets, caches and model checkpoints (`.pt`, `.zip`).

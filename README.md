@@ -4,10 +4,6 @@
 **Course:** CIS 631, Minnesota State University, Mankato, Fall 2026
 **Instructor:** Dr. Suboh Alkhushayni
 
-The research idea was first proposed by classmates **Mashfika Jahan** and **Yisihaq Yemiu** and is used here with their agreement.
-
-> Work was kept in Google Drive until November 2026 and moved to this repository at the instructor's request. Images, datasets and model checkpoints stay on Drive (see [What is not in this repo](#what-is-not-in-this-repo)).
-
 ## Overview
 
 Art-style classifiers are usually trained on WikiArt. Museums may want to use them on their own collections, but images from different sources differ in digitization, color and framing. This project measures how much a WikiArt-trained model loses on museum digitizations from the Metropolitan Museum of Art (the Met) and the Rijksmuseum, and whether a few museum images help at the other museum.

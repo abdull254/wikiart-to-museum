@@ -212,5 +212,4 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 - CLIP may have seen these paintings during pretraining.
 
 ## Credits
-
-Research framing: Mashfika Jahan and Yisihaq Yemiu. Data: WikiArt via `Artificio/WikiArt_Full`; The Metropolitan Museum of Art Open Access (CC0); Rijksmuseum (public domain / CC0); Wikidata (CC0).
+Data: WikiArt via `Artificio/WikiArt_Full`; The Metropolitan Museum of Art Open Access (CC0); Rijksmuseum (public domain / CC0); Wikidata (CC0).

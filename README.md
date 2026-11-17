@@ -109,6 +109,8 @@ reports/      progress reports
 | `notebooks/met_style_counts.ipynb` | Met style counts in Colab |
 | `notebooks/foundation_probes.ipynb` | CLIP and DINOv2 probes, CLIP zero-shot |
 | `notebooks/boost_accuracy.ipynb` | Accuracy boost: SigLIP, feature ensemble, CLIP fine-tune + WiSE-FT, TTA |
+| `notebooks/improve_accuracy.ipynb` | One-hour T4 run of the accuracy levers (SigLIP, feature ensemble, CLIP fine-tune, ensemble) with 6-style, 4-group and 3-era scores and painter-level bootstrap |
+| `docs/improving_accuracy.md` | Which levers can raise accuracy, with the evidence (epoch logs, merged-style scores) |
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
 | `docs/rq1_results.md` | Full RQ1, ablation and probe results |
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |

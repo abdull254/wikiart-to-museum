@@ -63,7 +63,15 @@ CLIP is best by about 10 points, but it may have seen these famous paintings dur
 
 ### RQ2: few-shot
 
-Notebook ready ([notebooks/rq2_fewshot.ipynb](notebooks/rq2_fewshot.ipynb)), **not run yet**, so no results.
+Run on Nov 17, 2026 ([notebooks/rq2_fewshot.ipynb](notebooks/rq2_fewshot.ipynb), with outputs). Fixed test sets: painters absent from WikiArt train and from the source museum (Met → Rijks n = 2,279; Rijks → Met n = 424). Balanced accuracy (%), mean of 3 seeds (probes at k = 0: one deterministic run); gain = k = 50 minus k = 0, paired bootstrap.
+
+| Model | Met → Rijks, k = 0 | k = 50 | gain [95% CI] | Rijks → Met, k = 0 | k = 50 | gain [95% CI] |
+|---|---:|---:|---:|---:|---:|---:|
+| ResNet-50 fine-tune | 57.0 | 59.5 | +2.5 [−0.1, 5.2] | 57.7 | 58.5 | +0.8 [−2.1, 3.7] |
+| CLIP probe | 65.0 | 66.4 | +1.4 [−1.6, 4.3] | 67.0 | 66.4 | −0.5 [−4.2, 3.2] |
+| DINOv2 probe | 58.1 | 58.3 | +0.2 [−2.8, 3.0] | 61.4 | 62.8 | +1.4 [−2.0, 4.6] |
+
+A few labeled paintings from one museum barely help on the other: none of the 24 gains (3 models × 2 directions × k = 5, 10, 25, 50) is significant; the largest is ResNet-50, Met → Rijks, k = 50 (p = 0.06). The WikiArt-only control (same 200 steps) gives −1.6 and −0.4, and WikiArt test stays at 59–61 (no forgetting). The shots mainly move errors between styles (ResNet-50, Met → Rijks, k = 50: Romanticism recall 39 → 59, Baroque 59 → 52; ECE 0.07 → 0.15). Full table: [results/rq2/rq2_report.txt](results/rq2/rq2_report.txt); curve: [results/rq2/rq2_curve.png](results/rq2/rq2_curve.png).
 
 ## Repository layout
 
@@ -114,6 +122,7 @@ reports/      progress reports
 | `results/stats_summary.csv`, `stats_per_class.csv`, `stats_report.txt` | 3-seed ResNet-50 statistics (RQ1 table) |
 | `results/runs/resnet50_seed{1,2,3}/` | Config, training history, metrics, ablations and per-painting predictions |
 | `results/probes/` | CLIP and DINOv2 probe metrics, report and predictions |
+| `results/rq2/` | RQ2 few-shot report (all models, directions, k), test-set sizes and floors, curve |
 | `results/labels/` | Museum test labels with rules, hand-check record |
 | `data/final/wikiart_split.csv` | Artist-disjoint WikiArt split (train / val / test), SHA-256 starts `d5bb835c8cd9526a`, as in every run config |
 | `data/final/museum_table.csv` | All 6,909 museum paintings with label, rule and the reason each excluded one was dropped |
@@ -143,7 +152,7 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 | Met and Rijksmuseum object IDs with export dates | Done | `data/met/ids.txt`, `data/rijks/ids.txt`; all harvested on 2026-10-20 (logs in `data/*/harvest_log.json`, dates in [docs/data_notes.md](docs/data_notes.md)) |
 | Removed WikiArt-museum overlaps; near-duplicate list | Done | [data/final/museum_wikiart_overlap.csv](data/final/museum_wikiart_overlap.csv) (721), [data/final/wikiart_near_duplicates.csv](data/final/wikiart_near_duplicates.csv) (425); method in [docs/data_notes.md](docs/data_notes.md) section 5 |
 | Artist-disjoint split, seeds, model and probe settings | Done | [data/final/wikiart_split.csv](data/final/wikiart_split.csv) (hash `d5bb835c8cd9526a`, matches `results/runs/*/config.json`), [docs/settings.md](docs/settings.md) |
-| Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations and probes | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/` |
+| Result files behind every table, incl. `rq1_results.md` | Done for RQ1, ablations, probes and RQ2 | `results/stats_*`, `results/runs/resnet50_seed{1,2,3}/` (metrics, ablations, predictions), `results/probes/`, `results/rq2/` |
 | README with library versions and steps to reproduce | Done | Below. Training versions from the run configs; full Colab `pip freeze` in [requirements_colab.txt](requirements_colab.txt) |
 
 ## Reproducing the main tables
@@ -181,7 +190,7 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 3. **Ablation table (Colab).** For each seed, run `python src/evaluate.py --run runs/resnet50_seed<N>`.
 4. **Statistics (Colab).** Run `python src/stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3`. Output matches `results/stats_report.txt`.
 5. **Foundation-model table (Colab).** Run `notebooks/foundation_probes.ipynb`.
-6. **RQ2 curve (Colab).** Run `notebooks/rq2_fewshot.ipynb`.
+6. **RQ2 curve (Colab).** Run `notebooks/rq2_fewshot.ipynb` after step 5 (it reuses the probe features). Output matches `results/rq2/rq2_report.txt`.
 
 ## Ethics and licensing
 

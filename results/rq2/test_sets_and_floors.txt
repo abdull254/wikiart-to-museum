@@ -1,0 +1,11 @@
+Fixed test sets (paintings per style):
+  met->rijks: n= 2279 of 3092   Baroque 1527  Mannerism 54  Northern 65  Realism 165  Rococo 435  Romantici 33
+  rijks->met: n=  424 of 937   Baroque 136  Mannerism 43  Northern 121  Realism 17  Rococo 80  Romantici 27
+
+Shots actually available at k=50 (a style with fewer paintings uses all it has):
+  met   Baroque 50  Mannerism 50  Northern 50  Realism 50  Rococo 50  Romantici 50
+  rijks Baroque 50  Mannerism 50  Northern 50  Realism 50  Rococo 50  Romantici 38
+
+Floors on the fixed test sets (chance balanced accuracy is always 16.7):
+  met->rijks: majority-class guess  acc 67.0  macro-F1 13.4  bal acc 16.7
+  rijks->met: majority-class guess  acc 32.1  macro-F1 8.1  bal acc 16.7

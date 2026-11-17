@@ -49,8 +49,9 @@ SigLIP (`google/siglip-so400m-patch14-384`) probe, feature ensemble, partial CLI
 - ResNet-50: starts from the seed 1-3 checkpoints, 200 fixed steps, each batch half museum shots and half WikiArt.
 - Control `k0ft`: the same 200 steps on WikiArt only.
 - Forgetting check: rescore WikiArt test at k0ft and k = 50.
-- Probes: refit the CLIP and DINOv2 logistic regression on WikiArt train plus the shots.
-- Not yet run.
+- Probes: refit the CLIP and DINOv2 logistic regression on WikiArt train plus the shots (C = 0.1 and 0.003; shots and WikiArt get equal total weight; warm start from the WikiArt-only fit).
+- ResNet-50 settings: AdamW, lr 2e-5, cosine schedule, batch 32 (16 shots + 16 class-balanced WikiArt), BatchNorm statistics frozen, label smoothing 0.1.
+- Run on Nov 17, 2026 (T4 GPU, about 50 min). Results: `results/rq2/`.
 
 ## Statistics
 

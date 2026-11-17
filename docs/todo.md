@@ -25,7 +25,8 @@ Ordered by priority. Details for each code item are in `code_review.md` (section
 
 ## D. Experiments not started (instructor requires)
 
-- [ ] RQ2 few-shot curve: 5, 10, 25, 50 per style, Met → Rijks and Rijks → Met
+- [x] (run 2026-11-17, results/rq2/) RQ2 few-shot curve: 5, 10, 25, 50 per style, Met → Rijks and Rijks → Met
+- [ ] RQ2 follow-up: artist-level bootstrap; per-style trade-off (Baroque down, small styles up)
 - [ ] CORAL domain adaptation in `train.py`, compared with each simple fix on its own
 - [x] (done 2026-10-28, see rq1_results.md) DINOv2 and CLIP linear probes (note CLIP may have seen these paintings)
 - [x] Decide on an in-gallery test set: left out (Nov 16); stated as a threat to external validity and future work

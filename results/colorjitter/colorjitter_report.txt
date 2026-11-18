@@ -1,0 +1,76 @@
+Colour jitter (brightness 0.2, saturation 0.2, training only) vs baseline ResNet-50, mean of 3 seeds, in %
+Training script: the train.py inside colab_data.zip with the same one-line ColorJitter change as `src/train.py --color-jitter` (the notebook fell back to patching it because the GitHub copy did not have the switch yet).
+Museum rows marked (unseen) = painters not in WikiArt (main result). diff = jitter - baseline.
+CI and boot_p: painter-level paired bootstrap (2,000). t_test_p: paired t-test over the 3 seed pairs.
+
+--- balanced_accuracy ---
+           set    n  baseline  baseline_sd  colorjitter  colorjitter_sd  diff  t_test_p  ci_low  ci_high  boot_p
+  wikiart_test 3857      61.1          1.3         60.6             1.8  -0.5     0.497    -4.2      1.1   0.568
+  met (unseen)  731      57.5          1.9         60.3             0.8   2.7     0.150     0.0      5.0   0.048
+rijks (unseen) 2994      58.2          0.4         59.4             2.5   1.2     0.526    -0.6      3.7   0.155
+     met (all)  937      61.0          0.9         62.7             1.8   1.7     0.168    -1.1      4.2   0.210
+   rijks (all) 3092      58.0          0.2         59.3             2.3   1.3     0.453    -0.2      3.4   0.086
+
+--- macro_f1 ---
+           set    n  baseline  baseline_sd  colorjitter  colorjitter_sd  diff  t_test_p  ci_low  ci_high  boot_p
+  wikiart_test 3857      59.7          1.3         57.5             2.8  -2.2     0.192    -4.2      0.2   0.077
+  met (unseen)  731      55.7          2.1         55.8             2.5   0.2     0.920    -2.1      2.2   0.930
+rijks (unseen) 2994      46.0          1.5         44.7             2.1  -1.3     0.191    -2.3     -0.1   0.040
+     met (all)  937      59.2          1.6         58.8             3.3  -0.5     0.771    -2.7      1.6   0.660
+   rijks (all) 3092      46.3          1.5         45.0             2.1  -1.2     0.203    -2.2     -0.0   0.043
+
+--- top1 ---
+           set    n  baseline  baseline_sd  colorjitter  colorjitter_sd  diff  t_test_p
+  wikiart_test 3857      61.2          0.7         59.3             2.1  -1.9     0.181
+  met (unseen)  731      64.9          1.4         63.0             4.5  -1.9     0.504
+rijks (unseen) 2994      61.5          4.0         58.4             4.5  -3.1     0.075
+     met (all)  937      65.7          1.4         64.2             4.4  -1.5     0.490
+   rijks (all) 3092      61.9          3.9         58.9             4.4  -3.0     0.084
+
+--- McNemar per seed (same paintings): paintings only one model gets right ---
+           set  seed  only_baseline_right  only_jitter_right      p
+  wikiart_test     1                  375                365 0.7408
+  wikiart_test     2                  383                311 0.0070
+  wikiart_test     3                  482                349 0.0000
+  met (unseen)     1                   54                 67 0.2753
+  met (unseen)     2                   63                 54 0.4597
+  met (unseen)     3                  112                 67 0.0010
+rijks (unseen)     1                  281                241 0.0877
+rijks (unseen)     2                  344                215 0.0000
+rijks (unseen)     3                  383                278 0.0001
+     met (all)     1                   72                 79 0.6255
+     met (all)     2                   75                 73 0.9345
+     met (all)     3                  134                 87 0.0019
+   rijks (all)     1                  283                245 0.1073
+   rijks (all)     2                  355                220 0.0000
+   rijks (all)     3                  394                289 0.0001
+
+--- Per-style recall (mean of 3 seeds) ---
+wikiart_test
+                       style    n  baseline  colorjitter  diff
+                     Baroque  583      59.5         49.1 -10.4
+Mannerism (Late Renaissance)  210      55.6         74.0  18.4
+        Northern Renaissance  221      76.6         70.9  -5.7
+                     Realism 1298      75.7         78.4   2.8
+                      Rococo  388      52.2         49.8  -2.4
+                 Romanticism 1157      46.9         41.4  -5.5
+
+met (unseen)
+                       style   n  baseline  colorjitter  diff
+                     Baroque 298      65.9         59.3  -6.6
+Mannerism (Late Renaissance)  48      61.1         75.0  13.9
+        Northern Renaissance 164      88.6         82.9  -5.7
+                     Realism  71      46.9         53.5   6.6
+                      Rococo 119      50.4         52.1   1.7
+                 Romanticism  31      32.3         38.7   6.5
+
+rijks (unseen)
+                       style    n  baseline  colorjitter  diff
+                     Baroque 2059      61.6         57.0  -4.6
+Mannerism (Late Renaissance)   66      40.9         55.6  14.6
+        Northern Renaissance  102      72.5         63.7  -8.8
+                     Realism  266      77.8         80.7   2.9
+                      Rococo  466      53.6         52.0  -1.6
+                 Romanticism   35      42.9         47.6   4.8
+
+Check: baseline means should read WikiArt 61.1, Met all 61.0 / unseen 57.5, Rijks all 58.0 / unseen 58.2 (balanced accuracy).

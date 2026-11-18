@@ -50,6 +50,19 @@ All numbers are **balanced accuracy (%)**. Chance is 16.7%. Museum columns use *
 
 No digitization fix closes the gap. Matching color (`colornorm`) or JPEG quality (`jpegmatch`) changes results by less than 0.3 points. Center crop helps the Met by +2.5 (noisy). Grayscale costs 4 to 9 points everywhere, so color carries style information. Museum images are no more fragile than WikiArt. Full table: [docs/rq1_results.md](docs/rq1_results.md).
 
+### Colour-jitter training (3 seeds, Nov 18)
+
+ResNet-50 retrained with `ColorJitter(brightness=0.2, saturation=0.2)` on WikiArt training images only; everything else as the baseline. Mean of 3 seeds, difference vs baseline with a painter-level paired bootstrap 95% CI.
+
+| Test set | Baseline | Colour jitter | Diff [95% CI] | Top-1 diff |
+|---|---:|---:|---:|---:|
+| WikiArt test | 61.1 | 60.6 | -0.5 [-4.2, 1.1] | -1.9 |
+| Met, unseen artists | 57.5 | 60.3 | +2.7 [0.0, 5.0], p = 0.048 | -1.9 |
+| Rijksmuseum, unseen artists | 58.2 | 59.4 | +1.2 [-0.6, 3.7], p = 0.16 | -3.1 |
+
+- A small, borderline balanced-accuracy gain at the Met only; none of the paired t-tests over seeds is significant (p >= 0.15), and top-1 accuracy and Rijks macro-F1 (-1.3) go down.
+- The gain is a trade between styles, not better recognition overall: Mannerism recall rises by 14 to 18 points while Baroque (-5 to -10) and Northern Renaissance (-6 to -9) fall. Full report: [results/colorjitter/colorjitter_report.txt](results/colorjitter/colorjitter_report.txt).
+
 ### Foundation models (frozen features + linear probe, Oct 28)
 
 | Model | WikiArt | Met unseen | Rijks unseen |
@@ -111,6 +124,7 @@ reports/      progress reports
 | `notebooks/boost_accuracy.ipynb` | Accuracy boost: SigLIP, feature ensemble, CLIP fine-tune + WiSE-FT, TTA |
 | `notebooks/improve_accuracy.ipynb` | One-hour T4 run of the accuracy levers (SigLIP, feature ensemble, CLIP fine-tune, ensemble) with 6-style, 4-group and 3-era scores and painter-level bootstrap |
 | `docs/improving_accuracy.md` | Which levers can raise accuracy, the evidence, and the Nov 18 results (unseen-artist museums: ResNet 57-58 to 70-73 balanced accuracy with SigLIP / ensembles; files in `results/improve/`) |
+| `notebooks/colorjitter.ipynb` | Colour-jitter test (with outputs): retrains the ResNet-50 baseline (3 seeds) with `ColorJitter(brightness=0.2, saturation=0.2)` on WikiArt training images only and compares it with the baseline (paired t-test, painter-level bootstrap, McNemar); report in `results/colorjitter/` |
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
 | `docs/rq1_results.md` | Full RQ1, ablation and probe results |
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |

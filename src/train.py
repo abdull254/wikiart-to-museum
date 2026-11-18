@@ -11,6 +11,7 @@ Usage (inside your venv):
   python train.py --seed 1                     # full run
   python train.py --seed 1 --eval-museums      # full run + Met and Rijksmuseum scores
   python train.py --seed 1 --grayscale-aug 0.2 # later: grayscale-augmentation test
+  python train.py --seed 1 --color-jitter      # colour-jitter test (training images only)
 
 Each run writes to runs/<name>/:
   config.json     every setting, the device, library versions and the split file's hash
@@ -105,6 +106,8 @@ def make_transforms(args):
              transforms.RandomHorizontalFlip()]
     if args.grayscale_aug > 0:
         train.append(transforms.RandomGrayscale(p=args.grayscale_aug))
+    if args.color_jitter:   # WikiArt training images only; val, test and museum images are unchanged
+        train.append(transforms.ColorJitter(brightness=0.2, saturation=0.2))
     train += [transforms.ToTensor(), transforms.Normalize(MEAN, STD)]
     # Images are already 256 x 256 squares: resize the whole image, no cropping
     test = [transforms.Resize((224, 224)), transforms.ToTensor(), transforms.Normalize(MEAN, STD)]
@@ -198,6 +201,8 @@ def main():
     ap.add_argument("--no-class-weights", action="store_true",
                     help="turn off inverse-frequency class weights in the loss")
     ap.add_argument("--grayscale-aug", type=float, default=0.0, help="probability of grayscale training images")
+    ap.add_argument("--color-jitter", action="store_true",
+                    help="colour jitter (brightness 0.2, saturation 0.2) on training images")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--quick", action="store_true", help="test run: 2,000 train / 500 val images, 1 epoch")
     ap.add_argument("--eval-museums", action="store_true", help="also score the Met and Rijksmuseum sets")
@@ -213,7 +218,8 @@ def main():
     device = pick_device(args.device)
     classes = load_classes()
     name = args.name or (f"{'quick_' if args.quick else ''}resnet50"
-                         f"{'_gray' + str(args.grayscale_aug) if args.grayscale_aug else ''}_seed{args.seed}")
+                         f"{'_gray' + str(args.grayscale_aug) if args.grayscale_aug else ''}"
+                         f"{'_cj' if args.color_jitter else ''}_seed{args.seed}")
     out = RUNS / name
     out.mkdir(parents=True, exist_ok=True)
 

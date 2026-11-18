@@ -1,0 +1,296 @@
+/content
+
+===== seed 1: training with colour jitter =====
+Device: cuda   classes: 6   train 18501  val 3786  test 3857
+  Baroque                          3003 train images
+  Mannerism (Late Renaissance)      920 train images
+  Northern Renaissance             1252 train images
+  Realism                          6055 train images
+  Rococo                           1759 train images
+  Romanticism                      5512 train images
+Downloading: "https://download.pytorch.org/models/resnet50-11ad3fa6.pth" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth
+100% 97.8M/97.8M [00:00<00:00, 161MB/s]
+  loading the first batch of images...
+  batch 1 loaded after 0.8 s, training on it...
+  batch 1 done after 3.5 s (loss 1.970)
+  batch 2 loaded after 3.5 s, training on it...
+  batch 2 done after 3.7 s (loss 1.924)
+  batch 3 loaded after 3.7 s, training on it...
+  batch 3 done after 4.0 s (loss 1.873)
+  speed: 0.57 s per batch -> about 3 min per full epoch, 0.5 h for a 12-epoch run
+  epoch 1 batch 50/290  loss 1.903
+  epoch 1 batch 100/290  loss 1.887
+  epoch 1 batch 150/290  loss 1.855
+  epoch 1 batch 200/290  loss 1.804
+  epoch 1 batch 250/290  loss 1.736
+epoch 1: train loss 1.688 | val acc 0.407 bal acc 0.436 macro-F1 0.377 (1.9 min)
+  epoch 2 batch 50/290  loss 1.295
+  epoch 2 batch 100/290  loss 1.252
+  epoch 2 batch 150/290  loss 1.232
+  epoch 2 batch 200/290  loss 1.213
+  epoch 2 batch 250/290  loss 1.202
+epoch 2: train loss 1.198 | val acc 0.505 bal acc 0.512 macro-F1 0.451 (1.8 min)
+  epoch 3 batch 50/290  loss 1.019
+  epoch 3 batch 100/290  loss 1.004
+  epoch 3 batch 150/290  loss 1.003
+  epoch 3 batch 200/290  loss 1.015
+  epoch 3 batch 250/290  loss 1.013
+epoch 3: train loss 1.010 | val acc 0.564 bal acc 0.542 macro-F1 0.520 (1.8 min)
+  epoch 4 batch 50/290  loss 0.898
+  epoch 4 batch 100/290  loss 0.896
+  epoch 4 batch 150/290  loss 0.898
+  epoch 4 batch 200/290  loss 0.894
+  epoch 4 batch 250/290  loss 0.894
+epoch 4: train loss 0.897 | val acc 0.577 bal acc 0.549 macro-F1 0.523 (1.9 min)
+  epoch 5 batch 50/290  loss 0.850
+  epoch 5 batch 100/290  loss 0.833
+  epoch 5 batch 150/290  loss 0.829
+  epoch 5 batch 200/290  loss 0.832
+  epoch 5 batch 250/290  loss 0.834
+epoch 5: train loss 0.833 | val acc 0.585 bal acc 0.556 macro-F1 0.526 (1.8 min)
+  epoch 6 batch 50/290  loss 0.787
+  epoch 6 batch 100/290  loss 0.780
+  epoch 6 batch 150/290  loss 0.773
+  epoch 6 batch 200/290  loss 0.770
+  epoch 6 batch 250/290  loss 0.766
+epoch 6: train loss 0.767 | val acc 0.581 bal acc 0.564 macro-F1 0.531 (1.8 min)
+  epoch 7 batch 50/290  loss 0.739
+  epoch 7 batch 100/290  loss 0.731
+  epoch 7 batch 150/290  loss 0.730
+  epoch 7 batch 200/290  loss 0.730
+  epoch 7 batch 250/290  loss 0.730
+epoch 7: train loss 0.730 | val acc 0.567 bal acc 0.546 macro-F1 0.523 (1.8 min)
+  epoch 8 batch 50/290  loss 0.699
+  epoch 8 batch 100/290  loss 0.701
+  epoch 8 batch 150/290  loss 0.701
+  epoch 8 batch 200/290  loss 0.702
+  epoch 8 batch 250/290  loss 0.706
+epoch 8: train loss 0.705 | val acc 0.593 bal acc 0.562 macro-F1 0.543 (1.8 min)
+  epoch 9 batch 50/290  loss 0.692
+  epoch 9 batch 100/290  loss 0.689
+  epoch 9 batch 150/290  loss 0.686
+  epoch 9 batch 200/290  loss 0.685
+  epoch 9 batch 250/290  loss 0.686
+epoch 9: train loss 0.686 | val acc 0.579 bal acc 0.548 macro-F1 0.525 (1.8 min)
+  epoch 10 batch 50/290  loss 0.664
+  epoch 10 batch 100/290  loss 0.663
+  epoch 10 batch 150/290  loss 0.665
+  epoch 10 batch 200/290  loss 0.669
+  epoch 10 batch 250/290  loss 0.671
+epoch 10: train loss 0.672 | val acc 0.580 bal acc 0.555 macro-F1 0.528 (1.8 min)
+  epoch 11 batch 50/290  loss 0.660
+  epoch 11 batch 100/290  loss 0.666
+  epoch 11 batch 150/290  loss 0.664
+  epoch 11 batch 200/290  loss 0.663
+  epoch 11 batch 250/290  loss 0.663
+epoch 11: train loss 0.664 | val acc 0.572 bal acc 0.549 macro-F1 0.525 (1.8 min)
+  epoch 12 batch 50/290  loss 0.658
+  epoch 12 batch 100/290  loss 0.655
+  epoch 12 batch 150/290  loss 0.660
+  epoch 12 batch 200/290  loss 0.660
+  epoch 12 batch 250/290  loss 0.659
+epoch 12: train loss 0.659 | val acc 0.588 bal acc 0.563 macro-F1 0.539 (1.8 min)
+
+Done in 22.5 min. Results in /content/runs/resnet50_cj_seed1
+  set                n     acc  bal acc  macro-F1    ECE
+  wikiart_val     3786   0.581    0.564     0.531  0.043
+  wikiart_test    3857   0.612    0.625     0.594  0.035
+  met              937   0.666    0.633     0.601  0.056
+  rijks           3092   0.625    0.581     0.464  0.041
+seed 1: saved to Drive in 23 min
+
+===== seed 2: training with colour jitter =====
+Device: cuda   classes: 6   train 18501  val 3786  test 3857
+  Baroque                          3003 train images
+  Mannerism (Late Renaissance)      920 train images
+  Northern Renaissance             1252 train images
+  Realism                          6055 train images
+  Rococo                           1759 train images
+  Romanticism                      5512 train images
+  loading the first batch of images...
+  batch 1 loaded after 0.7 s, training on it...
+  batch 1 done after 2.5 s (loss 1.925)
+  batch 2 loaded after 2.5 s, training on it...
+  batch 2 done after 2.8 s (loss 1.873)
+  batch 3 loaded after 2.8 s, training on it...
+  batch 3 done after 3.1 s (loss 1.953)
+  speed: 0.49 s per batch -> about 2 min per full epoch, 0.5 h for a 12-epoch run
+  epoch 1 batch 50/290  loss 1.903
+  epoch 1 batch 100/290  loss 1.885
+  epoch 1 batch 150/290  loss 1.855
+  epoch 1 batch 200/290  loss 1.794
+  epoch 1 batch 250/290  loss 1.723
+epoch 1: train loss 1.674 | val acc 0.419 bal acc 0.426 macro-F1 0.392 (1.8 min)
+  epoch 2 batch 50/290  loss 1.263
+  epoch 2 batch 100/290  loss 1.250
+  epoch 2 batch 150/290  loss 1.235
+  epoch 2 batch 200/290  loss 1.213
+  epoch 2 batch 250/290  loss 1.202
+epoch 2: train loss 1.194 | val acc 0.524 bal acc 0.512 macro-F1 0.474 (1.8 min)
+  epoch 3 batch 50/290  loss 1.026
+  epoch 3 batch 100/290  loss 1.026
+  epoch 3 batch 150/290  loss 1.021
+  epoch 3 batch 200/290  loss 1.011
+  epoch 3 batch 250/290  loss 1.016
+epoch 3: train loss 1.011 | val acc 0.537 bal acc 0.546 macro-F1 0.482 (1.8 min)
+  epoch 4 batch 50/290  loss 0.914
+  epoch 4 batch 100/290  loss 0.898
+  epoch 4 batch 150/290  loss 0.901
+  epoch 4 batch 200/290  loss 0.905
+  epoch 4 batch 250/290  loss 0.900
+epoch 4: train loss 0.896 | val acc 0.547 bal acc 0.531 macro-F1 0.498 (1.8 min)
+  epoch 5 batch 50/290  loss 0.826
+  epoch 5 batch 100/290  loss 0.823
+  epoch 5 batch 150/290  loss 0.825
+  epoch 5 batch 200/290  loss 0.821
+  epoch 5 batch 250/290  loss 0.823
+epoch 5: train loss 0.825 | val acc 0.556 bal acc 0.552 macro-F1 0.511 (1.8 min)
+  epoch 6 batch 50/290  loss 0.790
+  epoch 6 batch 100/290  loss 0.779
+  epoch 6 batch 150/290  loss 0.773
+  epoch 6 batch 200/290  loss 0.771
+  epoch 6 batch 250/290  loss 0.766
+epoch 6: train loss 0.766 | val acc 0.566 bal acc 0.542 macro-F1 0.509 (1.8 min)
+  epoch 7 batch 50/290  loss 0.763
+  epoch 7 batch 100/290  loss 0.744
+  epoch 7 batch 150/290  loss 0.736
+  epoch 7 batch 200/290  loss 0.736
+  epoch 7 batch 250/290  loss 0.734
+epoch 7: train loss 0.733 | val acc 0.604 bal acc 0.561 macro-F1 0.542 (1.8 min)
+  epoch 8 batch 50/290  loss 0.687
+  epoch 8 batch 100/290  loss 0.697
+  epoch 8 batch 150/290  loss 0.699
+  epoch 8 batch 200/290  loss 0.701
+  epoch 8 batch 250/290  loss 0.698
+epoch 8: train loss 0.700 | val acc 0.579 bal acc 0.553 macro-F1 0.527 (1.8 min)
+  epoch 9 batch 50/290  loss 0.688
+  epoch 9 batch 100/290  loss 0.685
+  epoch 9 batch 150/290  loss 0.685
+  epoch 9 batch 200/290  loss 0.683
+  epoch 9 batch 250/290  loss 0.680
+epoch 9: train loss 0.684 | val acc 0.572 bal acc 0.542 macro-F1 0.521 (1.8 min)
+  epoch 10 batch 50/290  loss 0.678
+  epoch 10 batch 100/290  loss 0.671
+  epoch 10 batch 150/290  loss 0.672
+  epoch 10 batch 200/290  loss 0.672
+  epoch 10 batch 250/290  loss 0.670
+epoch 10: train loss 0.672 | val acc 0.575 bal acc 0.551 macro-F1 0.523 (1.8 min)
+  epoch 11 batch 50/290  loss 0.657
+  epoch 11 batch 100/290  loss 0.663
+  epoch 11 batch 150/290  loss 0.661
+  epoch 11 batch 200/290  loss 0.661
+  epoch 11 batch 250/290  loss 0.660
+epoch 11: train loss 0.664 | val acc 0.589 bal acc 0.545 macro-F1 0.529 (1.8 min)
+  epoch 12 batch 50/290  loss 0.659
+  epoch 12 batch 100/290  loss 0.661
+  epoch 12 batch 150/290  loss 0.660
+  epoch 12 batch 200/290  loss 0.668
+  epoch 12 batch 250/290  loss 0.663
+epoch 12: train loss 0.662 | val acc 0.575 bal acc 0.546 macro-F1 0.521 (1.8 min)
+
+Done in 22.3 min. Results in /content/runs/resnet50_cj_seed2
+  set                n     acc  bal acc  macro-F1    ECE
+  wikiart_val     3786   0.604    0.561     0.542  0.057
+  wikiart_test    3857   0.599    0.605     0.588  0.038
+  met              937   0.668    0.642     0.612  0.034
+  rijks           3092   0.603    0.620     0.462  0.054
+seed 2: saved to Drive in 22 min
+
+===== seed 3: training with colour jitter =====
+Device: cuda   classes: 6   train 18501  val 3786  test 3857
+  Baroque                          3003 train images
+  Mannerism (Late Renaissance)      920 train images
+  Northern Renaissance             1252 train images
+  Realism                          6055 train images
+  Rococo                           1759 train images
+  Romanticism                      5512 train images
+  loading the first batch of images...
+  batch 1 loaded after 1.1 s, training on it...
+  batch 1 done after 3.3 s (loss 1.925)
+  batch 2 loaded after 3.3 s, training on it...
+  batch 2 done after 3.6 s (loss 1.944)
+  batch 3 loaded after 3.6 s, training on it...
+  batch 3 done after 3.8 s (loss 1.953)
+  speed: 0.56 s per batch -> about 3 min per full epoch, 0.5 h for a 12-epoch run
+  epoch 1 batch 50/290  loss 1.909
+  epoch 1 batch 100/290  loss 1.897
+  epoch 1 batch 150/290  loss 1.861
+  epoch 1 batch 200/290  loss 1.798
+  epoch 1 batch 250/290  loss 1.733
+epoch 1: train loss 1.688 | val acc 0.443 bal acc 0.480 macro-F1 0.411 (1.9 min)
+  epoch 2 batch 50/290  loss 1.299
+  epoch 2 batch 100/290  loss 1.257
+  epoch 2 batch 150/290  loss 1.245
+  epoch 2 batch 200/290  loss 1.230
+  epoch 2 batch 250/290  loss 1.221
+epoch 2: train loss 1.211 | val acc 0.500 bal acc 0.505 macro-F1 0.453 (1.8 min)
+  epoch 3 batch 50/290  loss 1.031
+  epoch 3 batch 100/290  loss 1.025
+  epoch 3 batch 150/290  loss 1.011
+  epoch 3 batch 200/290  loss 1.009
+  epoch 3 batch 250/290  loss 1.010
+epoch 3: train loss 1.008 | val acc 0.564 bal acc 0.555 macro-F1 0.514 (1.9 min)
+  epoch 4 batch 50/290  loss 0.893
+  epoch 4 batch 100/290  loss 0.901
+  epoch 4 batch 150/290  loss 0.900
+  epoch 4 batch 200/290  loss 0.905
+  epoch 4 batch 250/290  loss 0.903
+epoch 4: train loss 0.906 | val acc 0.549 bal acc 0.567 macro-F1 0.514 (1.9 min)
+  epoch 5 batch 50/290  loss 0.833
+  epoch 5 batch 100/290  loss 0.831
+  epoch 5 batch 150/290  loss 0.833
+  epoch 5 batch 200/290  loss 0.839
+  epoch 5 batch 250/290  loss 0.837
+epoch 5: train loss 0.837 | val acc 0.575 bal acc 0.554 macro-F1 0.525 (1.8 min)
+  epoch 6 batch 50/290  loss 0.790
+  epoch 6 batch 100/290  loss 0.775
+  epoch 6 batch 150/290  loss 0.780
+  epoch 6 batch 200/290  loss 0.781
+  epoch 6 batch 250/290  loss 0.780
+epoch 6: train loss 0.776 | val acc 0.567 bal acc 0.550 macro-F1 0.514 (1.9 min)
+  epoch 7 batch 50/290  loss 0.728
+  epoch 7 batch 100/290  loss 0.736
+  epoch 7 batch 150/290  loss 0.743
+  epoch 7 batch 200/290  loss 0.737
+  epoch 7 batch 250/290  loss 0.735
+epoch 7: train loss 0.733 | val acc 0.583 bal acc 0.548 macro-F1 0.531 (1.8 min)
+  epoch 8 batch 50/290  loss 0.723
+  epoch 8 batch 100/290  loss 0.712
+  epoch 8 batch 150/290  loss 0.707
+  epoch 8 batch 200/290  loss 0.705
+  epoch 8 batch 250/290  loss 0.704
+epoch 8: train loss 0.704 | val acc 0.586 bal acc 0.550 macro-F1 0.528 (1.9 min)
+  epoch 9 batch 50/290  loss 0.697
+  epoch 9 batch 100/290  loss 0.691
+  epoch 9 batch 150/290  loss 0.693
+  epoch 9 batch 200/290  loss 0.693
+  epoch 9 batch 250/290  loss 0.688
+epoch 9: train loss 0.689 | val acc 0.577 bal acc 0.554 macro-F1 0.525 (1.9 min)
+  epoch 10 batch 50/290  loss 0.673
+  epoch 10 batch 100/290  loss 0.675
+  epoch 10 batch 150/290  loss 0.675
+  epoch 10 batch 200/290  loss 0.675
+  epoch 10 batch 250/290  loss 0.675
+epoch 10: train loss 0.675 | val acc 0.586 bal acc 0.561 macro-F1 0.541 (1.8 min)
+  epoch 11 batch 50/290  loss 0.662
+  epoch 11 batch 100/290  loss 0.665
+  epoch 11 batch 150/290  loss 0.671
+  epoch 11 batch 200/290  loss 0.671
+  epoch 11 batch 250/290  loss 0.670
+epoch 11: train loss 0.669 | val acc 0.582 bal acc 0.558 macro-F1 0.531 (1.8 min)
+  epoch 12 batch 50/290  loss 0.659
+  epoch 12 batch 100/290  loss 0.659
+  epoch 12 batch 150/290  loss 0.659
+  epoch 12 batch 200/290  loss 0.664
+  epoch 12 batch 250/290  loss 0.665
+epoch 12: train loss 0.667 | val acc 0.590 bal acc 0.558 macro-F1 0.540 (1.8 min)
+
+Done in 23.0 min. Results in /content/runs/resnet50_cj_seed3
+  set                n     acc  bal acc  macro-F1    ECE
+  wikiart_val     3786   0.549    0.567     0.514  0.055
+  wikiart_test    3857   0.570    0.589     0.542  0.048
+  met              937   0.591    0.607     0.551  0.090
+  rijks           3092   0.540    0.579     0.426  0.093
+seed 3: saved to Drive in 23 min
+
+All seeds done: ['resnet50_cj_seed1', 'resnet50_cj_seed2', 'resnet50_cj_seed3']

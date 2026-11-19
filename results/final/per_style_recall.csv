@@ -1,0 +1,55 @@
+model,set,style,n,recall
+ResNet-50,WikiArt test,Baroque,583,59.46
+ResNet-50,WikiArt test,Mannerism,210,55.56
+ResNet-50,WikiArt test,Northern Renaissance,221,76.47
+ResNet-50,WikiArt test,Realism,1298,75.65
+ResNet-50,WikiArt test,Rococo,388,52.23
+ResNet-50,WikiArt test,Romanticism,1157,46.93
+ResNet-50,Met,Baroque,298,65.88
+ResNet-50,Met,Mannerism,48,61.11
+ResNet-50,Met,Northern Renaissance,164,88.62
+ResNet-50,Met,Realism,71,46.95
+ResNet-50,Met,Rococo,119,50.42
+ResNet-50,Met,Romanticism,31,32.26
+ResNet-50,Rijksmuseum,Baroque,2059,61.58
+ResNet-50,Rijksmuseum,Mannerism,66,40.91
+ResNet-50,Rijksmuseum,Northern Renaissance,102,72.55
+ResNet-50,Rijksmuseum,Realism,266,77.82
+ResNet-50,Rijksmuseum,Rococo,466,53.58
+ResNet-50,Rijksmuseum,Romanticism,35,42.86
+CLIP probe,WikiArt test,Baroque,583,73.76
+CLIP probe,WikiArt test,Mannerism,210,64.29
+CLIP probe,WikiArt test,Northern Renaissance,221,81.9
+CLIP probe,WikiArt test,Realism,1298,84.21
+CLIP probe,WikiArt test,Rococo,388,59.02
+CLIP probe,WikiArt test,Romanticism,1157,62.23
+CLIP probe,Met,Baroque,298,73.15
+CLIP probe,Met,Mannerism,48,75.0
+CLIP probe,Met,Northern Renaissance,164,85.37
+CLIP probe,Met,Realism,71,71.83
+CLIP probe,Met,Rococo,119,52.1
+CLIP probe,Met,Romanticism,31,51.61
+CLIP probe,Rijksmuseum,Baroque,2059,78.34
+CLIP probe,Rijksmuseum,Mannerism,66,34.85
+CLIP probe,Rijksmuseum,Northern Renaissance,102,72.55
+CLIP probe,Rijksmuseum,Realism,266,87.97
+CLIP probe,Rijksmuseum,Rococo,466,50.64
+CLIP probe,Rijksmuseum,Romanticism,35,74.29
+DINOv2 probe,WikiArt test,Baroque,583,64.84
+DINOv2 probe,WikiArt test,Mannerism,210,48.57
+DINOv2 probe,WikiArt test,Northern Renaissance,221,66.97
+DINOv2 probe,WikiArt test,Realism,1298,77.66
+DINOv2 probe,WikiArt test,Rococo,388,42.27
+DINOv2 probe,WikiArt test,Romanticism,1157,51.94
+DINOv2 probe,Met,Baroque,298,62.75
+DINOv2 probe,Met,Mannerism,48,50.0
+DINOv2 probe,Met,Northern Renaissance,164,85.98
+DINOv2 probe,Met,Realism,71,67.61
+DINOv2 probe,Met,Rococo,119,42.02
+DINOv2 probe,Met,Romanticism,31,58.06
+DINOv2 probe,Rijksmuseum,Baroque,2059,64.59
+DINOv2 probe,Rijksmuseum,Mannerism,66,34.85
+DINOv2 probe,Rijksmuseum,Northern Renaissance,102,73.53
+DINOv2 probe,Rijksmuseum,Realism,266,80.45
+DINOv2 probe,Rijksmuseum,Rococo,466,44.85
+DINOv2 probe,Rijksmuseum,Romanticism,35,45.71

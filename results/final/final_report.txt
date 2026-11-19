@@ -1,0 +1,199 @@
+TABLE OF RECORD (balanced accuracy = mean of per-style recall; top-1 = plain accuracy; top-3 chance = 50%)
+CIs: painter-level bootstrap, 2,000 resamples; ResNet-50 = mean of 3 seeds, probes = 1 deterministic run
+
+       model          set  group    n  painters  seeds  bal_acc  bal_acc_sd  bal_ci_low  bal_ci_high  macro_f1  f1_ci_low  f1_ci_high  top1  top3  ece
+   ResNet-50 WikiArt test    all 3857        81      3     61.1         1.3        55.2         66.0      59.7       48.6        63.8  61.2  85.9  0.0
+   ResNet-50          Met    all  937       481      3     61.0         0.9        56.9         65.1      59.2       54.7        62.9  65.7  87.4  0.1
+   ResNet-50          Met   seen  206        70      3     69.9         1.5        59.4         78.6      69.4       57.4        76.5  68.4  86.9  0.1
+   ResNet-50          Met unseen  731       411      3     57.5         1.9        52.9         62.1      55.7       51.2        59.8  64.9  87.6  0.1
+   ResNet-50  Rijksmuseum    all 3092      2012      3     58.0         0.2        54.8         62.5      46.3       43.6        48.6  61.9  85.9  0.1
+   ResNet-50  Rijksmuseum   seen   98        37      3     59.9         4.1        47.9         79.6      55.6       43.5        69.9  75.5  93.2  0.1
+   ResNet-50  Rijksmuseum unseen 2994      1975      3     58.2         0.4        55.2         63.6      46.0       43.4        48.2  61.5  85.7  0.1
+  CLIP probe WikiArt test    all 3857        81      1     70.9         0.0        65.2         75.9      71.1       60.9        74.9  72.3  97.1  0.1
+  CLIP probe          Met    all  937       481      1     71.2         0.0        66.6         76.6      67.9       62.8        72.4  72.7  96.3  0.1
+  CLIP probe          Met   seen  206        70      1     80.2         0.0        71.1         88.9      77.0       65.4        84.7  76.7  96.1  0.1
+  CLIP probe          Met unseen  731       411      1     68.2         0.0        62.9         75.6      64.8       59.3        69.9  71.5  96.3  0.2
+  CLIP probe  Rijksmuseum    all 3092      2012      1     66.2         0.0        62.5         70.7      55.8       51.9        59.0  73.9  96.5  0.1
+  CLIP probe  Rijksmuseum   seen   98        37      1     62.9         0.0        48.8         84.6      59.9       48.0        75.1  79.6  98.0  0.1
+  CLIP probe  Rijksmuseum unseen 2994      1975      1     66.4         0.0        62.7         71.5      55.5       51.5        58.8  73.7  96.5  0.1
+DINOv2 probe WikiArt test    all 3857        81      1     58.7         0.0        51.5         66.8      60.4       50.6        65.6  62.3  94.9  0.1
+DINOv2 probe          Met    all  937       481      1     63.5         0.0        58.7         67.9      60.6       55.0        65.0  65.6  91.1  0.1
+DINOv2 probe          Met   seen  206        70      1     73.0         0.0        64.7         83.4      72.8       62.2        80.9  71.4  93.7  0.0
+DINOv2 probe          Met unseen  731       411      1     61.1         0.0        54.6         66.4      57.1       50.5        62.3  64.0  90.4  0.1
+DINOv2 probe  Rijksmuseum    all 3092      2012      1     56.9         0.0        52.6         60.3      45.9       42.9        48.7  62.7  91.5  0.1
+DINOv2 probe  Rijksmuseum   seen   98        37      1     56.4         0.0        47.7         71.5      54.5       45.2        66.9  73.5  96.9  0.1
+DINOv2 probe  Rijksmuseum unseen 2994      1975      1     57.3         0.0        53.0         61.0      45.5       42.6        48.1  62.4  91.3  0.1
+
+MUSEUM GAP = WikiArt test minus museum unseen artists (balanced accuracy, points)
+Painter-level bootstrap (independent painters in the two sets). Equivalence margin +-5 points (TOST):
+the gap is 'equivalent to zero' if the 90% CI lies inside the margin.
+
+       model      museum    gap  ci95_low  ci95_high  p_diff  ci90_low  ci90_high  tost_p  equivalent
+   ResNet-50         Met  3.512    -4.362      9.972   0.421    -3.213      9.083   0.296       False
+   ResNet-50 Rijksmuseum  2.836    -5.660      8.674   0.557    -3.974      7.506   0.190       False
+  CLIP probe         Met  2.722    -6.904     10.074   0.693    -5.545      8.751   0.230       False
+  CLIP probe Rijksmuseum  4.461    -3.540     10.635   0.316    -2.311      9.739   0.355       False
+DINOv2 probe         Met -2.361   -11.072      7.578   0.647    -9.649      5.826   0.275       False
+DINOv2 probe Rijksmuseum  1.377    -6.807     10.612   0.725    -5.761      9.081   0.206       False
+
+SEEN-ARTIST BOOST = museum seen minus unseen artists (balanced accuracy, painter-level bootstrap)
+  ResNet-50     Met          +12.4  [ +1.2, +22.0]
+  ResNet-50     Rijksmuseum   +1.7  [-11.8, +22.0]
+  CLIP probe    Met          +12.1  [ +0.2, +21.9]
+  CLIP probe    Rijksmuseum   -3.5  [-19.1, +18.8]
+  DINOv2 probe  Met          +12.0  [ +2.0, +24.6]
+  DINOv2 probe  Rijksmuseum   -0.9  [-10.6, +14.8]
+
+PAIRED MODEL COMPARISONS on the same paintings (unseen artists for museums)
+diff = model A minus model B, balanced accuracy; painter-level paired bootstrap (same resample for both).
+McNemar exact test on top-1 correctness (ResNet-50: prediction from the mean of the 3 seeds' probabilities).
+Effect sizes: diff in points, Cohen's h on top-1 accuracy, discordant odds ratio b/c.
+
+         set  group      model_a      model_b   diff  ci_low  ci_high  boot_p  only_a_right  only_b_right  mcnemar_p  odds_ratio  cohens_h
+WikiArt test    all   CLIP probe    ResNet-50  9.848   6.254   13.102   0.000           739           401      0.000       1.843     0.188
+WikiArt test    all DINOv2 probe    ResNet-50 -2.344  -6.122    3.244   0.365           542           591      0.154       0.917    -0.026
+WikiArt test    all   CLIP probe DINOv2 probe 12.192   7.574   14.989   0.000           750           363      0.000       2.066     0.214
+         Met unseen   CLIP probe    ResNet-50 10.638   4.662   18.911   0.000           113            85      0.055       1.329     0.083
+         Met unseen DINOv2 probe    ResNet-50  3.529  -3.331    8.586   0.263            82           109      0.060       0.752    -0.078
+         Met unseen   CLIP probe DINOv2 probe  7.108   1.226   15.777   0.011           125            70      0.000       1.786     0.161
+ Rijksmuseum unseen   CLIP probe    ResNet-50  8.224   3.546   12.339   0.002           559           284      0.000       1.968     0.199
+ Rijksmuseum unseen DINOv2 probe    ResNet-50 -0.885  -7.882    3.370   0.617           369           433      0.026       0.852    -0.044
+ Rijksmuseum unseen   CLIP probe DINOv2 probe  9.108   4.362   15.199   0.001           604           265      0.000       2.279     0.244
+
+RQ1 BY LABEL SOURCE (museum, unseen artists). 'movement' = Wikidata artwork or painter movement (rules R1, R2a-c);
+'date rule' = R7 (no movement found). Balanced accuracy over the styles present in BOTH groups of that museum.
+
+     museum        model                   source      n                                        styles  bal_acc  ci_low  ci_high
+        Met    ResNet-50                 movement  261.0 Baroque+Mannerism+Northern Renaissance+Rococo     64.8    58.1     73.8
+        Met    ResNet-50                date rule  368.0 Baroque+Mannerism+Northern Renaissance+Rococo     67.8    62.1     73.5
+        Met    ResNet-50 movement minus date rule    NaN                                                   -3.0   -11.6      7.6
+        Met   CLIP probe                 movement  261.0 Baroque+Mannerism+Northern Renaissance+Rococo     73.5    66.2     83.8
+        Met   CLIP probe                date rule  368.0 Baroque+Mannerism+Northern Renaissance+Rococo     70.6    64.3     77.6
+        Met   CLIP probe movement minus date rule    NaN                                                    3.0    -7.2     15.2
+        Met DINOv2 probe                 movement  261.0 Baroque+Mannerism+Northern Renaissance+Rococo     64.7    55.2     77.0
+        Met DINOv2 probe                date rule  368.0 Baroque+Mannerism+Northern Renaissance+Rococo     57.6    51.0     64.8
+        Met DINOv2 probe movement minus date rule    NaN                                                    7.1    -4.8     20.4
+Rijksmuseum    ResNet-50                 movement  622.0 Baroque+Mannerism+Northern Renaissance+Rococo     58.4    48.2     66.3
+Rijksmuseum    ResNet-50                date rule 2071.0 Baroque+Mannerism+Northern Renaissance+Rococo     57.8    52.7     62.8
+Rijksmuseum    ResNet-50 movement minus date rule    NaN                                                    0.6   -10.5      9.9
+Rijksmuseum   CLIP probe                 movement  622.0 Baroque+Mannerism+Northern Renaissance+Rococo     64.8    54.7     71.1
+Rijksmuseum   CLIP probe                date rule 2071.0 Baroque+Mannerism+Northern Renaissance+Rococo     59.7    53.5     66.2
+Rijksmuseum   CLIP probe movement minus date rule    NaN                                                    5.1    -7.3     14.1
+Rijksmuseum DINOv2 probe                 movement  622.0 Baroque+Mannerism+Northern Renaissance+Rococo     55.8    45.4     63.0
+Rijksmuseum DINOv2 probe                date rule 2071.0 Baroque+Mannerism+Northern Renaissance+Rococo     55.5    48.9     62.6
+Rijksmuseum DINOv2 probe movement minus date rule    NaN                                                    0.3   -13.2      9.8
+
+Recall per style by label source:
+                                                      n             recall         
+source                                        date rule movement date rule movement
+museum      model        style                                                     
+Met         CLIP probe   Baroque                  157.0    141.0      73.2     73.0
+                         Mannerism                 30.0     18.0      66.7     88.9
+                         Northern Renaissance     110.0     54.0      81.8     92.6
+                         Rococo                    71.0     48.0      60.6     39.6
+            DINOv2 probe Baroque                  157.0    141.0      61.8     63.8
+                         Mannerism                 30.0     18.0      40.0     66.7
+                         Northern Renaissance     110.0     54.0      83.6     90.7
+                         Rococo                    71.0     48.0      45.1     37.5
+            ResNet-50    Baroque                  157.0    141.0      65.4     66.4
+                         Mannerism                 30.0     18.0      63.3     57.4
+                         Northern Renaissance     110.0     54.0      85.8     94.4
+                         Rococo                    71.0     48.0      56.8     41.0
+Rijksmuseum CLIP probe   Baroque                 1532.0    527.0      77.9     79.7
+                         Mannerism                 24.0     42.0      41.7     31.0
+                         Northern Renaissance      87.0     15.0      69.0     93.3
+                         Rococo                   428.0     38.0      50.2     55.3
+            DINOv2 probe Baroque                 1532.0    527.0      62.7     70.0
+                         Mannerism                 24.0     42.0      41.7     31.0
+                         Northern Renaissance      87.0     15.0      72.4     80.0
+                         Rococo                   428.0     38.0      45.1     42.1
+            ResNet-50    Baroque                 1532.0    527.0      61.0     63.3
+                         Mannerism                 24.0     42.0      44.4     38.9
+                         Northern Renaissance      87.0     15.0      72.8     71.1
+                         Rococo                   428.0     38.0      53.0     60.5
+
+CLASS-BALANCED RESCORING: museum paintings re-weighted so the style mix equals WikiArt test's.
+Top-1 accuracy and macro-F1 depend on the style mix; balanced accuracy does not (it is the uniform-mix accuracy).
+
+WikiArt test style mix: Baroque 15%, Mannerism 5%, Northern Renaissance 6%, Realism 34%, Rococo 10%, Romanticism 30%
+       model      museum  wikiart_top1  top1_raw  top1_wikiart_mix  wikiart_macro_f1  macro_f1_raw  macro_f1_wikiart_mix  largest_style_share largest_style
+   ResNet-50         Met          61.2      64.9              48.9              59.7          55.7                  51.7                 40.8       Baroque
+   ResNet-50 Rijksmuseum          61.2      61.5              60.1              59.7          46.0                  56.2                 68.8       Baroque
+  CLIP probe         Met          72.3      71.5              64.9              71.1          64.8                  64.4                 40.8       Baroque
+  CLIP probe Rijksmuseum          72.3      73.7              74.9              71.1          55.5                  66.2                 68.8       Baroque
+DINOv2 probe         Met          62.3      64.0              61.5              60.4          57.1                  59.0                 40.8       Baroque
+DINOv2 probe Rijksmuseum          62.3      62.4              61.2              60.4          45.5                  56.0                 68.8       Baroque
+
+PER-STYLE RECALL (%), museums = unseen artists
+set                                 Met  Rijksmuseum  WikiArt test
+model        style                                                
+CLIP probe   Baroque               73.2         78.3          73.8
+             Mannerism             75.0         34.8          64.3
+             Northern Renaissance  85.4         72.5          81.9
+             Realism               71.8         88.0          84.2
+             Rococo                52.1         50.6          59.0
+             Romanticism           51.6         74.3          62.2
+DINOv2 probe Baroque               62.8         64.6          64.8
+             Mannerism             50.0         34.8          48.6
+             Northern Renaissance  86.0         73.5          67.0
+             Realism               67.6         80.5          77.7
+             Rococo                42.0         44.8          42.3
+             Romanticism           58.1         45.7          51.9
+ResNet-50    Baroque               65.9         61.6          59.5
+             Mannerism             61.1         40.9          55.6
+             Northern Renaissance  88.6         72.5          76.5
+             Realism               46.9         77.8          75.7
+             Rococo                50.4         53.6          52.2
+             Romanticism           32.3         42.9          46.9
+
+MOST-CONFUSED STYLE PAIRS (share of the true style's paintings predicted as the other style)
+  CLIP probe    Met          Rococo->Baroque 33%; Romanticism->Rococo 32%; Realism->Romanticism 21%; Romanticism->Baroque 13%
+  CLIP probe    Rijksmuseum  Mannerism->Baroque 42%; Rococo->Baroque 37%; Mannerism->Northern Renaissance 21%; Northern Renaissance->Mannerism 19%
+  CLIP probe    WikiArt test Romanticism->Realism 26%; Mannerism->Baroque 26%; Rococo->Baroque 20%; Rococo->Romanticism 18%
+  DINOv2 probe  Met          Rococo->Baroque 31%; Realism->Romanticism 24%; Mannerism->Northern Renaissance 23%; Mannerism->Baroque 19%
+  DINOv2 probe  Rijksmuseum  Mannerism->Baroque 38%; Romanticism->Rococo 31%; Rococo->Baroque 29%; Mannerism->Northern Renaissance 18%
+  DINOv2 probe  WikiArt test Mannerism->Baroque 39%; Romanticism->Realism 34%; Rococo->Romanticism 28%; Rococo->Baroque 24%
+  ResNet-50     Met          Realism->Romanticism 31%; Romanticism->Rococo 30%; Romanticism->Baroque 23%; Rococo->Baroque 21%
+  ResNet-50     Rijksmuseum  Romanticism->Rococo 37%; Mannerism->Baroque 32%; Rococo->Baroque 23%; Realism->Romanticism 16%
+  ResNet-50     WikiArt test Romanticism->Realism 34%; Mannerism->Baroque 27%; Rococo->Romanticism 21%; Rococo->Baroque 18%
+
+MERGED STYLES (post hoc; probabilities summed within a group). Balanced accuracy; chance 16.7 / 25 / 33.3
+       model          set  six_styles  4 groups  3 eras
+   ResNet-50 WikiArt test        61.1      67.4    78.4
+   ResNet-50          Met        57.5      59.7    78.3
+   ResNet-50  Rijksmuseum        58.2      67.7    80.7
+  CLIP probe WikiArt test        70.9      76.8    84.7
+  CLIP probe          Met        68.2      74.3    86.2
+  CLIP probe  Rijksmuseum        66.4      82.6    87.3
+DINOv2 probe WikiArt test        58.7      67.6    76.8
+DINOv2 probe          Met        61.1      73.1    82.3
+DINOv2 probe  Rijksmuseum        57.3      68.8    82.1
+
+CONFIDENT ERRORS: 1299 wrong museum predictions (unseen artists, ResNet-50 seed mean); 125 with confidence >= 0.8. The 30 most confident per museum are in confident_errors.csv.
+
+RIJKSMUSEUM MANNERISM: 72 test paintings; rules: {'R2a': 29, 'R7': 24, 'R2b': 17, 'R2c': 2}; portraits (by title): 16
+  resnet_pred: {'Mannerism': 30, 'Baroque': 23, 'Northern Renaissance': 10, 'Romanticism': 7, 'Rococo': 1, 'Realism': 1}
+    recall on portraits 69%, on other paintings 34%
+  clip_pred: {'Baroque': 31, 'Mannerism': 25, 'Northern Renaissance': 15, 'Rococo': 1}
+    recall on portraits 50%, on other paintings 30%
+  by rule (ResNet-50 recall): R2a 34% (n=29), R2b 35% (n=17), R2c 100% (n=2), R7 50% (n=24)
+  Painter-movement labels on works dated before 1580 (the date rule R5/R7 would call a northern work of these years Northern Renaissance): 25 of 72; ResNet-50 recall on them 36%, NR predictions 16%
+  Date-rule (R7) Mannerism labels: 24, of which portraits/group portraits by title: 15
+  AI-assisted visual pre-check (M Mannerist-looking history, G grisaille, P portrait, I Italian High-Renaissance-looking, O other):
+    G: n= 6  ResNet-50 recall   0%  CLIP  33%  ResNet predictions {'Baroque': 4, 'Romanticism': 2}
+    I: n= 6  ResNet-50 recall  83%  CLIP  83%  ResNet predictions {'Mannerism': 5, 'Northern Renaissance': 1}
+    M: n=26  ResNet-50 recall  38%  CLIP  31%  ResNet predictions {'Mannerism': 10, 'Baroque': 6, 'Northern Renaissance': 5, 'Romanticism': 4, 'Realism': 1}
+    O: n= 5  ResNet-50 recall   0%  CLIP   0%  ResNet predictions {'Northern Renaissance': 3, 'Baroque': 2}
+    P: n=29  ResNet-50 recall  52%  CLIP  34%  ResNet predictions {'Mannerism': 15, 'Baroque': 11, 'Northern Renaissance': 1, 'Romanticism': 1, 'Rococo': 1}
+  Met Mannerism for comparison: n=59, rules {'R7': 31, 'R2a': 21, 'R1': 5, 'R2c': 2}, region {'italian': 49, 'northern': 9}
+  Rijks Mannerism region {'northern': 63, 'italian': 7}
+  WikiArt train Mannerism: 920 paintings, top painters: Tintoretto, Paolo Veronese, El Greco, Agnolo Bronzino, Jacopo Pontormo, Parmigianino, Jacopo Bassano, Giuseppe Arcimboldo
+
+WIKIART TEST PAINTERS: 81 painters in total; per style: Baroque 16, Mannerism 3, Northern Renaissance 8, Realism 30, Rococo 7, Romanticism 24
+Recall per painter on WikiArt test for the styles where DINOv2 does better at the Met (painters with >= 20 paintings):
+  Northern Renaissance  ResNet-50     Hans Holbein the Younger 76% (n=107); Gerard David 91% (n=52); Mabuse 63% (n=50)
+  Northern Renaissance  CLIP probe    Hans Holbein the Younger 78% (n=107); Gerard David 94% (n=52); Mabuse 76% (n=50)
+  Northern Renaissance  DINOv2 probe  Hans Holbein the Younger 56% (n=107); Gerard David 96% (n=52); Mabuse 52% (n=50)
+  Mannerism             ResNet-50     Titian 57% (n=115); Giorgio Vasari 62% (n=67); Correggio 36% (n=28)
+  Mannerism             CLIP probe    Titian 63% (n=115); Giorgio Vasari 75% (n=67); Correggio 46% (n=28)
+  Mannerism             DINOv2 probe  Titian 45% (n=115); Giorgio Vasari 66% (n=67); Correggio 21% (n=28)

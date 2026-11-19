@@ -1,0 +1,7 @@
+model,museum,wikiart_top1,top1_raw,top1_wikiart_mix,wikiart_macro_f1,macro_f1_raw,macro_f1_wikiart_mix,largest_style_share,largest_style
+ResNet-50,Met,61.19,64.89,48.91,59.68,55.66,51.65,40.77,Baroque
+ResNet-50,Rijksmuseum,61.19,61.48,60.13,59.68,45.95,56.19,68.77,Baroque
+CLIP probe,Met,72.28,71.55,64.93,71.13,64.78,64.44,40.77,Baroque
+CLIP probe,Rijksmuseum,72.28,73.68,74.88,71.13,55.48,66.21,68.77,Baroque
+DINOv2 probe,Met,62.25,64.02,61.53,60.39,57.13,59.01,40.77,Baroque
+DINOv2 probe,Rijksmuseum,62.25,62.36,61.17,60.39,45.54,55.95,68.77,Baroque

@@ -1,0 +1,61 @@
+uid,museum,title,artist,year,rule_id,true,resnet_pred,resnet_conf,clip_pred,primary_cause,visible_factor
+met:435864,met,A Woman with a Dog,Giacomo Ceruti,1744,R2a,Baroque,Rococo,0.9448666666666666,Mannerism,style boundary,border
+met:437205,met,Portrait of a Young Woman,Netherlandish Painter,1535,R7,Northern Renaissance,Mannerism,0.9397,Mannerism,style boundary,
+met:436847,met,André François Alloys de Theys d'Herculais (1692–1779),Nicolas de Largillierre (or Largillière),1727,R2a,Baroque,Rococo,0.9354333333333332,Rococo,style boundary,
+met:436520,met,"Marie Adélaïde de Savoie (1685–1712), Duchesse de Bourgogne",Pierre Gobert,1710,R7,Baroque,Rococo,0.9336333333333332,Rococo,style boundary,oval format
+met:437600,met,Portrait of a Woman,Rolán de Moys,1570,R7,Northern Renaissance,Mannerism,0.9202333333333332,Mannerism,style boundary,
+met:436824,met,Lady Mary Berkeley,Sir Godfrey Kneller,1700,R7,Baroque,Rococo,0.9186,Baroque,style boundary,oval format
+met:436846,met,Portrait of a Woman and an Enslaved Servant,Nicolas de Largillierre (or Largillière),1696,R2a,Baroque,Rococo,0.9169333333333332,Rococo,style boundary,
+met:459105,met,Aretino in the Studio of Tintoretto,Jean Auguste Dominique Ingres,1848,R2a,Romanticism,Baroque,0.9096666666666668,Baroque,subject or palette of another period,
+met:437463,met,Portrait of a General Officer,Hyacinthe Rigaud,1710,R1,Baroque,Rococo,0.9069333333333331,Rococo,style boundary,
+met:436398,met,Portrait of a Woman in a Rose Dress,French Painter,1712,R7,Baroque,Rococo,0.8990666666666667,Rococo,style boundary,oval format
+met:436551,met,"Ferdinand VII (1784–1833), When Prince of Asturias",Goya,1800,R2a,Romanticism,Rococo,0.8975333333333334,Rococo,style boundary,oval format
+met:436494,met,The Nativity with Saints,Ridolfo Ghirlandaio,1532,R7,Mannerism,Northern Renaissance,0.8969333333333335,Northern Renaissance,digitization or format,multi-panel with black gaps
+met:439553,met,The Lamentation,Domenichino (Domenico Zampieri),1603,R7,Baroque,Mannerism,0.8931,Mannerism,style boundary,
+met:437841,met,Saint Margaret of Cortona,Gaspare Traversi,1758,R7,Rococo,Baroque,0.8876,Baroque,style boundary,
+met:437324,met,Portrait of a Young Woman,Pieter Jansz. Pourbus,1564,R7,Northern Renaissance,Mannerism,0.8775,Baroque,style boundary,
+met:437902,met,Examining Antique Arms,José Villegas y Cordero,1870,R2a,Realism,Baroque,0.8707333333333334,Romanticism,subject or palette of another period,dark varnish
+met:652416,met,The Crucifixion,Pedro Orrente,1628,R7,Baroque,Mannerism,0.8636333333333334,Mannerism,style boundary,
+met:436499,met,Diana the Huntress,Giampietrino (Giovanni Pietro Rizzoli),1538,R7,Mannerism,Northern Renaissance,0.8615333333333334,Northern Renaissance,style boundary,black border
+met:437262,met,"Henry Frederick (1594–1612), Prince of Wales, with Sir John Harington (1592–1614), in the Hunting Field",Robert Peake the Elder,1603,R7,Baroque,Northern Renaissance,0.8608333333333333,Mannerism,label problem (later copy / imitation / date rule),
+met:459064,met,Adoration of the Magi,Imitator of Netherlandish (Antwerp Mannerist) Painter,1650,R7,Baroque,Northern Renaissance,0.8601,Mannerism,label problem (later copy / imitation / date rule),visible frame
+met:438387,met,The Virgin Adored by Saints,Scarsellino (Ippolito Scarsella),1609,R7,Baroque,Mannerism,0.8432,Mannerism,style boundary,
+met:436823,met,"Charles Beauclerk (1670–1726), Duke of St. Albans",Sir Godfrey Kneller,1692,R7,Baroque,Rococo,0.8290000000000001,Rococo,style boundary,
+met:436008,met,Alphonse Promayet (1822–1872),Gustave Courbet,1851,R2a,Realism,Baroque,0.8213666666666667,Baroque,subject or palette of another period,dark varnish
+met:438129,met,The Meeting of Antony and Cleopatra,Giovanni Battista Tiepolo,1746,R2a,Rococo,Baroque,0.8203999999999999,Romanticism,no clear cause,
+met:437810,met,Allegorical Figure Representing America,Giovanni Domenico Tiepolo,1776,R7,Rococo,Northern Renaissance,0.8157666666666666,Mannerism,digitization or format,grisaille (near monochrome)
+met:659875,met,The Execution of Saint John the Baptist,Ubaldo Gandolfi,1770,R7,Rococo,Baroque,0.8121,Baroque,subject or palette of another period,dark varnish
+met:437351,met,Paul and Barnabas at Lystra,Jacob Pynas,1628,R7,Baroque,Mannerism,0.8113999999999999,Mannerism,style boundary,
+met:436199,met,Christ Healing the Sick,Christian Wilhelm Ernst Dietrich,1742,R7,Rococo,Baroque,0.8057666666666666,Baroque,label problem (later copy / imitation / date rule),dark varnish
+met:437792,met,The Apotheosis of the Spanish Monarchy,Giovanni Battista Tiepolo,1764,R1,Rococo,Mannerism,0.8001,Baroque,digitization or format,round format with frame strip
+met:437286,met,The Death of Harmonia,Jean-Baptiste Marie Pierre,1740,R2a,Rococo,Mannerism,0.7960333333333334,Rococo,no clear cause,
+rijks:200108212,rijks,"The Bend in the Herengracht, Amsterdam",Gerrit Berckheyde,1685,R7,Baroque,Rococo,0.9638,Baroque,subject or palette of another period,
+rijks:20026716,rijks,The Adoration of the Magi,,1625,R7,Baroque,Northern Renaissance,0.9558333333333334,Northern Renaissance,label problem (later copy / imitation / date rule),yellow varnish
+rijks:20026222,rijks,Virgin and Child with young John the Baptist and Saint Catherine,Hans Rottenhammer (I),1604,R7,Baroque,Mannerism,0.9552666666666668,Mannerism,style boundary,
+rijks:20027940,rijks,Arcadian Landscape with Jupiter and Io,Johannes Glauber,1703,R7,Baroque,Rococo,0.9539666666666666,Rococo,style boundary,yellow-green varnish
+rijks:20027294,rijks,"Portrait of a Woman, probably Maria Schuurman (1575-1621)",anonymous,1600,R7,Baroque,Mannerism,0.9519,Mannerism,style boundary,
+rijks:200109036,rijks,Portrait of Elisabeth Bellinghausen (c.1520- after 1570),Bartholomäus Bruyn (I),1538,R2a,Northern Renaissance,Mannerism,0.9510666666666668,Northern Renaissance,digitization or format,painted arched frame
+rijks:20027785,rijks,"Isaac Parker, His Wife Justina Johanna Ramskrammer and Their Son Willem Alexander",Philip van Dijk,1742,R2a,Baroque,Rococo,0.9498,Rococo,style boundary,
+rijks:20027183,rijks,The Adoration of the Magi,Pieter Brueghel (II),1614,R7,Baroque,Northern Renaissance,0.9403666666666668,Northern Renaissance,label problem (later copy / imitation / date rule),
+rijks:200108502,rijks,The Beheading of Claudius Paulus and the Capture of Julius Civilis,Otto van Veen,1606,R7,Baroque,Mannerism,0.9282,Mannerism,style boundary,
+rijks:20026221,rijks,Venus and Mars,Hans Rottenhammer (I),1604,R7,Baroque,Mannerism,0.9271333333333333,Mannerism,style boundary,
+rijks:20026864,rijks,The Choice between Virtue and Passion,,1635,R2b,Baroque,Mannerism,0.9262333333333332,Mannerism,style boundary,
+rijks:200108216,rijks,"De Waag (Weighing House) and Crane on the Spaarne, Haarlem",Gerrit Berckheyde,1679,R7,Baroque,Rococo,0.9261666666666668,Baroque,subject or palette of another period,
+rijks:20026746,rijks,Village on the Bank of a River,Joseph van Bredael,1723,R7,Rococo,Baroque,0.9226333333333332,Rococo,label problem (later copy / imitation / date rule),
+rijks:20026493,rijks,"The Amsterdam Merchant Jeremias van Collen (1608-1676), with his Wife and their Twelve Children",,1656,R2b,Baroque,Rococo,0.9141333333333334,Rococo,style boundary,
+rijks:20028003,rijks,"William III (1650-1702), Prince of Orange, as a Child",,1654,R2b,Baroque,Rococo,0.9135,Rococo,style boundary,
+rijks:20028438,rijks,"Anna Margaretha van Petcum (1676-1745), Wife of Johan Arnold Zoutman",Johan van Diest,1705,R7,Baroque,Rococo,0.9114666666666666,Rococo,digitization or format,"oval format, damage"
+rijks:20028908,rijks,"Louise van Savoye (1467-1531), hertogin van Angoulême, moeder van Frans I",anonymous,1750,R7,Rococo,Northern Renaissance,0.9101666666666668,Northern Renaissance,label problem (later copy / imitation / date rule),inscription
+rijks:20027415,rijks,"Portrait of Berend van Iddekinge, Johanna Maria Sichterman, and their Son Jan Albert",Philip van Dijk,1746,R2a,Baroque,Rococo,0.9099666666666666,Rococo,style boundary,
+rijks:20027787,rijks,"Justina Johanna Ramskrammer (1702-98), Wife of Isaac Parker",Philip van Dijk,1734,R2a,Baroque,Rococo,0.9091,Baroque,style boundary,
+rijks:20028738,rijks,East Indian Market Stall in Batavia,,1653,R7,Baroque,Northern Renaissance,0.9069333333333334,Baroque,non-European or naive work,
+rijks:20028092,rijks,Portrait of Gaspard de Coligny (1517-72),,1621,R2b,Baroque,Mannerism,0.9068666666666668,Baroque,label problem (later copy / imitation / date rule),inscription
+rijks:200108082,rijks,View of Ankara,anonymous,1750,R7,Rococo,Northern Renaissance,0.9046666666666666,Northern Renaissance,non-European or naive work,
+rijks:200108513,rijks,The Peace Negotiations between Julius Civilis and the Roman General Cerialis,Otto van Veen,1606,R7,Baroque,Mannerism,0.9017,Baroque,style boundary,
+rijks:20027786,rijks,"Isaac Parker (1702-55), Merchant of Middelburg",Philip van Dijk,1734,R2a,Baroque,Rococo,0.8992999999999999,Rococo,style boundary,
+rijks:20026861,rijks,"Portrait of Elisabeth van Riebeeck, Daughter of Abraham van Riebeeck, Wife of Gerard van Oosten",Nicolaas Verkolje,1716,R7,Baroque,Rococo,0.8963666666666666,Baroque,style boundary,painted oval spandrels
+rijks:20015937,rijks,Sibylla Erythrea,Maarten van Heemskerck,1564,R2a,Mannerism,Northern Renaissance,0.895,Baroque,digitization or format,visible wooden frame
+rijks:20028934,rijks,"Frederik Hendrik (1584-1647), prins van Oranje",anonymous,1648,R7,Baroque,Northern Renaissance,0.8949333333333334,Baroque,digitization or format,miniature photographed in its metal frame
+rijks:200516039,rijks,Woman in a Large Hat,Caesar van Everdingen,1650,R7,Baroque,Rococo,0.8941333333333333,Rococo,no clear cause,
+rijks:20028985,rijks,"Portrait of Cornelis Speelman, Governor-General of the Dutch East Indies",,1775,R7,Rococo,Baroque,0.8939333333333334,Baroque,label problem (later copy / imitation / date rule),inscription cartouche
+rijks:20026859,rijks,Portrait of a Woman,Jan Verkolje (I),1691,R7,Baroque,Rococo,0.8930333333333333,Rococo,style boundary,

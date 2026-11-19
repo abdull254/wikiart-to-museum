@@ -56,4 +56,18 @@ SigLIP (`google/siglip-so400m-patch14-384`) probe, feature ensemble, partial CLI
 ## Statistics
 
 - 2,000 bootstrap samples, 95% percentile intervals.
-- Note from the instructor's feedback (Nov 16): the next version should bootstrap by artist, not by painting, and use paired tests and equivalence tests for the gap. Not done yet.
+- Final analyses (`src/final_analysis.py`, Nov 19): painter-level (cluster) bootstrap, 2,000 resamples, seed 0; ResNet-50 seeds averaged inside each resample.
+- Museum gap: WikiArt test minus museum unseen artists; TOST equivalence with a +-5-point margin (90% CI inside the margin).
+- Model comparisons: painter-level paired bootstrap, McNemar's exact test (ResNet-50 from the mean of the 3 seeds' probabilities), Cohen's h and discordant odds ratio.
+- Class-balanced rescoring: museum paintings re-weighted to WikiArt test's style proportions.
+- ECE: 15 equal-width confidence bins.
+
+## CORAL (`notebooks/final_extras.ipynb`)
+
+- Frozen CLIP, DINOv2 and SigLIP features, L2-normalized and standardized on WikiArt train.
+- WikiArt train features whitened with their covariance (+ identity) and re-colored with the target museum's covariance (+ identity), re-centered on the museum mean; target = all that museum's test images, no labels.
+- Logistic regression with the same C as without adaptation (chosen on WikiArt val).
+
+## Grayscale-augmentation training (`notebooks/final_extras.ipynb`)
+
+- `src/train.py --grayscale-aug 0.2`, otherwise identical to the baseline; seeds 1-3; scored with `src/evaluate.py --variants base gray`.

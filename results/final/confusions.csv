@@ -1,0 +1,271 @@
+model,set,true,predicted,share,count
+CLIP probe,Met,Rococo,Baroque,32.77,39.0
+CLIP probe,Met,Romanticism,Rococo,32.26,10.0
+CLIP probe,Met,Realism,Romanticism,21.13,15.0
+CLIP probe,Met,Romanticism,Baroque,12.9,4.0
+CLIP probe,Met,Mannerism,Northern Renaissance,12.5,6.0
+CLIP probe,Met,Northern Renaissance,Mannerism,11.59,19.0
+CLIP probe,Met,Baroque,Mannerism,11.41,34.0
+CLIP probe,Met,Mannerism,Baroque,10.42,5.0
+CLIP probe,Met,Baroque,Rococo,8.72,26.0
+CLIP probe,Met,Rococo,Romanticism,8.4,10.0
+CLIP probe,Met,Rococo,Mannerism,6.72,8.0
+CLIP probe,Met,Realism,Baroque,4.23,3.0
+CLIP probe,Met,Baroque,Romanticism,4.03,12.0
+CLIP probe,Met,Romanticism,Realism,3.23,1.0
+CLIP probe,Met,Realism,Mannerism,2.82,2.0
+CLIP probe,Met,Mannerism,Romanticism,2.08,1.0
+CLIP probe,Met,Northern Renaissance,Baroque,1.83,3.0
+CLIP probe,Met,Baroque,Northern Renaissance,1.34,4.0
+CLIP probe,Met,Baroque,Realism,1.34,4.0
+CLIP probe,Met,Northern Renaissance,Realism,0.61,1.0
+CLIP probe,Met,Northern Renaissance,Romanticism,0.61,1.0
+CLIP probe,Met,Mannerism,Realism,0.0,0.0
+CLIP probe,Met,Mannerism,Rococo,0.0,0.0
+CLIP probe,Met,Northern Renaissance,Rococo,0.0,0.0
+CLIP probe,Met,Realism,Northern Renaissance,0.0,0.0
+CLIP probe,Met,Realism,Rococo,0.0,0.0
+CLIP probe,Met,Rococo,Northern Renaissance,0.0,0.0
+CLIP probe,Met,Rococo,Realism,0.0,0.0
+CLIP probe,Met,Romanticism,Mannerism,0.0,0.0
+CLIP probe,Met,Romanticism,Northern Renaissance,0.0,0.0
+CLIP probe,Rijksmuseum,Mannerism,Baroque,42.42,28.0
+CLIP probe,Rijksmuseum,Rococo,Baroque,36.7,171.0
+CLIP probe,Rijksmuseum,Mannerism,Northern Renaissance,21.21,14.0
+CLIP probe,Rijksmuseum,Northern Renaissance,Mannerism,18.63,19.0
+CLIP probe,Rijksmuseum,Romanticism,Realism,11.43,4.0
+CLIP probe,Rijksmuseum,Romanticism,Rococo,11.43,4.0
+CLIP probe,Rijksmuseum,Baroque,Rococo,10.78,222.0
+CLIP probe,Rijksmuseum,Northern Renaissance,Baroque,7.84,8.0
+CLIP probe,Rijksmuseum,Realism,Romanticism,7.52,20.0
+CLIP probe,Rijksmuseum,Rococo,Romanticism,7.3,34.0
+CLIP probe,Rijksmuseum,Baroque,Mannerism,4.52,93.0
+CLIP probe,Rijksmuseum,Realism,Baroque,3.76,10.0
+CLIP probe,Rijksmuseum,Romanticism,Baroque,2.86,1.0
+CLIP probe,Rijksmuseum,Rococo,Realism,2.79,13.0
+CLIP probe,Rijksmuseum,Baroque,Romanticism,2.53,52.0
+CLIP probe,Rijksmuseum,Baroque,Northern Renaissance,2.48,51.0
+CLIP probe,Rijksmuseum,Rococo,Mannerism,1.72,8.0
+CLIP probe,Rijksmuseum,Mannerism,Rococo,1.52,1.0
+CLIP probe,Rijksmuseum,Baroque,Realism,1.36,28.0
+CLIP probe,Rijksmuseum,Northern Renaissance,Romanticism,0.98,1.0
+CLIP probe,Rijksmuseum,Rococo,Northern Renaissance,0.86,4.0
+CLIP probe,Rijksmuseum,Realism,Rococo,0.75,2.0
+CLIP probe,Rijksmuseum,Mannerism,Realism,0.0,0.0
+CLIP probe,Rijksmuseum,Mannerism,Romanticism,0.0,0.0
+CLIP probe,Rijksmuseum,Northern Renaissance,Realism,0.0,0.0
+CLIP probe,Rijksmuseum,Northern Renaissance,Rococo,0.0,0.0
+CLIP probe,Rijksmuseum,Realism,Mannerism,0.0,0.0
+CLIP probe,Rijksmuseum,Realism,Northern Renaissance,0.0,0.0
+CLIP probe,Rijksmuseum,Romanticism,Mannerism,0.0,0.0
+CLIP probe,Rijksmuseum,Romanticism,Northern Renaissance,0.0,0.0
+CLIP probe,WikiArt test,Romanticism,Realism,26.27,304.0
+CLIP probe,WikiArt test,Mannerism,Baroque,25.71,54.0
+CLIP probe,WikiArt test,Rococo,Baroque,19.85,77.0
+CLIP probe,WikiArt test,Rococo,Romanticism,18.04,70.0
+CLIP probe,WikiArt test,Realism,Romanticism,14.41,187.0
+CLIP probe,WikiArt test,Baroque,Rococo,8.23,48.0
+CLIP probe,WikiArt test,Northern Renaissance,Baroque,7.69,17.0
+CLIP probe,WikiArt test,Northern Renaissance,Mannerism,7.24,16.0
+CLIP probe,WikiArt test,Romanticism,Rococo,7.09,82.0
+CLIP probe,WikiArt test,Baroque,Mannerism,7.03,41.0
+CLIP probe,WikiArt test,Baroque,Romanticism,6.0,35.0
+CLIP probe,WikiArt test,Mannerism,Northern Renaissance,5.24,11.0
+CLIP probe,WikiArt test,Romanticism,Baroque,3.8,44.0
+CLIP probe,WikiArt test,Northern Renaissance,Romanticism,2.71,6.0
+CLIP probe,WikiArt test,Baroque,Northern Renaissance,2.57,15.0
+CLIP probe,WikiArt test,Baroque,Realism,2.4,14.0
+CLIP probe,WikiArt test,Mannerism,Romanticism,2.38,5.0
+CLIP probe,WikiArt test,Rococo,Mannerism,1.8,7.0
+CLIP probe,WikiArt test,Mannerism,Rococo,1.43,3.0
+CLIP probe,WikiArt test,Mannerism,Realism,0.95,2.0
+CLIP probe,WikiArt test,Realism,Baroque,0.92,12.0
+CLIP probe,WikiArt test,Rococo,Realism,0.77,3.0
+CLIP probe,WikiArt test,Rococo,Northern Renaissance,0.52,2.0
+CLIP probe,WikiArt test,Realism,Rococo,0.46,6.0
+CLIP probe,WikiArt test,Northern Renaissance,Realism,0.45,1.0
+CLIP probe,WikiArt test,Romanticism,Mannerism,0.35,4.0
+CLIP probe,WikiArt test,Romanticism,Northern Renaissance,0.26,3.0
+CLIP probe,WikiArt test,Northern Renaissance,Rococo,0.0,0.0
+CLIP probe,WikiArt test,Realism,Mannerism,0.0,0.0
+CLIP probe,WikiArt test,Realism,Northern Renaissance,0.0,0.0
+DINOv2 probe,Met,Rococo,Baroque,31.09,37.0
+DINOv2 probe,Met,Realism,Romanticism,23.94,17.0
+DINOv2 probe,Met,Mannerism,Northern Renaissance,22.92,11.0
+DINOv2 probe,Met,Mannerism,Baroque,18.75,9.0
+DINOv2 probe,Met,Romanticism,Rococo,16.13,5.0
+DINOv2 probe,Met,Rococo,Romanticism,15.13,18.0
+DINOv2 probe,Met,Romanticism,Baroque,12.9,4.0
+DINOv2 probe,Met,Baroque,Romanticism,12.42,37.0
+DINOv2 probe,Met,Baroque,Rococo,11.74,35.0
+DINOv2 probe,Met,Romanticism,Realism,9.68,3.0
+DINOv2 probe,Met,Rococo,Mannerism,9.24,11.0
+DINOv2 probe,Met,Realism,Baroque,7.04,5.0
+DINOv2 probe,Met,Northern Renaissance,Mannerism,6.1,10.0
+DINOv2 probe,Met,Baroque,Realism,5.7,17.0
+DINOv2 probe,Met,Northern Renaissance,Baroque,5.49,9.0
+DINOv2 probe,Met,Baroque,Mannerism,5.37,16.0
+DINOv2 probe,Met,Mannerism,Rococo,4.17,2.0
+DINOv2 probe,Met,Romanticism,Northern Renaissance,3.23,1.0
+DINOv2 probe,Met,Mannerism,Realism,2.08,1.0
+DINOv2 probe,Met,Mannerism,Romanticism,2.08,1.0
+DINOv2 probe,Met,Baroque,Northern Renaissance,2.01,6.0
+DINOv2 probe,Met,Northern Renaissance,Romanticism,1.83,3.0
+DINOv2 probe,Met,Rococo,Northern Renaissance,1.68,2.0
+DINOv2 probe,Met,Realism,Rococo,1.41,1.0
+DINOv2 probe,Met,Rococo,Realism,0.84,1.0
+DINOv2 probe,Met,Northern Renaissance,Rococo,0.61,1.0
+DINOv2 probe,Met,Northern Renaissance,Realism,0.0,0.0
+DINOv2 probe,Met,Realism,Mannerism,0.0,0.0
+DINOv2 probe,Met,Realism,Northern Renaissance,0.0,0.0
+DINOv2 probe,Met,Romanticism,Mannerism,0.0,0.0
+DINOv2 probe,Rijksmuseum,Mannerism,Baroque,37.88,25.0
+DINOv2 probe,Rijksmuseum,Romanticism,Rococo,31.43,11.0
+DINOv2 probe,Rijksmuseum,Rococo,Baroque,28.97,135.0
+DINOv2 probe,Rijksmuseum,Mannerism,Northern Renaissance,18.18,12.0
+DINOv2 probe,Rijksmuseum,Realism,Romanticism,16.54,44.0
+DINOv2 probe,Rijksmuseum,Northern Renaissance,Mannerism,15.69,16.0
+DINOv2 probe,Rijksmuseum,Romanticism,Baroque,14.29,5.0
+DINOv2 probe,Rijksmuseum,Rococo,Romanticism,13.52,63.0
+DINOv2 probe,Rijksmuseum,Baroque,Romanticism,13.02,268.0
+DINOv2 probe,Rijksmuseum,Baroque,Rococo,8.6,177.0
+DINOv2 probe,Rijksmuseum,Romanticism,Realism,8.57,3.0
+DINOv2 probe,Rijksmuseum,Mannerism,Romanticism,7.58,5.0
+DINOv2 probe,Rijksmuseum,Northern Renaissance,Baroque,6.86,7.0
+DINOv2 probe,Rijksmuseum,Baroque,Mannerism,5.78,119.0
+DINOv2 probe,Rijksmuseum,Rococo,Mannerism,5.15,24.0
+DINOv2 probe,Rijksmuseum,Baroque,Northern Renaissance,4.71,97.0
+DINOv2 probe,Rijksmuseum,Rococo,Northern Renaissance,4.08,19.0
+DINOv2 probe,Rijksmuseum,Rococo,Realism,3.43,16.0
+DINOv2 probe,Rijksmuseum,Baroque,Realism,3.3,68.0
+DINOv2 probe,Rijksmuseum,Northern Renaissance,Romanticism,2.94,3.0
+DINOv2 probe,Rijksmuseum,Realism,Baroque,2.63,7.0
+DINOv2 probe,Rijksmuseum,Mannerism,Realism,1.52,1.0
+DINOv2 probe,Rijksmuseum,Northern Renaissance,Realism,0.98,1.0
+DINOv2 probe,Rijksmuseum,Realism,Rococo,0.38,1.0
+DINOv2 probe,Rijksmuseum,Mannerism,Rococo,0.0,0.0
+DINOv2 probe,Rijksmuseum,Northern Renaissance,Rococo,0.0,0.0
+DINOv2 probe,Rijksmuseum,Realism,Mannerism,0.0,0.0
+DINOv2 probe,Rijksmuseum,Realism,Northern Renaissance,0.0,0.0
+DINOv2 probe,Rijksmuseum,Romanticism,Mannerism,0.0,0.0
+DINOv2 probe,Rijksmuseum,Romanticism,Northern Renaissance,0.0,0.0
+DINOv2 probe,WikiArt test,Mannerism,Baroque,39.05,82.0
+DINOv2 probe,WikiArt test,Romanticism,Realism,34.05,394.0
+DINOv2 probe,WikiArt test,Rococo,Romanticism,28.09,109.0
+DINOv2 probe,WikiArt test,Rococo,Baroque,23.97,93.0
+DINOv2 probe,WikiArt test,Realism,Romanticism,18.95,246.0
+DINOv2 probe,WikiArt test,Baroque,Romanticism,14.07,82.0
+DINOv2 probe,WikiArt test,Northern Renaissance,Mannerism,13.57,30.0
+DINOv2 probe,WikiArt test,Northern Renaissance,Baroque,11.31,25.0
+DINOv2 probe,WikiArt test,Baroque,Realism,9.26,54.0
+DINOv2 probe,WikiArt test,Baroque,Rococo,7.72,45.0
+DINOv2 probe,WikiArt test,Romanticism,Rococo,7.0,81.0
+DINOv2 probe,WikiArt test,Romanticism,Baroque,5.36,62.0
+DINOv2 probe,WikiArt test,Northern Renaissance,Romanticism,4.52,10.0
+DINOv2 probe,WikiArt test,Mannerism,Rococo,4.29,9.0
+DINOv2 probe,WikiArt test,Mannerism,Romanticism,3.81,8.0
+DINOv2 probe,WikiArt test,Baroque,Mannerism,3.6,21.0
+DINOv2 probe,WikiArt test,Mannerism,Northern Renaissance,2.86,6.0
+DINOv2 probe,WikiArt test,Rococo,Realism,2.84,11.0
+DINOv2 probe,WikiArt test,Northern Renaissance,Realism,2.71,6.0
+DINOv2 probe,WikiArt test,Realism,Baroque,1.85,24.0
+DINOv2 probe,WikiArt test,Rococo,Mannerism,1.8,7.0
+DINOv2 probe,WikiArt test,Mannerism,Realism,1.43,3.0
+DINOv2 probe,WikiArt test,Romanticism,Northern Renaissance,1.3,15.0
+DINOv2 probe,WikiArt test,Realism,Rococo,1.08,14.0
+DINOv2 probe,WikiArt test,Rococo,Northern Renaissance,1.03,4.0
+DINOv2 probe,WikiArt test,Northern Renaissance,Rococo,0.9,2.0
+DINOv2 probe,WikiArt test,Baroque,Northern Renaissance,0.51,3.0
+DINOv2 probe,WikiArt test,Romanticism,Mannerism,0.35,4.0
+DINOv2 probe,WikiArt test,Realism,Northern Renaissance,0.31,4.0
+DINOv2 probe,WikiArt test,Realism,Mannerism,0.15,2.0
+ResNet-50,Met,Realism,Romanticism,30.52,21.67
+ResNet-50,Met,Romanticism,Rococo,30.11,9.33
+ResNet-50,Met,Romanticism,Baroque,22.58,7.0
+ResNet-50,Met,Rococo,Baroque,21.01,25.0
+ResNet-50,Met,Realism,Baroque,19.25,13.67
+ResNet-50,Met,Mannerism,Northern Renaissance,16.67,8.0
+ResNet-50,Met,Mannerism,Baroque,15.97,7.67
+ResNet-50,Met,Rococo,Romanticism,14.01,16.67
+ResNet-50,Met,Baroque,Rococo,13.31,39.67
+ResNet-50,Met,Rococo,Mannerism,9.52,11.33
+ResNet-50,Met,Baroque,Romanticism,7.72,23.0
+ResNet-50,Met,Romanticism,Realism,7.53,2.33
+ResNet-50,Met,Northern Renaissance,Mannerism,7.32,12.0
+ResNet-50,Met,Baroque,Mannerism,6.49,19.33
+ResNet-50,Met,Romanticism,Mannerism,6.45,2.0
+ResNet-50,Met,Baroque,Northern Renaissance,4.03,12.0
+ResNet-50,Met,Rococo,Northern Renaissance,3.64,4.33
+ResNet-50,Met,Mannerism,Rococo,3.47,1.67
+ResNet-50,Met,Baroque,Realism,2.57,7.67
+ResNet-50,Met,Northern Renaissance,Baroque,2.44,4.0
+ResNet-50,Met,Realism,Rococo,1.88,1.33
+ResNet-50,Met,Rococo,Realism,1.4,1.67
+ResNet-50,Met,Mannerism,Realism,1.39,0.67
+ResNet-50,Met,Mannerism,Romanticism,1.39,0.67
+ResNet-50,Met,Romanticism,Northern Renaissance,1.08,0.33
+ResNet-50,Met,Realism,Mannerism,0.94,0.67
+ResNet-50,Met,Northern Renaissance,Rococo,0.81,1.33
+ResNet-50,Met,Northern Renaissance,Romanticism,0.81,1.33
+ResNet-50,Met,Realism,Northern Renaissance,0.47,0.33
+ResNet-50,Met,Northern Renaissance,Realism,0.0,0.0
+ResNet-50,Rijksmuseum,Romanticism,Rococo,37.14,13.0
+ResNet-50,Rijksmuseum,Mannerism,Baroque,31.82,21.0
+ResNet-50,Rijksmuseum,Rococo,Baroque,23.25,108.33
+ResNet-50,Rijksmuseum,Realism,Romanticism,15.91,42.33
+ResNet-50,Rijksmuseum,Northern Renaissance,Mannerism,15.69,16.0
+ResNet-50,Rijksmuseum,Baroque,Rococo,13.87,285.67
+ResNet-50,Rijksmuseum,Mannerism,Northern Renaissance,13.64,9.0
+ResNet-50,Rijksmuseum,Romanticism,Baroque,12.38,4.33
+ResNet-50,Rijksmuseum,Baroque,Romanticism,11.04,227.33
+ResNet-50,Rijksmuseum,Rococo,Romanticism,9.44,44.0
+ResNet-50,Rijksmuseum,Mannerism,Romanticism,9.09,6.0
+ResNet-50,Rijksmuseum,Romanticism,Realism,7.62,2.67
+ResNet-50,Rijksmuseum,Rococo,Mannerism,7.51,35.0
+ResNet-50,Rijksmuseum,Baroque,Mannerism,6.57,135.33
+ResNet-50,Rijksmuseum,Northern Renaissance,Baroque,4.9,5.0
+ResNet-50,Rijksmuseum,Baroque,Northern Renaissance,4.47,92.0
+ResNet-50,Rijksmuseum,Rococo,Northern Renaissance,3.79,17.67
+ResNet-50,Rijksmuseum,Northern Renaissance,Realism,3.59,3.67
+ResNet-50,Rijksmuseum,Mannerism,Realism,3.03,2.0
+ResNet-50,Rijksmuseum,Realism,Baroque,2.76,7.33
+ResNet-50,Rijksmuseum,Realism,Rococo,2.51,6.67
+ResNet-50,Rijksmuseum,Baroque,Realism,2.46,50.67
+ResNet-50,Rijksmuseum,Rococo,Realism,2.43,11.33
+ResNet-50,Rijksmuseum,Northern Renaissance,Romanticism,2.29,2.33
+ResNet-50,Rijksmuseum,Mannerism,Rococo,1.52,1.0
+ResNet-50,Rijksmuseum,Northern Renaissance,Rococo,0.98,1.0
+ResNet-50,Rijksmuseum,Realism,Northern Renaissance,0.88,2.33
+ResNet-50,Rijksmuseum,Realism,Mannerism,0.13,0.33
+ResNet-50,Rijksmuseum,Romanticism,Mannerism,0.0,0.0
+ResNet-50,Rijksmuseum,Romanticism,Northern Renaissance,0.0,0.0
+ResNet-50,WikiArt test,Romanticism,Realism,34.28,396.67
+ResNet-50,WikiArt test,Mannerism,Baroque,26.67,56.0
+ResNet-50,WikiArt test,Rococo,Romanticism,20.88,81.0
+ResNet-50,WikiArt test,Rococo,Baroque,18.04,70.0
+ResNet-50,WikiArt test,Realism,Romanticism,17.36,225.33
+ResNet-50,WikiArt test,Northern Renaissance,Mannerism,12.22,27.0
+ResNet-50,WikiArt test,Baroque,Rococo,11.78,68.67
+ResNet-50,WikiArt test,Baroque,Romanticism,9.95,58.0
+ResNet-50,WikiArt test,Romanticism,Rococo,8.1,93.67
+ResNet-50,WikiArt test,Baroque,Realism,7.72,45.0
+ResNet-50,WikiArt test,Mannerism,Romanticism,7.14,15.0
+ResNet-50,WikiArt test,Baroque,Mannerism,6.75,39.33
+ResNet-50,WikiArt test,Romanticism,Baroque,6.37,73.67
+ResNet-50,WikiArt test,Northern Renaissance,Baroque,6.18,13.67
+ResNet-50,WikiArt test,Mannerism,Northern Renaissance,5.87,12.33
+ResNet-50,WikiArt test,Baroque,Northern Renaissance,4.35,25.33
+ResNet-50,WikiArt test,Realism,Baroque,3.47,45.0
+ResNet-50,WikiArt test,Rococo,Realism,3.09,12.0
+ResNet-50,WikiArt test,Rococo,Northern Renaissance,3.01,11.67
+ResNet-50,WikiArt test,Romanticism,Northern Renaissance,3.0,34.67
+ResNet-50,WikiArt test,Rococo,Mannerism,2.75,10.67
+ResNet-50,WikiArt test,Northern Renaissance,Romanticism,2.56,5.67
+ResNet-50,WikiArt test,Mannerism,Realism,2.54,5.33
+ResNet-50,WikiArt test,Mannerism,Rococo,2.22,4.67
+ResNet-50,WikiArt test,Realism,Rococo,1.95,25.33
+ResNet-50,WikiArt test,Northern Renaissance,Realism,1.66,3.67
+ResNet-50,WikiArt test,Romanticism,Mannerism,1.33,15.33
+ResNet-50,WikiArt test,Northern Renaissance,Rococo,0.9,2.0
+ResNet-50,WikiArt test,Realism,Mannerism,0.82,10.67
+ResNet-50,WikiArt test,Realism,Northern Renaissance,0.74,9.67

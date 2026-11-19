@@ -1,0 +1,19 @@
+museum,model,source,n,styles,bal_acc,ci_low,ci_high
+Met,ResNet-50,movement,261.0,Baroque+Mannerism+Northern Renaissance+Rococo,64.81,58.11,73.81
+Met,ResNet-50,date rule,368.0,Baroque+Mannerism+Northern Renaissance+Rococo,67.82,62.09,73.54
+Met,ResNet-50,movement minus date rule,,,-3.01,-11.61,7.57
+Met,CLIP probe,movement,261.0,Baroque+Mannerism+Northern Renaissance+Rococo,73.53,66.23,83.84
+Met,CLIP probe,date rule,368.0,Baroque+Mannerism+Northern Renaissance+Rococo,70.57,64.28,77.55
+Met,CLIP probe,movement minus date rule,,,2.95,-7.18,15.21
+Met,DINOv2 probe,movement,261.0,Baroque+Mannerism+Northern Renaissance+Rococo,64.68,55.2,76.99
+Met,DINOv2 probe,date rule,368.0,Baroque+Mannerism+Northern Renaissance+Rococo,57.62,51.0,64.77
+Met,DINOv2 probe,movement minus date rule,,,7.06,-4.78,20.4
+Rijksmuseum,ResNet-50,movement,622.0,Baroque+Mannerism+Northern Renaissance+Rococo,58.44,48.23,66.29
+Rijksmuseum,ResNet-50,date rule,2071.0,Baroque+Mannerism+Northern Renaissance+Rococo,57.8,52.69,62.78
+Rijksmuseum,ResNet-50,movement minus date rule,,,0.64,-10.47,9.93
+Rijksmuseum,CLIP probe,movement,622.0,Baroque+Mannerism+Northern Renaissance+Rococo,64.81,54.68,71.13
+Rijksmuseum,CLIP probe,date rule,2071.0,Baroque+Mannerism+Northern Renaissance+Rococo,59.68,53.54,66.19
+Rijksmuseum,CLIP probe,movement minus date rule,,,5.13,-7.3,14.09
+Rijksmuseum,DINOv2 probe,movement,622.0,Baroque+Mannerism+Northern Renaissance+Rococo,55.77,45.35,63.03
+Rijksmuseum,DINOv2 probe,date rule,2071.0,Baroque+Mannerism+Northern Renaissance+Rococo,55.48,48.9,62.59
+Rijksmuseum,DINOv2 probe,movement minus date rule,,,0.29,-13.24,9.79

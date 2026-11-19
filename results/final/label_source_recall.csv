@@ -1,0 +1,49 @@
+museum,model,source,style,n,recall
+Met,ResNet-50,movement,Baroque,141,66.43
+Met,ResNet-50,movement,Mannerism,18,57.41
+Met,ResNet-50,movement,Northern Renaissance,54,94.44
+Met,ResNet-50,movement,Rococo,48,40.97
+Met,ResNet-50,date rule,Baroque,157,65.39
+Met,ResNet-50,date rule,Mannerism,30,63.33
+Met,ResNet-50,date rule,Northern Renaissance,110,85.76
+Met,ResNet-50,date rule,Rococo,71,56.81
+Met,CLIP probe,movement,Baroque,141,73.05
+Met,CLIP probe,movement,Mannerism,18,88.89
+Met,CLIP probe,movement,Northern Renaissance,54,92.59
+Met,CLIP probe,movement,Rococo,48,39.58
+Met,CLIP probe,date rule,Baroque,157,73.25
+Met,CLIP probe,date rule,Mannerism,30,66.67
+Met,CLIP probe,date rule,Northern Renaissance,110,81.82
+Met,CLIP probe,date rule,Rococo,71,60.56
+Met,DINOv2 probe,movement,Baroque,141,63.83
+Met,DINOv2 probe,movement,Mannerism,18,66.67
+Met,DINOv2 probe,movement,Northern Renaissance,54,90.74
+Met,DINOv2 probe,movement,Rococo,48,37.5
+Met,DINOv2 probe,date rule,Baroque,157,61.78
+Met,DINOv2 probe,date rule,Mannerism,30,40.0
+Met,DINOv2 probe,date rule,Northern Renaissance,110,83.64
+Met,DINOv2 probe,date rule,Rococo,71,45.07
+Rijksmuseum,ResNet-50,movement,Baroque,527,63.25
+Rijksmuseum,ResNet-50,movement,Mannerism,42,38.89
+Rijksmuseum,ResNet-50,movement,Northern Renaissance,15,71.11
+Rijksmuseum,ResNet-50,movement,Rococo,38,60.53
+Rijksmuseum,ResNet-50,date rule,Baroque,1532,61.01
+Rijksmuseum,ResNet-50,date rule,Mannerism,24,44.44
+Rijksmuseum,ResNet-50,date rule,Northern Renaissance,87,72.8
+Rijksmuseum,ResNet-50,date rule,Rococo,428,52.96
+Rijksmuseum,CLIP probe,movement,Baroque,527,79.7
+Rijksmuseum,CLIP probe,movement,Mannerism,42,30.95
+Rijksmuseum,CLIP probe,movement,Northern Renaissance,15,93.33
+Rijksmuseum,CLIP probe,movement,Rococo,38,55.26
+Rijksmuseum,CLIP probe,date rule,Baroque,1532,77.87
+Rijksmuseum,CLIP probe,date rule,Mannerism,24,41.67
+Rijksmuseum,CLIP probe,date rule,Northern Renaissance,87,68.97
+Rijksmuseum,CLIP probe,date rule,Rococo,428,50.23
+Rijksmuseum,DINOv2 probe,movement,Baroque,527,70.02
+Rijksmuseum,DINOv2 probe,movement,Mannerism,42,30.95
+Rijksmuseum,DINOv2 probe,movement,Northern Renaissance,15,80.0
+Rijksmuseum,DINOv2 probe,movement,Rococo,38,42.11
+Rijksmuseum,DINOv2 probe,date rule,Baroque,1532,62.73
+Rijksmuseum,DINOv2 probe,date rule,Mannerism,24,41.67
+Rijksmuseum,DINOv2 probe,date rule,Northern Renaissance,87,72.41
+Rijksmuseum,DINOv2 probe,date rule,Rococo,428,45.09

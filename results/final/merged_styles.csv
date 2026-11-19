@@ -1,0 +1,10 @@
+model,set,six_styles,4 groups,3 eras
+ResNet-50,WikiArt test,61.05,67.41,78.43
+ResNet-50,Met,57.54,59.74,78.31
+ResNet-50,Rijksmuseum,58.22,67.75,80.66
+CLIP probe,WikiArt test,70.9,76.78,84.74
+CLIP probe,Met,68.18,74.27,86.23
+CLIP probe,Rijksmuseum,66.44,82.55,87.28
+DINOv2 probe,WikiArt test,58.71,67.58,76.75
+DINOv2 probe,Met,61.07,73.07,82.27
+DINOv2 probe,Rijksmuseum,57.33,68.85,82.15

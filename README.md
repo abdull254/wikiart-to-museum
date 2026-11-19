@@ -4,6 +4,18 @@
 **Course:** CIS 631, Minnesota State University, Mankato, Fall 2026
 **Instructor:** Dr. Suboh Alkhushayni
 
+## Final submission
+
+| Item | Where |
+|---|---|
+| 1. Final paper (PDF) | [paper/WikiArt_to_Museum_Final_Paper.pdf](paper/WikiArt_to_Museum_Final_Paper.pdf) |
+| 2. LaTeX source | [paper/main.tex](paper/main.tex), [paper/refs.bib](paper/refs.bib), figures in [paper/figures/](paper/figures/) (IEEE conference format; build with `pdflatex main && bibtex main && pdflatex main && pdflatex main`) |
+| 3. Final slides | [slides/WikiArt_to_Museum_Final.pptx](slides/WikiArt_to_Museum_Final.pptx) (speaker notes on every slide) |
+| 4. Video recording | Submitted on D2L |
+| 5. All code | [src/](src/) (scripts) and [notebooks/](notebooks/) (Colab notebooks, most with outputs) |
+| 6. README | This file |
+| 7. Datasets (links) | [Datasets](#datasets-links) below, plus the ID, label and split files in [data/](data/) |
+
 ## Overview
 
 Art-style classifiers are usually trained on WikiArt. Museums may want to use them on their own collections, but images from different sources differ in digitization, color and framing. This project measures how much a WikiArt-trained model loses on museum digitizations from the Metropolitan Museum of Art (the Met) and the Rijksmuseum, and whether a few museum images help at the other museum.
@@ -14,6 +26,19 @@ The museum images are professional collection digitizations, not photographs tak
 
 1. **RQ1, transfer.** How much does performance change when a model trained only on WikiArt is tested on the Met and the Rijksmuseum?
 2. **RQ2, few-shot.** Does fine-tuning on 5, 10, 25 or 50 images per style from one museum improve results at the other museum? Tested both ways (Met → Rijks and Rijks → Met).
+
+## Datasets (links)
+
+The images are not in this repository (see [Ethics and licensing](#ethics-and-licensing)). They can be rebuilt from these public sources with the scripts in `src/`:
+
+| Dataset | Link | What we used | IDs / labels in this repo |
+|---|---|---|---|
+| WikiArt (`Artificio/WikiArt_Full`) | https://huggingface.co/datasets/Artificio/WikiArt_Full | 26,144 paintings in the six styles (artist named for every image), 256 x 256 | [data/final/wikiart_split.csv](data/final/wikiart_split.csv) (index, artist, style, split), [data/wikiart/download_log.json](data/wikiart/download_log.json) |
+| The Met Collection API (Open Access) | https://metmuseum.github.io/ (API: https://collectionapi.metmuseum.org/public/collection/v1) | European Paintings and Robert Lehman Collection, public-domain paintings | [data/met/ids.txt](data/met/ids.txt), [data/met/harvest_log.json](data/met/harvest_log.json) |
+| Rijksmuseum Data Services (Search API + IIIF) | https://data.rijksmuseum.nl/ | Paintings collection (`SK-` object numbers) | [data/rijks/ids.txt](data/rijks/ids.txt), [data/rijks/harvest_log.json](data/rijks/harvest_log.json) |
+| Wikidata (movement labels, P135) | https://www.wikidata.org/ | Artwork and painter movements for the museum labels | [data/labels/museum_labels.csv](data/labels/museum_labels.csv) (label, rule and source for all 6,909 museum paintings) |
+
+Both museums were harvested on 2026-10-20. Final museum test sets: [data/final/museum_test.csv](data/final/museum_test.csv) (Met 937, Rijksmuseum 3,092). Removed overlaps: [data/final/museum_wikiart_overlap.csv](data/final/museum_wikiart_overlap.csv); WikiArt near-duplicates: [data/final/wikiart_near_duplicates.csv](data/final/wikiart_near_duplicates.csv).
 
 ## Data
 
@@ -30,11 +55,47 @@ The museum images are professional collection digitizations, not photographs tak
 - **Museum labels** come from Wikidata movements (P135), the painter's movement and a date rule. Since Oct 26 a movement that does not fit the painting's date is dropped. A blind human hand check found 92 of 92 decided labels correct (8 unsure).
 - **Test sets:** Met 937 paintings, Rijksmuseum 3,092.
 
-## Results so far
+## Results
+
+**Table of record (final, Nov 19):** [results/final/table_of_record.csv](results/final/table_of_record.csv), recomputed by `python src/final_analysis.py` from the committed prediction files. It uses a **painter-level bootstrap** (painters, not paintings, are resampled), so its intervals are wider than the older painting-level intervals in the sections below; the point estimates are the same. All final analyses are in [results/final/final_report.txt](results/final/final_report.txt).
+
+### Final analyses (painter-level statistics, Nov 19)
+
+Unseen artists, top-1 balanced accuracy (%), painter-level 95% CI:
+
+| Model | WikiArt test | Met | Rijksmuseum | Gap Met | Gap Rijks |
+|---|---:|---:|---:|---:|---:|
+| ResNet-50 (3 seeds) | 61.1 [55.2, 66.0] | 57.5 [52.9, 62.1] | 58.2 [55.2, 63.6] | 3.5 [-4.4, 10.0] | 2.8 [-5.7, 8.7] |
+| CLIP probe | 70.9 [65.2, 75.9] | 68.2 [62.9, 75.6] | 66.4 [62.7, 71.5] | 2.7 [-6.9, 10.1] | 4.5 [-3.5, 10.6] |
+| DINOv2 probe | 58.7 [51.5, 66.8] | 61.1 [54.6, 66.4] | 57.3 [53.0, 61.0] | -2.4 [-11.1, 7.6] | 1.4 [-6.8, 10.6] |
+
+- **Equivalence (TOST, +-5 points):** not shown for any model; the 90% intervals reach 6 to 10 points. A gap above about 10 points is ruled out for every model. ([gaps_equivalence.csv](results/final/gaps_equivalence.csv))
+- **Seen-artist boost at the Met:** ResNet-50 +12.4 [1.2, 22.0], CLIP +12.1 [0.2, 21.9], DINOv2 +12.0 [2.0, 24.6].
+- **Paired model tests** ([paired_models.csv](results/final/paired_models.csv)): CLIP beats ResNet-50 by +10.6 [4.7, 18.9] at the Met and +8.2 [3.5, 12.3] at the Rijksmuseum (McNemar p = 0.055 and < 0.001); DINOv2 is not better than ResNet-50.
+- **Label shift:** re-weighting each museum to WikiArt's style mix raises Rijksmuseum macro-F1 from 46.0 to 56.2 (ResNet-50) and 55.5 to 66.2 (CLIP), so its low macro-F1 comes from the Baroque-heavy mix ([class_balanced.csv](results/final/class_balanced.csv)).
+- **Label source:** Wikidata-movement vs date-rule labels differ by -3.0 to +7.1 points, all CIs include zero ([label_source.csv](results/final/label_source.csv)).
+- **DINOv2 Met > WikiArt:** not significant; WikiArt test has only 8 Northern Renaissance painters and DINOv2 gets Holbein (107 of 221 paintings) right only 56%.
+- **Rijksmuseum Mannerism:** 63 of 72 are northern (Dutch) works, while WikiArt's Mannerism is Italian. ResNet-50 recall: Italian-looking works 83%, Dutch history paintings 38%, portraits 52%, grisailles 0% ([rijks_mannerism.csv](results/final/rijks_mannerism.csv)).
+- **Failure tally** (60 most confident errors, [error_tally.csv](results/final/error_tally.csv)): 55% style boundary, 15% label problems (later copies, date rule), 13% subject from another period or non-European work, 12% digitization or format (frame, oval, triptych, grisaille), 5% unclear. No glare, crop or low-resolution cases.
+- **ECE** for every model and test set is in the table of record (ResNet-50 0.039 WikiArt, 0.069 Met, 0.056 Rijks; CLIP 0.099 / 0.155 / 0.125).
+- **Merged styles** (post hoc, next to the six-style results): [merged_styles.csv](results/final/merged_styles.csv); final ensemble 3 eras 92.1 / 87.0 / 90.9.
+- **CORAL and grayscale-augmentation training:** [notebooks/final_extras.ipynb](notebooks/final_extras.ipynb); results go to `results/final_extras/`.
+
+### Stronger models (one run, Nov 18)
+
+Unseen artists, balanced accuracy (%), chosen on WikiArt val only ([results/improve/](results/improve/)):
+
+| Model | WikiArt test | Met | Rijksmuseum | Met 3 eras | Rijks 3 eras |
+|---|---:|---:|---:|---:|---:|
+| SigLIP so400m probe | 80.6 | 70.9 | 70.9 | 90.9 | 89.1 |
+| CLIP + DINOv2 + SigLIP feature ensemble | 79.4 | 72.6 | 69.3 | 91.2 | 89.2 |
+| Final ensemble | 78.3 | 70.3 | 71.0 | 87.0 | 90.9 |
+
+The older sections below keep the numbers as first reported, with painting-level intervals.
 
 All numbers are **balanced accuracy (%)**. Chance is 16.7%. Museum columns use **unseen artists** (painters not in WikiArt training), the fair test for RQ1.
 
-### RQ1: ResNet-50 baseline (3 seeds, fixed labels, Oct 27)
+### RQ1: ResNet-50 baseline (3 seeds, fixed labels, Oct 27; painting-level CIs)
 
 | Test set | Balanced acc. [95% CI] | Macro-F1 |
 |---|---:|---:|
@@ -126,6 +187,10 @@ reports/      progress reports
 | `docs/improving_accuracy.md` | Which levers can raise accuracy, the evidence, and the Nov 18 results (unseen-artist museums: ResNet 57-58 to 70-73 balanced accuracy with SigLIP / ensembles; files in `results/improve/`) |
 | `notebooks/colorjitter.ipynb` | Colour-jitter test (with outputs): retrains the ResNet-50 baseline (3 seeds) with `ColorJitter(brightness=0.2, saturation=0.2)` on WikiArt training images only and compares it with the baseline (paired t-test, painter-level bootstrap, McNemar); report in `results/colorjitter/` |
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
+| `notebooks/final_extras.ipynb` | CORAL on frozen CLIP / DINOv2 / SigLIP features (CPU, minutes) and grayscale-augmentation training, 3 seeds (T4, about 1 h) |
+| `src/final_analysis.py` | Final statistics from the committed predictions, no GPU: table of record, painter-level CIs, equivalence and paired tests, label source, class-balanced rescoring, confusions, merged styles, confident errors, Rijksmuseum Mannerism, figures |
+| `results/final/` | Output of `src/final_analysis.py` (CSVs, `final_report.txt`, confusion-matrix and label-source figures) and the confident-error tally (`error_tally.csv`) |
+| `paper/` | Final paper: LaTeX source, bibliography, figures and PDF |
 | `docs/rq1_results.md` | Full RQ1, ablation and probe results |
 | `docs/related_work_2024_2026.md` | Related work, 2024 to 2026 |
 | `docs/labeling_rules.md` | Numbered rules for museum style labels |
@@ -207,6 +272,9 @@ Use the numbers in [docs/rq1_results.md](docs/rq1_results.md) (Oct 27-28). Prese
 4. **Statistics (Colab).** Run `python src/stats.py --runs runs/resnet50_seed1 runs/resnet50_seed2 runs/resnet50_seed3`. Output matches `results/stats_report.txt`.
 5. **Foundation-model table (Colab).** Run `notebooks/foundation_probes.ipynb`.
 6. **RQ2 curve (Colab).** Run `notebooks/rq2_fewshot.ipynb` after step 5 (it reuses the probe features). Output matches `results/rq2/rq2_report.txt`.
+7. **Final statistics (any computer, no GPU).** `pip install numpy pandas scipy matplotlib`, then `python src/final_analysis.py` from the repository root. Output matches `results/final/`.
+8. **CORAL and grayscale training (Colab).** Run `notebooks/final_extras.ipynb` (needs the feature files from step 5 and `colab_data.zip`).
+9. **Paper.** In `paper/`: `pdflatex main && bibtex main && pdflatex main && pdflatex main`.
 
 ## Ethics and licensing
 
@@ -231,13 +299,9 @@ This repository keeps everything needed to check and rebuild the work: all code 
 - Images, datasets, caches and model checkpoints (`.pt`, `.zip`).
 - `data/final/wikiart_table.csv` (16 MB, full WikiArt table) and `data/final/hashes.json` (perceptual hashes); both are rebuilt by `src/prepare_dataset.py`.
 
-## Next steps
+## Status
 
-1. Run the RQ2 few-shot notebook.
-2. Run the accuracy-boost notebook.
-3. Add CORAL domain adaptation.
-4. Failure analysis, especially Rijksmuseum Mannerism (low for every model).
-5. Write threats to validity, ethics and reproducibility.
+Done: RQ1 (3 seeds, painter-level statistics, equivalence and paired tests, label source, class-balanced rescoring, ECE), ablations on 3 seeds, colour-jitter training, foundation-model probes, stronger models, RQ2 in both directions, failure analysis and the Rijksmuseum Mannerism check, final paper and slides. CORAL and grayscale-augmentation training run in `notebooks/final_extras.ipynb`.
 
 ## Limitations
 
@@ -248,4 +312,6 @@ This repository keeps everything needed to check and rebuild the work: all code 
 - CLIP may have seen these paintings during pretraining.
 
 ## Credits
+Project idea and its two-question framing: classmates Mashfika Jahan and Yisihaq Yemiu, used with their agreement.
+
 Data: WikiArt via `Artificio/WikiArt_Full`; The Metropolitan Museum of Art Open Access (CC0); Rijksmuseum (public domain / CC0); Wikidata (CC0).

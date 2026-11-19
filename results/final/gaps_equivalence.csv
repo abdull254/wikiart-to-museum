@@ -1,0 +1,7 @@
+model,museum,gap,ci95_low,ci95_high,p_diff,ci90_low,ci90_high,tost_p,equivalent
+ResNet-50,Met,3.512,-4.362,9.972,0.421,-3.213,9.083,0.296,False
+ResNet-50,Rijksmuseum,2.836,-5.66,8.674,0.557,-3.974,7.506,0.19,False
+CLIP probe,Met,2.722,-6.904,10.074,0.693,-5.545,8.751,0.23,False
+CLIP probe,Rijksmuseum,4.461,-3.54,10.635,0.316,-2.311,9.739,0.355,False
+DINOv2 probe,Met,-2.361,-11.072,7.578,0.647,-9.649,5.826,0.275,False
+DINOv2 probe,Rijksmuseum,1.377,-6.807,10.612,0.725,-5.761,9.081,0.206,False

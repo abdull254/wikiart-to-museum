@@ -12,6 +12,7 @@ Usage (inside your venv):
   python train.py --seed 1 --eval-museums      # full run + Met and Rijksmuseum scores
   python train.py --seed 1 --grayscale-aug 0.2 # later: grayscale-augmentation test
   python train.py --seed 1 --color-jitter      # colour-jitter test (training images only)
+  python train.py --seed 1 --balanced-sampler  # balanced batches instead of a class-weighted loss
 
 Each run writes to runs/<name>/:
   config.json     every setting, the device, library versions and the split file's hash
@@ -37,7 +38,7 @@ import torch
 import torch.nn as nn
 from PIL import Image
 from sklearn.metrics import balanced_accuracy_score, confusion_matrix, f1_score
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset, WeightedRandomSampler
 from torchvision import models, transforms
 
 ROOT = Path(__file__).resolve().parent
@@ -203,6 +204,8 @@ def main():
     ap.add_argument("--grayscale-aug", type=float, default=0.0, help="probability of grayscale training images")
     ap.add_argument("--color-jitter", action="store_true",
                     help="colour jitter (brightness 0.2, saturation 0.2) on training images")
+    ap.add_argument("--balanced-sampler", action="store_true",
+                    help="draw training images so every style is equally likely in each batch; the loss is then unweighted")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--quick", action="store_true", help="test run: 2,000 train / 500 val images, 1 epoch")
     ap.add_argument("--eval-museums", action="store_true", help="also score the Met and Rijksmuseum sets")
@@ -219,7 +222,7 @@ def main():
     classes = load_classes()
     name = args.name or (f"{'quick_' if args.quick else ''}resnet50"
                          f"{'_gray' + str(args.grayscale_aug) if args.grayscale_aug else ''}"
-                         f"{'_cj' if args.color_jitter else ''}_seed{args.seed}")
+                         f"{'_cj' if args.color_jitter else ''}{'_bs' if args.balanced_sampler else ''}_seed{args.seed}")
     out = RUNS / name
     out.mkdir(parents=True, exist_ok=True)
 
@@ -234,7 +237,15 @@ def main():
         args.epochs = 1
 
     tf_train, tf_test = make_transforms(args)
-    dl_train = loader(Images(train_df, "image", classes, tf_train), args, shuffle=True)
+    ds_train = Images(train_df, "image", classes, tf_train)
+    if args.balanced_sampler:   # each style drawn equally often (with replacement); epoch length unchanged
+        n_per = train_df["style"].value_counts()
+        w = torch.tensor((1.0 / train_df["style"].map(n_per)).values, dtype=torch.double)
+        g = torch.Generator().manual_seed(args.seed)
+        dl_train = DataLoader(ds_train, batch_size=args.batch_size, sampler=WeightedRandomSampler(w, len(w), replacement=True, generator=g),
+                              num_workers=args.workers, pin_memory=torch.cuda.is_available(), persistent_workers=args.workers > 0)
+    else:
+        dl_train = loader(ds_train, args, shuffle=True)
     ds_val = Images(val_df, "image", classes, tf_test)
     dl_val = loader(ds_val, args, shuffle=False)
 
@@ -245,7 +256,7 @@ def main():
         print(f"  {c:<30} {counts.get(c, 0):>6} train images")
 
     model = build_model(len(classes), pretrained=not args.no_pretrained).to(device)
-    if args.no_class_weights:
+    if args.no_class_weights or args.balanced_sampler:   # the sampler already balances the styles
         weight = None
     else:   # rarer styles count more, so the model doesn't ignore Mannerism
         w = np.array([len(train_df) / (len(classes) * counts.get(c, 1)) for c in classes], dtype=np.float32)

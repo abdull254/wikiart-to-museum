@@ -1,0 +1,7 @@
+set,model_a,model_b,diff,ci_low,ci_high,p
+WikiArt test,ResNet-50 + CLIP + DINOv2,CLIP probe,0.72,-1.3,2.65,0.44
+WikiArt test,CLIP + DINOv2,CLIP probe,-0.12,-2.12,1.4,0.92
+Met,ResNet-50 + CLIP + DINOv2,CLIP probe,0.99,-3.79,4.35,0.7
+Met,CLIP + DINOv2,CLIP probe,-0.78,-4.74,1.89,0.58
+Rijksmuseum,ResNet-50 + CLIP + DINOv2,CLIP probe,2.06,-1.69,5.55,0.26
+Rijksmuseum,CLIP + DINOv2,CLIP probe,-0.73,-3.36,2.11,0.55

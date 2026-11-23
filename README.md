@@ -79,6 +79,8 @@ Unseen artists, top-1 balanced accuracy (%), painter-level 95% CI:
 - **Failure tally** (60 most confident errors, [error_tally.csv](results/final/error_tally.csv)): 55% style boundary, 15% label problems (later copies, date rule), 13% subject from another period or non-European work, 12% digitization or format (frame, oval, triptych, grisaille), 5% unclear. No glare, crop or low-resolution cases.
 - **ECE** for every model and test set is in the table of record (ResNet-50 0.039 WikiArt, 0.069 Met, 0.056 Rijks; CLIP 0.099 / 0.155 / 0.125).
 - **Merged styles** (post hoc, next to the six-style results): [merged_styles.csv](results/final/merged_styles.csv); final ensemble 3 eras 92.1 / 87.0 / 90.9.
+- **Ensembles from saved predictions** (equal weights, nothing tuned; `python src/ensembles.py`, [results/ensembles/](results/ensembles/)): averaging the 3 ResNet-50 seeds gives 63.5 / 59.8 / 59.9 (WikiArt / Met / Rijks unseen; single seeds 61.1 / 57.5 / 58.2). ResNet-50 + CLIP + DINOv2 gives 71.6 / 69.2 / 68.5, i.e. +0.7 / +1.0 / +2.1 over the CLIP probe alone, none significant (painter-level paired bootstrap).
+- **Wikidata-only labels:** only 52 unseen-painter Met paintings (23 painters, 5 styles) and no Rijksmuseum paintings have a style taken directly from Wikidata, so this subset gives very wide intervals (CLIP probe 67.3 [44.5, 84.7]); see `results/ensembles/ensembles.csv`.
 - **CORAL and grayscale-augmentation training:** [notebooks/final_extras.ipynb](notebooks/final_extras.ipynb); results go to `results/final_extras/`.
 
 ### Stronger models (one run, Nov 18)
@@ -185,6 +187,8 @@ reports/      progress reports
 | `notebooks/boost_accuracy.ipynb` | Accuracy boost: SigLIP, feature ensemble, CLIP fine-tune + WiSE-FT, TTA |
 | `notebooks/improve_accuracy.ipynb` | One-hour T4 run of the accuracy levers (SigLIP, feature ensemble, CLIP fine-tune, ensemble) with 6-style, 4-group and 3-era scores and painter-level bootstrap |
 | `docs/improving_accuracy.md` | Which levers can raise accuracy, the evidence, and the Nov 18 results (unseen-artist museums: ResNet 57-58 to 70-73 balanced accuracy with SigLIP / ensembles; files in `results/improve/`) |
+| `notebooks/more_levers.ipynb` | Remaining items of the improvement list (T4, about 1.5 h): 7-view test-time averaging for the CLIP and SigLIP probes, ResNet-50 with balanced sampling (`src/train.py --balanced-sampler`, 3 seeds), ensembles with SigLIP, Wikidata-only scores; results go to `wikiart_runs/more_levers/` |
+| `src/ensembles.py` | Seed ensemble and ResNet-50 + CLIP + DINOv2 ensemble from the committed predictions (no GPU), with Wikidata-only scores; output in `results/ensembles/` |
 | `notebooks/colorjitter.ipynb` | Colour-jitter test (with outputs): retrains the ResNet-50 baseline (3 seeds) with `ColorJitter(brightness=0.2, saturation=0.2)` on WikiArt training images only and compares it with the baseline (paired t-test, painter-level bootstrap, McNemar); report in `results/colorjitter/` |
 | `notebooks/rq2_fewshot.ipynb` | RQ2 few-shot curve, both directions |
 | `notebooks/final_extras.ipynb` | CORAL on frozen CLIP / DINOv2 / SigLIP features (CPU, minutes) and grayscale-augmentation training, 3 seeds (T4, about 1 h) |
